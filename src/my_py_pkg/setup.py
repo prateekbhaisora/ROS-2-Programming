@@ -21,8 +21,9 @@ setup(
     entry_points={
         'console_scripts': [
             "py_node = my_py_pkg.my_first_node:main",
-            "robot_news_station = my_py_pkg.robot_news_station:main" 
-            # Installs our node into an executable called py_node
+            # Installs our node into an executable called py_node that calls a function called main upon execution 
+            "robot_news_station = my_py_pkg.robot_news_station:main",
+            "smartphone = my_py_pkg.smartphone:main"
         ],
     },
 )
