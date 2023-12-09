@@ -7,7 +7,7 @@ from example_interfaces.msg import String   # Imports some inbuilt messages that
 class RobotNewsStationNode(Node): 
     def __init__(self):
         super().__init__("robot_news_station")     # Node name
-    # Conventionally, developers use same name for file, node as well as executable.
+        # Conventionally, developers use same name for file, node as well as executable.
     
         self.robot_name_ = "CP30"
         self.publisher_ = self.create_publisher(String, "robot_news", 10)
