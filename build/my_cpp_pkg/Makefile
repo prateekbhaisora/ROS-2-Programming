@@ -236,6 +236,19 @@ smartphone/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/smartphone.dir/build.make CMakeFiles/smartphone.dir/build
 .PHONY : smartphone/fast
 
+#=============================================================================
+# Target rules for targets named number_counter
+
+# Build rule for target.
+number_counter: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 number_counter
+.PHONY : number_counter
+
+# fast build rule for target.
+number_counter/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/number_counter.dir/build.make CMakeFiles/number_counter.dir/build
+.PHONY : number_counter/fast
+
 src/my_first_node.o: src/my_first_node.cpp.o
 .PHONY : src/my_first_node.o
 
@@ -259,6 +272,30 @@ src/my_first_node.s: src/my_first_node.cpp.s
 src/my_first_node.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cpp_node.dir/build.make CMakeFiles/cpp_node.dir/src/my_first_node.cpp.s
 .PHONY : src/my_first_node.cpp.s
+
+src/number_counter.o: src/number_counter.cpp.o
+.PHONY : src/number_counter.o
+
+# target to build an object file
+src/number_counter.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/number_counter.dir/build.make CMakeFiles/number_counter.dir/src/number_counter.cpp.o
+.PHONY : src/number_counter.cpp.o
+
+src/number_counter.i: src/number_counter.cpp.i
+.PHONY : src/number_counter.i
+
+# target to preprocess a source file
+src/number_counter.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/number_counter.dir/build.make CMakeFiles/number_counter.dir/src/number_counter.cpp.i
+.PHONY : src/number_counter.cpp.i
+
+src/number_counter.s: src/number_counter.cpp.s
+.PHONY : src/number_counter.s
+
+# target to generate assembly for a file
+src/number_counter.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/number_counter.dir/build.make CMakeFiles/number_counter.dir/src/number_counter.cpp.s
+.PHONY : src/number_counter.cpp.s
 
 src/robot_news_station.o: src/robot_news_station.cpp.o
 .PHONY : src/robot_news_station.o
@@ -324,11 +361,15 @@ help:
 	@echo "... my_cpp_pkg_uninstall"
 	@echo "... uninstall"
 	@echo "... cpp_node"
+	@echo "... number_counter"
 	@echo "... robot_news_station"
 	@echo "... smartphone"
 	@echo "... src/my_first_node.o"
 	@echo "... src/my_first_node.i"
 	@echo "... src/my_first_node.s"
+	@echo "... src/number_counter.o"
+	@echo "... src/number_counter.i"
+	@echo "... src/number_counter.s"
 	@echo "... src/robot_news_station.o"
 	@echo "... src/robot_news_station.i"
 	@echo "... src/robot_news_station.s"

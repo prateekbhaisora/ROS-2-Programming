@@ -1,0 +1,13 @@
+[0.158s] Invoking command in '/home/prateek/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/prateek/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/prateek/ros2_ws/build/my_cpp_pkg -- -j2 -l2
+[0.374s] [ 25%] Built target cpp_node
+[0.387s] [ 50%] Built target robot_news_station
+[0.550s] [ 62%] [32mBuilding CXX object CMakeFiles/number_counter.dir/src/number_counter.cpp.o[0m
+[0.550s] [ 87%] Built target smartphone
+[0.964s] [01m[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/number_counter.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Kexample_interfaces/msg/Int64.hpp: No such file or directory
+[0.965s]     2 | #include [01;31m[K"example_interfaces/msg/Int64.hpp"[m[K
+[0.965s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.965s] compilation terminated.
+[0.968s] gmake[2]: *** [CMakeFiles/number_counter.dir/build.make:76: CMakeFiles/number_counter.dir/src/number_counter.cpp.o] Error 1
+[0.975s] gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/number_counter.dir/all] Error 2
+[0.978s] gmake: *** [Makefile:146: all] Error 2
+[0.998s] Invoked command in '/home/prateek/ros2_ws/build/my_cpp_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/prateek/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/prateek/ros2_ws/build/my_cpp_pkg -- -j2 -l2
