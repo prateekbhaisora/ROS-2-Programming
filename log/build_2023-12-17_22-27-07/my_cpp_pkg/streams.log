@@ -1,0 +1,42 @@
+[0.218s] Invoking command in '/home/prateek/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/prateek/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/prateek/ros2_ws/build/my_cpp_pkg -- -j2 -l2
+[0.433s] [ 16%] Built target cpp_node
+[0.467s] [ 33%] Built target robot_news_station
+[0.578s] [ 50%] Built target smartphone
+[0.672s] [ 66%] Built target number_counter
+[0.732s] [ 83%] Built target add_two_ints_server
+[0.763s] [35m[1mConsolidate compiler generated dependencies of target add_two_ints_client_no_oop[0m
+[0.838s] [ 91%] [32mBuilding CXX object CMakeFiles/add_two_ints_client_no_oop.dir/src/add_two_ints_client_no_oop.cpp.o[0m
+[4.363s] [01m[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[4.363s] [01m[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:7:40:[m[K [01;31m[Kerror: [m[Kfound ‘[01m[K:[m[K’ in nested-name-specifier, expected ‘[01m[K::[m[K’
+[4.363s]     7 |     auto node = std::make_shared<rclcpp[01;31m[K:[m[KNode>("add_two_ints_client_no_oop");
+[4.364s]       |                                        [01;31m[K^[m[K
+[4.364s]       |                                        [32m[K::[m[K
+[4.364s] [01m[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:8:89:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kexample_interfaces::srv::AddTwoInts::AddTwoInts(const char [13])[m[K’
+[4.364s]     8 | e_client<example_interfaces::srv::AddTwoInts("add_two_ints"[01;31m[K)[m[K>
+[4.364s]       |                                                            [01;31m[K^[m[K
+[4.364s] 
+[4.364s] In file included from [01m[K/opt/ros/humble/include/example_interfaces/example_interfaces/srv/add_two_ints.hpp:7[m[K,
+[4.364s]                  from [01m[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:2[m[K:
+[4.364s] [01m[K/opt/ros/humble/include/example_interfaces/example_interfaces/srv/detail/add_two_ints__struct.hpp:265:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr example_interfaces::srv::AddTwoInts::AddTwoInts()[m[K’
+[4.364s]   265 | struct [01;36m[KAddTwoInts[m[K
+[4.364s]       |        [01;36m[K^~~~~~~~~~[m[K
+[4.365s] [01m[K/opt/ros/humble/include/example_interfaces/example_interfaces/srv/detail/add_two_ints__struct.hpp:265:8:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 1 provided
+[4.365s] [01m[K/opt/ros/humble/include/example_interfaces/example_interfaces/srv/detail/add_two_ints__struct.hpp:265:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr example_interfaces::srv::AddTwoInts::AddTwoInts(const example_interfaces::srv::AddTwoInts&)[m[K’
+[4.365s] [01m[K/opt/ros/humble/include/example_interfaces/example_interfaces/srv/detail/add_two_ints__struct.hpp:265:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [13][m[K’ to ‘[01m[Kconst example_interfaces::srv::AddTwoInts&[m[K’
+[4.365s] [01m[K/opt/ros/humble/include/example_interfaces/example_interfaces/srv/detail/add_two_ints__struct.hpp:265:8:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr example_interfaces::srv::AddTwoInts::AddTwoInts(example_interfaces::srv::AddTwoInts&&)[m[K’
+[4.365s] [01m[K/opt/ros/humble/include/example_interfaces/example_interfaces/srv/detail/add_two_ints__struct.hpp:265:8:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst char [13][m[K’ to ‘[01m[Kexample_interfaces::srv::AddTwoInts&&[m[K’
+[4.365s] [01m[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:8:25:[m[K [01;31m[Kerror: [m[Kunable to deduce ‘[01m[Kauto[m[K’ from ‘[01m[K((std::__shared_ptr_access<rclcpp::Node, __gnu_cxx::_S_atomic, false, false>*)(& node))->std::__shared_ptr_access<rclcpp::Node, __gnu_cxx::_S_atomic, false, false>::operator->()->create_client<<expression error> >[m[K’
+[4.365s]     8 |     auto client = node->[01;31m[Kcreate_client<example_interfaces::srv::AddTwoInts("add_two_ints")>[m[K
+[4.365s]       |                         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.365s] [01m[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:8:25:[m[K [01;36m[Knote: [m[K  couldn’t deduce template parameter ‘[01m[Kauto[m[K’
+[4.365s] [01m[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:11:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[Kwhile[m[K’
+[4.365s]    11 |     [01;31m[Kwhile[m[K (!client->wait_for_service(std::chrono::seconds(1)))
+[4.366s]       |     [01;31m[K^~~~~[m[K
+[4.379s] [01m[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:23:69:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp::executor[m[K’ has not been declared
+[4.387s]    23 | in_until_future_complete(node, future) == rclcpp::[01;31m[Kexecutor[m[K::FutureReturnCode::SUCCESS)
+[4.387s]       |                                                   [01;31m[K^~~~~~~~[m[K
+[4.387s] 
+[5.187s] gmake[2]: *** [CMakeFiles/add_two_ints_client_no_oop.dir/build.make:76: CMakeFiles/add_two_ints_client_no_oop.dir/src/add_two_ints_client_no_oop.cpp.o] Error 1
+[5.188s] gmake[1]: *** [CMakeFiles/Makefile2:277: CMakeFiles/add_two_ints_client_no_oop.dir/all] Error 2
+[5.188s] gmake: *** [Makefile:146: all] Error 2
+[5.222s] Invoked command in '/home/prateek/ros2_ws/build/my_cpp_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/prateek/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/prateek/ros2_ws/build/my_cpp_pkg -- -j2 -l2
