@@ -701,4 +701,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/number_counter.dir/DependInfo.cmake"
   "CMakeFiles/add_two_ints_server.dir/DependInfo.cmake"
   "CMakeFiles/add_two_ints_client_no_oop.dir/DependInfo.cmake"
+  "CMakeFiles/add_two_ints_client.dir/DependInfo.cmake"
   )
