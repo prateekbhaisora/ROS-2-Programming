@@ -3,7 +3,9 @@
         {
             "name": "Linux",
             "includePath": [
-                "/opt/ros/humble/include/**"
+                // Add Paths here
+                "/opt/ros/humble/include/**", 
+                "~/ros2_ws/install/my_robot_interfaces/include/**"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",

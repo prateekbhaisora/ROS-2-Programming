@@ -7,8 +7,10 @@
   <maintainer email="prateek@todo.todo">prateek</maintainer>
   <license>TODO: License declaration</license>
 
+  <!--Whenever we import a new package that depends on another package, we need to add a dependency here.--> 
   <depend>rclpy</depend>
-  <depend>example_interfaces</depend>   <!--Whenever we import a new package that depends on another package, we need to add a dependency here.--> 
+  <depend>example_interfaces</depend>   <!--Dependency for inbuilt example_interfaces.msg-->
+  <depend>my_robot_interfaces</depend>  <!--Dependecy for custom HardwareStatus.msg-->
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
