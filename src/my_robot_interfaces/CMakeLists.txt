@@ -9,8 +9,10 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
+# Any new interface I create, I will add it here
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/HardwareStatus.msg"
+  "srv/ComputeRectangleArea.srv"
 )
 
 ament_export_dependencies(rosidl_default_runtime)
