@@ -6,6 +6,9 @@ class NumberCounterNode : public rclcpp::Node
 public:
     NumberCounterNode() : Node("number_counter"), counter_(0) 
     {
+        // Declaring and initalizing a custom parameter, with a default value.
+        // this->declare_parameter("param_3_", 7);
+        // parameter = this->get_parameter("param_3_ ").as_int(); 
         // It is always preferred to declare/create publishers before subscribers.
         counter_publisher_ = this->create_publisher<example_interfaces::msg::Int64>("number_count", 
         10);

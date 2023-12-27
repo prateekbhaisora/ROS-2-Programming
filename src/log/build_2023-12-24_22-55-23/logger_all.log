@@ -6,7 +6,7 @@
 [1.568s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
 [1.568s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
 [1.568s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
-[1.568s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/prateek/ros2-ws/src'
+[1.568s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/prateek/ros2_ws/src'
 [1.568s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
 [1.568s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
 [1.568s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
@@ -86,64 +86,64 @@
 [1.961s] Level 5:colcon.colcon_core.verb:set package 'my_robot_interfaces' build argument 'ament_cmake_args' from command line to 'None'
 [1.961s] Level 5:colcon.colcon_core.verb:set package 'my_robot_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
 [1.961s] Level 5:colcon.colcon_core.verb:set package 'my_robot_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
-[1.961s] DEBUG:colcon.colcon_core.verb:Building package 'my_robot_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/prateek/ros2-ws/src/build/my_robot_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/prateek/ros2-ws/src/install/my_robot_interfaces', 'merge_install': False, 'path': '/home/prateek/ros2-ws/src/my_robot_interfaces', 'symlink_install': False, 'test_result_base': None}
+[1.961s] DEBUG:colcon.colcon_core.verb:Building package 'my_robot_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/prateek/ros2_ws/src/build/my_robot_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/prateek/ros2_ws/src/install/my_robot_interfaces', 'merge_install': False, 'path': '/home/prateek/ros2_ws/src/my_robot_interfaces', 'symlink_install': False, 'test_result_base': None}
 [1.982s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
 [2.016s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
-[2.018s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/prateek/ros2-ws/src/my_robot_interfaces' with build type 'ament_cmake'
-[2.020s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/prateek/ros2-ws/src/my_robot_interfaces'
+[2.018s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/prateek/ros2_ws/src/my_robot_interfaces' with build type 'ament_cmake'
+[2.020s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/prateek/ros2_ws/src/my_robot_interfaces'
 [2.115s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
 [2.116s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
 [2.116s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
-[2.217s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/prateek/ros2-ws/src/build/my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/prateek/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/prateek/ros2-ws/src/my_robot_interfaces -DCMAKE_INSTALL_PREFIX=/home/prateek/ros2-ws/src/install/my_robot_interfaces
-[5.709s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/prateek/ros2-ws/src/build/my_robot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/prateek/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/prateek/ros2-ws/src/my_robot_interfaces -DCMAKE_INSTALL_PREFIX=/home/prateek/ros2-ws/src/install/my_robot_interfaces
-[5.710s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/prateek/ros2-ws/src/build/my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/prateek/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/prateek/ros2-ws/src/build/my_robot_interfaces -- -j2 -l2
-[14.733s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/prateek/ros2-ws/src/build/my_robot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/prateek/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/prateek/ros2-ws/src/build/my_robot_interfaces -- -j2 -l2
-[15.198s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/prateek/ros2-ws/src/build/my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/prateek/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/prateek/ros2-ws/src/build/my_robot_interfaces
+[2.217s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/prateek/ros2_ws/src/build/my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/prateek/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/prateek/ros2_ws/src/my_robot_interfaces -DCMAKE_INSTALL_PREFIX=/home/prateek/ros2_ws/src/install/my_robot_interfaces
+[5.709s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/prateek/ros2_ws/src/build/my_robot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/prateek/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake /home/prateek/ros2_ws/src/my_robot_interfaces -DCMAKE_INSTALL_PREFIX=/home/prateek/ros2_ws/src/install/my_robot_interfaces
+[5.710s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/prateek/ros2_ws/src/build/my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/prateek/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/prateek/ros2_ws/src/build/my_robot_interfaces -- -j2 -l2
+[14.733s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/prateek/ros2_ws/src/build/my_robot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/prateek/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/prateek/ros2_ws/src/build/my_robot_interfaces -- -j2 -l2
+[15.198s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/prateek/ros2_ws/src/build/my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/prateek/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/prateek/ros2_ws/src/build/my_robot_interfaces
 [15.374s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_robot_interfaces)
-[15.376s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/prateek/ros2-ws/src/build/my_robot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/prateek/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/prateek/ros2-ws/src/build/my_robot_interfaces
-[15.405s] Level 1:colcon.colcon_core.environment:checking '/home/prateek/ros2-ws/src/install/my_robot_interfaces' for CMake module files
-[15.406s] Level 1:colcon.colcon_core.environment:checking '/home/prateek/ros2-ws/src/install/my_robot_interfaces' for CMake config files
+[15.376s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/prateek/ros2_ws/src/build/my_robot_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/prateek/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/prateek/ros2_ws/src/build/my_robot_interfaces
+[15.405s] Level 1:colcon.colcon_core.environment:checking '/home/prateek/ros2_ws/src/install/my_robot_interfaces' for CMake module files
+[15.406s] Level 1:colcon.colcon_core.environment:checking '/home/prateek/ros2_ws/src/install/my_robot_interfaces' for CMake config files
 [15.407s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_interfaces', 'cmake_prefix_path')
-[15.430s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/prateek/ros2-ws/src/install/my_robot_interfaces/share/my_robot_interfaces/hook/cmake_prefix_path.ps1'
-[15.431s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/prateek/ros2-ws/src/install/my_robot_interfaces/share/my_robot_interfaces/hook/cmake_prefix_path.dsv'
-[15.431s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/prateek/ros2-ws/src/install/my_robot_interfaces/share/my_robot_interfaces/hook/cmake_prefix_path.sh'
-[15.433s] Level 1:colcon.colcon_core.environment:checking '/home/prateek/ros2-ws/src/install/my_robot_interfaces/lib'
+[15.430s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/prateek/ros2_ws/src/install/my_robot_interfaces/share/my_robot_interfaces/hook/cmake_prefix_path.ps1'
+[15.431s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/prateek/ros2_ws/src/install/my_robot_interfaces/share/my_robot_interfaces/hook/cmake_prefix_path.dsv'
+[15.431s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/prateek/ros2_ws/src/install/my_robot_interfaces/share/my_robot_interfaces/hook/cmake_prefix_path.sh'
+[15.433s] Level 1:colcon.colcon_core.environment:checking '/home/prateek/ros2_ws/src/install/my_robot_interfaces/lib'
 [15.433s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_interfaces', 'ld_library_path_lib')
-[15.461s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/prateek/ros2-ws/src/install/my_robot_interfaces/share/my_robot_interfaces/hook/ld_library_path_lib.ps1'
-[15.461s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/prateek/ros2-ws/src/install/my_robot_interfaces/share/my_robot_interfaces/hook/ld_library_path_lib.dsv'
-[15.462s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/prateek/ros2-ws/src/install/my_robot_interfaces/share/my_robot_interfaces/hook/ld_library_path_lib.sh'
-[15.462s] Level 1:colcon.colcon_core.environment:checking '/home/prateek/ros2-ws/src/install/my_robot_interfaces/bin'
-[15.462s] Level 1:colcon.colcon_core.environment:checking '/home/prateek/ros2-ws/src/install/my_robot_interfaces/lib/pkgconfig/my_robot_interfaces.pc'
-[15.463s] Level 1:colcon.colcon_core.environment:checking '/home/prateek/ros2-ws/src/install/my_robot_interfaces/lib/python3.10/site-packages'
-[15.464s] Level 1:colcon.colcon_core.environment:checking '/home/prateek/ros2-ws/src/install/my_robot_interfaces/bin'
-[15.497s] INFO:colcon.colcon_core.shell:Creating package script '/home/prateek/ros2-ws/src/install/my_robot_interfaces/share/my_robot_interfaces/package.ps1'
-[15.499s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/prateek/ros2-ws/src/install/my_robot_interfaces/share/my_robot_interfaces/package.dsv'
-[15.501s] INFO:colcon.colcon_core.shell:Creating package script '/home/prateek/ros2-ws/src/install/my_robot_interfaces/share/my_robot_interfaces/package.sh'
-[15.503s] INFO:colcon.colcon_core.shell:Creating package script '/home/prateek/ros2-ws/src/install/my_robot_interfaces/share/my_robot_interfaces/package.bash'
-[15.504s] INFO:colcon.colcon_core.shell:Creating package script '/home/prateek/ros2-ws/src/install/my_robot_interfaces/share/my_robot_interfaces/package.zsh'
-[15.505s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/prateek/ros2-ws/src/install/my_robot_interfaces/share/colcon-core/packages/my_robot_interfaces)
+[15.461s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/prateek/ros2_ws/src/install/my_robot_interfaces/share/my_robot_interfaces/hook/ld_library_path_lib.ps1'
+[15.461s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/prateek/ros2_ws/src/install/my_robot_interfaces/share/my_robot_interfaces/hook/ld_library_path_lib.dsv'
+[15.462s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/prateek/ros2_ws/src/install/my_robot_interfaces/share/my_robot_interfaces/hook/ld_library_path_lib.sh'
+[15.462s] Level 1:colcon.colcon_core.environment:checking '/home/prateek/ros2_ws/src/install/my_robot_interfaces/bin'
+[15.462s] Level 1:colcon.colcon_core.environment:checking '/home/prateek/ros2_ws/src/install/my_robot_interfaces/lib/pkgconfig/my_robot_interfaces.pc'
+[15.463s] Level 1:colcon.colcon_core.environment:checking '/home/prateek/ros2_ws/src/install/my_robot_interfaces/lib/python3.10/site-packages'
+[15.464s] Level 1:colcon.colcon_core.environment:checking '/home/prateek/ros2_ws/src/install/my_robot_interfaces/bin'
+[15.497s] INFO:colcon.colcon_core.shell:Creating package script '/home/prateek/ros2_ws/src/install/my_robot_interfaces/share/my_robot_interfaces/package.ps1'
+[15.499s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/prateek/ros2_ws/src/install/my_robot_interfaces/share/my_robot_interfaces/package.dsv'
+[15.501s] INFO:colcon.colcon_core.shell:Creating package script '/home/prateek/ros2_ws/src/install/my_robot_interfaces/share/my_robot_interfaces/package.sh'
+[15.503s] INFO:colcon.colcon_core.shell:Creating package script '/home/prateek/ros2_ws/src/install/my_robot_interfaces/share/my_robot_interfaces/package.bash'
+[15.504s] INFO:colcon.colcon_core.shell:Creating package script '/home/prateek/ros2_ws/src/install/my_robot_interfaces/share/my_robot_interfaces/package.zsh'
+[15.505s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/prateek/ros2_ws/src/install/my_robot_interfaces/share/colcon-core/packages/my_robot_interfaces)
 [15.984s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(my_robot_interfaces)
-[16.004s] Level 1:colcon.colcon_core.environment:checking '/home/prateek/ros2-ws/src/install/my_robot_interfaces' for CMake module files
-[16.005s] Level 1:colcon.colcon_core.environment:checking '/home/prateek/ros2-ws/src/install/my_robot_interfaces' for CMake config files
+[16.004s] Level 1:colcon.colcon_core.environment:checking '/home/prateek/ros2_ws/src/install/my_robot_interfaces' for CMake module files
+[16.005s] Level 1:colcon.colcon_core.environment:checking '/home/prateek/ros2_ws/src/install/my_robot_interfaces' for CMake config files
 [16.005s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_interfaces', 'cmake_prefix_path')
-[16.026s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/prateek/ros2-ws/src/install/my_robot_interfaces/share/my_robot_interfaces/hook/cmake_prefix_path.ps1'
-[16.027s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/prateek/ros2-ws/src/install/my_robot_interfaces/share/my_robot_interfaces/hook/cmake_prefix_path.dsv'
-[16.036s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/prateek/ros2-ws/src/install/my_robot_interfaces/share/my_robot_interfaces/hook/cmake_prefix_path.sh'
-[16.037s] Level 1:colcon.colcon_core.environment:checking '/home/prateek/ros2-ws/src/install/my_robot_interfaces/lib'
+[16.026s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/prateek/ros2_ws/src/install/my_robot_interfaces/share/my_robot_interfaces/hook/cmake_prefix_path.ps1'
+[16.027s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/prateek/ros2_ws/src/install/my_robot_interfaces/share/my_robot_interfaces/hook/cmake_prefix_path.dsv'
+[16.036s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/prateek/ros2_ws/src/install/my_robot_interfaces/share/my_robot_interfaces/hook/cmake_prefix_path.sh'
+[16.037s] Level 1:colcon.colcon_core.environment:checking '/home/prateek/ros2_ws/src/install/my_robot_interfaces/lib'
 [16.038s] Level 1:colcon.colcon_core.shell:create_environment_hook('my_robot_interfaces', 'ld_library_path_lib')
-[16.059s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/prateek/ros2-ws/src/install/my_robot_interfaces/share/my_robot_interfaces/hook/ld_library_path_lib.ps1'
-[16.059s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/prateek/ros2-ws/src/install/my_robot_interfaces/share/my_robot_interfaces/hook/ld_library_path_lib.dsv'
-[16.063s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/prateek/ros2-ws/src/install/my_robot_interfaces/share/my_robot_interfaces/hook/ld_library_path_lib.sh'
-[16.065s] Level 1:colcon.colcon_core.environment:checking '/home/prateek/ros2-ws/src/install/my_robot_interfaces/bin'
-[16.065s] Level 1:colcon.colcon_core.environment:checking '/home/prateek/ros2-ws/src/install/my_robot_interfaces/lib/pkgconfig/my_robot_interfaces.pc'
-[16.066s] Level 1:colcon.colcon_core.environment:checking '/home/prateek/ros2-ws/src/install/my_robot_interfaces/lib/python3.10/site-packages'
-[16.068s] Level 1:colcon.colcon_core.environment:checking '/home/prateek/ros2-ws/src/install/my_robot_interfaces/bin'
-[16.095s] INFO:colcon.colcon_core.shell:Creating package script '/home/prateek/ros2-ws/src/install/my_robot_interfaces/share/my_robot_interfaces/package.ps1'
-[16.097s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/prateek/ros2-ws/src/install/my_robot_interfaces/share/my_robot_interfaces/package.dsv'
-[16.100s] INFO:colcon.colcon_core.shell:Creating package script '/home/prateek/ros2-ws/src/install/my_robot_interfaces/share/my_robot_interfaces/package.sh'
-[16.102s] INFO:colcon.colcon_core.shell:Creating package script '/home/prateek/ros2-ws/src/install/my_robot_interfaces/share/my_robot_interfaces/package.bash'
-[16.109s] INFO:colcon.colcon_core.shell:Creating package script '/home/prateek/ros2-ws/src/install/my_robot_interfaces/share/my_robot_interfaces/package.zsh'
-[16.111s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/prateek/ros2-ws/src/install/my_robot_interfaces/share/colcon-core/packages/my_robot_interfaces)
+[16.059s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/prateek/ros2_ws/src/install/my_robot_interfaces/share/my_robot_interfaces/hook/ld_library_path_lib.ps1'
+[16.059s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/prateek/ros2_ws/src/install/my_robot_interfaces/share/my_robot_interfaces/hook/ld_library_path_lib.dsv'
+[16.063s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/prateek/ros2_ws/src/install/my_robot_interfaces/share/my_robot_interfaces/hook/ld_library_path_lib.sh'
+[16.065s] Level 1:colcon.colcon_core.environment:checking '/home/prateek/ros2_ws/src/install/my_robot_interfaces/bin'
+[16.065s] Level 1:colcon.colcon_core.environment:checking '/home/prateek/ros2_ws/src/install/my_robot_interfaces/lib/pkgconfig/my_robot_interfaces.pc'
+[16.066s] Level 1:colcon.colcon_core.environment:checking '/home/prateek/ros2_ws/src/install/my_robot_interfaces/lib/python3.10/site-packages'
+[16.068s] Level 1:colcon.colcon_core.environment:checking '/home/prateek/ros2_ws/src/install/my_robot_interfaces/bin'
+[16.095s] INFO:colcon.colcon_core.shell:Creating package script '/home/prateek/ros2_ws/src/install/my_robot_interfaces/share/my_robot_interfaces/package.ps1'
+[16.097s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/prateek/ros2_ws/src/install/my_robot_interfaces/share/my_robot_interfaces/package.dsv'
+[16.100s] INFO:colcon.colcon_core.shell:Creating package script '/home/prateek/ros2_ws/src/install/my_robot_interfaces/share/my_robot_interfaces/package.sh'
+[16.102s] INFO:colcon.colcon_core.shell:Creating package script '/home/prateek/ros2_ws/src/install/my_robot_interfaces/share/my_robot_interfaces/package.bash'
+[16.109s] INFO:colcon.colcon_core.shell:Creating package script '/home/prateek/ros2_ws/src/install/my_robot_interfaces/share/my_robot_interfaces/package.zsh'
+[16.111s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/prateek/ros2_ws/src/install/my_robot_interfaces/share/colcon-core/packages/my_robot_interfaces)
 [16.115s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
 [16.116s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
 [16.117s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
@@ -152,13 +152,13 @@
 [16.158s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
 [16.158s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
 [16.184s] DEBUG:colcon.colcon_core.event_reactor:joined thread
-[16.229s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/prateek/ros2-ws/src/install/local_setup.ps1'
-[16.231s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/prateek/ros2-ws/src/install/_local_setup_util_ps1.py'
-[16.235s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/prateek/ros2-ws/src/install/setup.ps1'
-[16.295s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/prateek/ros2-ws/src/install/local_setup.sh'
-[16.298s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/prateek/ros2-ws/src/install/_local_setup_util_sh.py'
-[16.300s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/prateek/ros2-ws/src/install/setup.sh'
-[16.369s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/prateek/ros2-ws/src/install/local_setup.bash'
-[16.371s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/prateek/ros2-ws/src/install/setup.bash'
-[16.401s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/prateek/ros2-ws/src/install/local_setup.zsh'
-[16.402s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/prateek/ros2-ws/src/install/setup.zsh'
+[16.229s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/prateek/ros2_ws/src/install/local_setup.ps1'
+[16.231s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/prateek/ros2_ws/src/install/_local_setup_util_ps1.py'
+[16.235s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/prateek/ros2_ws/src/install/setup.ps1'
+[16.295s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/prateek/ros2_ws/src/install/local_setup.sh'
+[16.298s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/prateek/ros2_ws/src/install/_local_setup_util_sh.py'
+[16.300s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/prateek/ros2_ws/src/install/setup.sh'
+[16.369s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/prateek/ros2_ws/src/install/local_setup.bash'
+[16.371s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/prateek/ros2_ws/src/install/setup.bash'
+[16.401s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/prateek/ros2_ws/src/install/local_setup.zsh'
+[16.402s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/prateek/ros2_ws/src/install/setup.zsh'
