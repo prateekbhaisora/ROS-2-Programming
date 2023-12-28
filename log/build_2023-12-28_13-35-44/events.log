@@ -1,0 +1,573 @@
+[0.000000] (-) TimerEvent: {}
+[0.000688] (my_robot_bringup) JobQueued: {'identifier': 'my_robot_bringup', 'dependencies': OrderedDict()}
+[0.001166] (my_robot_interfaces) JobQueued: {'identifier': 'my_robot_interfaces', 'dependencies': OrderedDict()}
+[0.001258] (my_cpp_pkg) JobQueued: {'identifier': 'my_cpp_pkg', 'dependencies': OrderedDict([('my_robot_interfaces', '/home/prateek/ros2_ws/install/my_robot_interfaces')])}
+[0.001297] (my_py_pkg) JobQueued: {'identifier': 'my_py_pkg', 'dependencies': OrderedDict([('my_robot_interfaces', '/home/prateek/ros2_ws/install/my_robot_interfaces')])}
+[0.017721] (my_robot_interfaces) JobStarted: {'identifier': 'my_robot_interfaces'}
+[0.099392] (-) TimerEvent: {}
+[0.216314] (my_robot_bringup) JobStarted: {'identifier': 'my_robot_bringup'}
+[0.217030] (-) TimerEvent: {}
+[0.347843] (-) TimerEvent: {}
+[0.354742] (my_robot_interfaces) JobProgress: {'identifier': 'my_robot_interfaces', 'progress': 'cmake'}
+[0.372986] (my_robot_interfaces) JobProgress: {'identifier': 'my_robot_interfaces', 'progress': 'build'}
+[0.373294] (my_robot_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/prateek/ros2_ws/build/my_robot_interfaces', '--', '-j2', '-l2'], 'cwd': '/home/prateek/ros2_ws/build/my_robot_interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'prateek'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/prateek/ros2_ws/install/my_robot_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/prateek'), ('OLDPWD', '/home/prateek/ros2_ws/src/my_robot_bringup/launch'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1533'), ('SYSTEMD_EXEC_PID', '1695'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2377'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/prateek/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'prateek'), ('JOURNAL_STREAM', '8:23547'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'prateek'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/prateek-VM:@/tmp/.ICE-unix/1676,unix/prateek-VM:/tmp/.ICE-unix/1676'), ('INVOCATION_ID', '000e14d033914f7f828aaa81ae22c2f3'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.JQOIG2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/prateek/ros2_ws/install/my_py_pkg:/home/prateek/ros2_ws/install/my_cpp_pkg:/home/prateek/ros2_ws/install/my_robot_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:df60fcf2-0603-4e83-9544-52fee7a95cdb'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/prateek/ros2_ws/build/my_robot_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/prateek/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/prateek/ros2_ws/install/my_cpp_pkg:/home/prateek/ros2_ws/install/my_robot_interfaces:/home/prateek/ros2_ws/install/my_py_pkg:/opt/ros/humble')]), 'shell': False}
+[0.398186] (my_robot_bringup) JobProgress: {'identifier': 'my_robot_bringup', 'progress': 'cmake'}
+[0.400169] (my_robot_bringup) Command: {'cmd': ['/usr/bin/cmake', '/home/prateek/ros2_ws/src/my_robot_bringup', '-DCMAKE_INSTALL_PREFIX=/home/prateek/ros2_ws/install/my_robot_bringup'], 'cwd': '/home/prateek/ros2_ws/build/my_robot_bringup', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'prateek'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/prateek/ros2_ws/install/my_robot_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/prateek'), ('OLDPWD', '/home/prateek/ros2_ws/src/my_robot_bringup/launch'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1533'), ('SYSTEMD_EXEC_PID', '1695'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2377'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/prateek/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'prateek'), ('JOURNAL_STREAM', '8:23547'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'prateek'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/prateek-VM:@/tmp/.ICE-unix/1676,unix/prateek-VM:/tmp/.ICE-unix/1676'), ('INVOCATION_ID', '000e14d033914f7f828aaa81ae22c2f3'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.JQOIG2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/prateek/ros2_ws/install/my_py_pkg:/home/prateek/ros2_ws/install/my_cpp_pkg:/home/prateek/ros2_ws/install/my_robot_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:df60fcf2-0603-4e83-9544-52fee7a95cdb'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/prateek/ros2_ws/build/my_robot_bringup'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/prateek/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/prateek/ros2_ws/install/my_cpp_pkg:/home/prateek/ros2_ws/install/my_robot_interfaces:/home/prateek/ros2_ws/install/my_py_pkg:/opt/ros/humble')]), 'shell': False}
+[0.438095] (my_robot_bringup) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.449265] (-) TimerEvent: {}
+[0.550468] (-) TimerEvent: {}
+[0.652532] (my_robot_interfaces) StdoutLine: {'line': b'[  2%] Built target my_robot_interfaces__cpp\n'}
+[0.653346] (-) TimerEvent: {}
+[0.666622] (my_robot_interfaces) StdoutLine: {'line': b'[ 12%] Built target my_robot_interfaces__rosidl_generator_c\n'}
+[0.798496] (-) TimerEvent: {}
+[0.848166] (my_robot_interfaces) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_my_robot_interfaces\n'}
+[0.893113] (my_robot_interfaces) StdoutLine: {'line': b'[ 23%] Built target my_robot_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[0.899158] (-) TimerEvent: {}
+[0.937756] (my_robot_bringup) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.998074] (my_robot_interfaces) StdoutLine: {'line': b'[ 33%] Built target my_robot_interfaces__rosidl_typesupport_introspection_c\n'}
+[0.999159] (-) TimerEvent: {}
+[1.037552] (my_robot_interfaces) StdoutLine: {'line': b'[ 43%] Built target my_robot_interfaces__rosidl_typesupport_c\n'}
+[1.105078] (-) TimerEvent: {}
+[1.105078] (my_robot_bringup) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.121791] (my_robot_bringup) StdoutLine: {'line': b'-- Generating done\n'}
+[1.149436] (my_robot_bringup) StdoutLine: {'line': b'-- Build files have been written to: /home/prateek/ros2_ws/build/my_robot_bringup\n'}
+[1.181403] (my_robot_bringup) CommandEnded: {'returncode': 0}
+[1.183395] (my_robot_bringup) JobProgress: {'identifier': 'my_robot_bringup', 'progress': 'build'}
+[1.185659] (my_robot_bringup) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/prateek/ros2_ws/build/my_robot_bringup', '--', '-j2', '-l2'], 'cwd': '/home/prateek/ros2_ws/build/my_robot_bringup', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'prateek'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/prateek/ros2_ws/install/my_robot_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/prateek'), ('OLDPWD', '/home/prateek/ros2_ws/src/my_robot_bringup/launch'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1533'), ('SYSTEMD_EXEC_PID', '1695'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2377'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/prateek/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'prateek'), ('JOURNAL_STREAM', '8:23547'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'prateek'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/prateek-VM:@/tmp/.ICE-unix/1676,unix/prateek-VM:/tmp/.ICE-unix/1676'), ('INVOCATION_ID', '000e14d033914f7f828aaa81ae22c2f3'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.JQOIG2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/prateek/ros2_ws/install/my_py_pkg:/home/prateek/ros2_ws/install/my_cpp_pkg:/home/prateek/ros2_ws/install/my_robot_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:df60fcf2-0603-4e83-9544-52fee7a95cdb'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/prateek/ros2_ws/build/my_robot_bringup'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/prateek/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/prateek/ros2_ws/install/my_cpp_pkg:/home/prateek/ros2_ws/install/my_robot_interfaces:/home/prateek/ros2_ws/install/my_py_pkg:/opt/ros/humble')]), 'shell': False}
+[1.205538] (-) TimerEvent: {}
+[1.231457] (my_robot_interfaces) StdoutLine: {'line': b'[ 53%] Built target my_robot_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[1.296292] (my_robot_interfaces) StdoutLine: {'line': b'[ 64%] Built target my_robot_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[1.305722] (-) TimerEvent: {}
+[1.407071] (my_robot_interfaces) StdoutLine: {'line': b'[ 74%] Built target my_robot_interfaces__rosidl_typesupport_cpp\n'}
+[1.407305] (-) TimerEvent: {}
+[1.537294] (-) TimerEvent: {}
+[1.578720] (my_robot_bringup) CommandEnded: {'returncode': 0}
+[1.853465] (-) TimerEvent: {}
+[1.933462] (my_robot_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[1.933832] (my_robot_interfaces) StdoutLine: {'line': b'writing my_robot_interfaces.egg-info/PKG-INFO\n'}
+[1.947642] (my_robot_interfaces) StdoutLine: {'line': b'writing dependency_links to my_robot_interfaces.egg-info/dependency_links.txt\n'}
+[1.948371] (my_robot_interfaces) StdoutLine: {'line': b'writing top-level names to my_robot_interfaces.egg-info/top_level.txt\n'}
+[1.954243] (-) TimerEvent: {}
+[1.975258] (my_robot_interfaces) StdoutLine: {'line': b"reading manifest file 'my_robot_interfaces.egg-info/SOURCES.txt'\n"}
+[1.980314] (my_robot_interfaces) StdoutLine: {'line': b"writing manifest file 'my_robot_interfaces.egg-info/SOURCES.txt'\n"}
+[2.029374] (my_robot_interfaces) StdoutLine: {'line': b'[ 74%] Built target my_robot_interfaces\n'}
+[2.060929] (-) TimerEvent: {}
+[2.145060] (my_robot_bringup) JobProgress: {'identifier': 'my_robot_bringup', 'progress': 'install'}
+[2.145163] (my_robot_interfaces) StdoutLine: {'line': b'[ 74%] Built target ament_cmake_python_build_my_robot_interfaces_egg\n'}
+[2.162091] (-) TimerEvent: {}
+[2.209626] (my_robot_bringup) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/prateek/ros2_ws/build/my_robot_bringup'], 'cwd': '/home/prateek/ros2_ws/build/my_robot_bringup', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'prateek'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/prateek/ros2_ws/install/my_robot_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/prateek'), ('OLDPWD', '/home/prateek/ros2_ws/src/my_robot_bringup/launch'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1533'), ('SYSTEMD_EXEC_PID', '1695'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2377'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/prateek/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'prateek'), ('JOURNAL_STREAM', '8:23547'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'prateek'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/prateek-VM:@/tmp/.ICE-unix/1676,unix/prateek-VM:/tmp/.ICE-unix/1676'), ('INVOCATION_ID', '000e14d033914f7f828aaa81ae22c2f3'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.JQOIG2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/prateek/ros2_ws/install/my_py_pkg:/home/prateek/ros2_ws/install/my_cpp_pkg:/home/prateek/ros2_ws/install/my_robot_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:df60fcf2-0603-4e83-9544-52fee7a95cdb'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/prateek/ros2_ws/build/my_robot_bringup'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/prateek/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/prateek/ros2_ws/install/my_cpp_pkg:/home/prateek/ros2_ws/install/my_robot_interfaces:/home/prateek/ros2_ws/install/my_py_pkg:/opt/ros/humble')]), 'shell': False}
+[2.290698] (my_robot_bringup) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.291125] (-) TimerEvent: {}
+[2.294022] (my_robot_bringup) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[2.294987] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_robot_bringup/share//launch/number_app.launch.py\n'}
+[2.295168] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_robot_bringup/share/ament_index/resource_index/package_run_dependencies/my_robot_bringup\n'}
+[2.295293] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_robot_bringup/share/ament_index/resource_index/parent_prefix_path/my_robot_bringup\n'}
+[2.295971] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/environment/ament_prefix_path.sh\n'}
+[2.296113] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/environment/ament_prefix_path.dsv\n'}
+[2.297963] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/environment/path.sh\n'}
+[2.298195] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/environment/path.dsv\n'}
+[2.298318] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/local_setup.bash\n'}
+[2.298434] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/local_setup.sh\n'}
+[2.298547] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/local_setup.zsh\n'}
+[2.310632] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/local_setup.dsv\n'}
+[2.310864] (my_robot_bringup) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/package.dsv\n'}
+[2.310962] (my_robot_interfaces) StdoutLine: {'line': b'[ 76%] Built target my_robot_interfaces__py\n'}
+[2.372605] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_robot_bringup/share/ament_index/resource_index/packages/my_robot_bringup\n'}
+[2.374385] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/cmake/my_robot_bringupConfig.cmake\n'}
+[2.557526] (-) TimerEvent: {}
+[2.565178] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/cmake/my_robot_bringupConfig-version.cmake\n'}
+[2.568246] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/package.xml\n'}
+[2.840165] (-) TimerEvent: {}
+[2.845564] (my_robot_bringup) CommandEnded: {'returncode': 0}
+[2.957992] (-) TimerEvent: {}
+[2.960419] (my_robot_interfaces) StdoutLine: {'line': b'[ 84%] Built target my_robot_interfaces__rosidl_generator_py\n'}
+[3.072055] (-) TimerEvent: {}
+[3.238478] (my_robot_interfaces) StdoutLine: {'line': b'[ 89%] Built target my_robot_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[3.238765] (-) TimerEvent: {}
+[3.360185] (-) TimerEvent: {}
+[3.483920] (-) TimerEvent: {}
+[3.487166] (my_robot_interfaces) StdoutLine: {'line': b'[ 94%] Built target my_robot_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[3.595428] (-) TimerEvent: {}
+[3.616944] (my_robot_bringup) JobEnded: {'identifier': 'my_robot_bringup', 'rc': 0}
+[3.696650] (-) TimerEvent: {}
+[3.699617] (my_robot_interfaces) StdoutLine: {'line': b'[100%] Built target my_robot_interfaces__rosidl_typesupport_c__pyext\n'}
+[3.768714] (my_robot_interfaces) CommandEnded: {'returncode': 0}
+[3.796785] (-) TimerEvent: {}
+[3.928405] (-) TimerEvent: {}
+[4.032944] (-) TimerEvent: {}
+[4.560445] (-) TimerEvent: {}
+[4.661588] (-) TimerEvent: {}
+[5.569714] (-) TimerEvent: {}
+[5.713938] (-) TimerEvent: {}
+[5.817191] (-) TimerEvent: {}
+[5.932627] (-) TimerEvent: {}
+[6.047787] (-) TimerEvent: {}
+[6.149087] (-) TimerEvent: {}
+[6.157244] (my_robot_interfaces) JobProgress: {'identifier': 'my_robot_interfaces', 'progress': 'install'}
+[6.157515] (my_robot_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/prateek/ros2_ws/build/my_robot_interfaces'], 'cwd': '/home/prateek/ros2_ws/build/my_robot_interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'prateek'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/prateek/ros2_ws/install/my_robot_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/prateek'), ('OLDPWD', '/home/prateek/ros2_ws/src/my_robot_bringup/launch'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1533'), ('SYSTEMD_EXEC_PID', '1695'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2377'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/prateek/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'prateek'), ('JOURNAL_STREAM', '8:23547'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'prateek'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/prateek-VM:@/tmp/.ICE-unix/1676,unix/prateek-VM:/tmp/.ICE-unix/1676'), ('INVOCATION_ID', '000e14d033914f7f828aaa81ae22c2f3'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.JQOIG2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/prateek/ros2_ws/install/my_py_pkg:/home/prateek/ros2_ws/install/my_cpp_pkg:/home/prateek/ros2_ws/install/my_robot_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:df60fcf2-0603-4e83-9544-52fee7a95cdb'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/prateek/ros2_ws/build/my_robot_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/prateek/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/prateek/ros2_ws/install/my_cpp_pkg:/home/prateek/ros2_ws/install/my_robot_interfaces:/home/prateek/ros2_ws/install/my_py_pkg:/opt/ros/humble')]), 'shell': False}
+[6.195528] (my_robot_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.199529] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/ament_index/resource_index/rosidl_interfaces/my_robot_interfaces\n'}
+[6.199560] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces\n'}
+[6.199706] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv\n'}
+[6.199839] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/compute_rectangle_area.h\n'}
+[6.199970] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail\n'}
+[6.200100] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/compute_rectangle_area__type_support.h\n'}
+[6.201359] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/compute_rectangle_area__functions.h\n'}
+[6.203531] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/compute_rectangle_area__functions.c\n'}
+[6.203531] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/compute_rectangle_area__struct.h\n'}
+[6.203531] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg\n'}
+[6.203531] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[6.203531] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/hardware_status.h\n'}
+[6.203580] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail\n'}
+[6.205273] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/hardware_status__functions.h\n'}
+[6.205797] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/hardware_status__struct.h\n'}
+[6.207533] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/hardware_status__functions.c\n'}
+[6.207533] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/hardware_status__type_support.h\n'}
+[6.207533] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/library_path.sh\n'}
+[6.209309] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/library_path.dsv\n'}
+[6.218102] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_generator_c.so\n'}
+[6.221776] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces\n'}
+[6.222078] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv\n'}
+[6.222231] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail\n'}
+[6.222371] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/compute_rectangle_area__rosidl_typesupport_fastrtps_c.h\n'}
+[6.222508] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg\n'}
+[6.226060] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail\n'}
+[6.226460] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/hardware_status__rosidl_typesupport_fastrtps_c.h\n'}
+[6.226896] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[6.232385] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[6.232641] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces\n'}
+[6.235546] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv\n'}
+[6.235546] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail\n'}
+[6.235546] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/compute_rectangle_area__rosidl_typesupport_introspection_c.h\n'}
+[6.235546] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/compute_rectangle_area__type_support.c\n'}
+[6.235546] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg\n'}
+[6.235546] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail\n'}
+[6.235546] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/hardware_status__rosidl_typesupport_introspection_c.h\n'}
+[6.235546] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/hardware_status__type_support.c\n'}
+[6.235546] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[6.239597] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[6.243613] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_c.so\n'}
+[6.247552] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces\n'}
+[6.247552] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv\n'}
+[6.247552] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/compute_rectangle_area.hpp\n'}
+[6.247552] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail\n'}
+[6.247552] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/compute_rectangle_area__struct.hpp\n'}
+[6.247552] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/compute_rectangle_area__traits.hpp\n'}
+[6.247552] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/compute_rectangle_area__builder.hpp\n'}
+[6.248687] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg\n'}
+[6.249236] (-) TimerEvent: {}
+[6.251554] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/hardware_status.hpp\n'}
+[6.251554] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail\n'}
+[6.251554] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/hardware_status__struct.hpp\n'}
+[6.251554] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/hardware_status__builder.hpp\n'}
+[6.251554] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/hardware_status__traits.hpp\n'}
+[6.251554] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces\n'}
+[6.251612] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv\n'}
+[6.253053] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail\n'}
+[6.253234] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/dds_fastrtps\n'}
+[6.254014] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/compute_rectangle_area__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.255555] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg\n'}
+[6.255555] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[6.256340] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail\n'}
+[6.257202] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/hardware_status__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[6.257381] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/dds_fastrtps\n'}
+[6.263559] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[6.264306] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces\n'}
+[6.265715] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv\n'}
+[6.267561] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail\n'}
+[6.267561] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/compute_rectangle_area__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.267561] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/compute_rectangle_area__type_support.cpp\n'}
+[6.267561] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg\n'}
+[6.267561] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail\n'}
+[6.267561] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/hardware_status__rosidl_typesupport_introspection_cpp.hpp\n'}
+[6.267561] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/hardware_status__type_support.cpp\n'}
+[6.270217] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[6.273553] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_cpp.so\n'}
+[6.274199] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/pythonpath.sh\n'}
+[6.274615] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/pythonpath.dsv\n'}
+[6.274969] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces-0.0.0-py3.10.egg-info\n'}
+[6.275309] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[6.275836] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[6.276294] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[6.276834] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[6.277442] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces\n'}
+[6.277838] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[6.278089] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/srv\n'}
+[6.278344] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/srv/_compute_rectangle_area.py\n'}
+[6.278682] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/srv/__init__.py\n'}
+[6.278926] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/srv/_compute_rectangle_area_s.c\n'}
+[6.279140] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/__init__.py\n'}
+[6.279396] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[6.279677] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[6.279903] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/libmy_robot_interfaces__rosidl_generator_py.so\n'}
+[6.280119] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.280428] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.280692] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.280901] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/msg\n'}
+[6.281147] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/msg/_hardware_status_s.c\n'}
+[6.281447] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/msg/__init__.py\n'}
+[6.281705] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/msg/_hardware_status.py\n'}
+[6.366932] (my_robot_interfaces) StdoutLine: {'line': b"Listing '/home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces'...\n"}
+[6.367203] (-) TimerEvent: {}
+[6.367909] (my_robot_interfaces) StdoutLine: {'line': b"Listing '/home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/msg'...\n"}
+[6.368098] (my_robot_interfaces) StdoutLine: {'line': b"Listing '/home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/srv'...\n"}
+[6.380145] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.384161] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.388158] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[6.392303] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_generator_py.so\n'}
+[6.392978] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/msg/HardwareStatus.idl\n'}
+[6.393299] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/srv/ComputeRectangleArea.idl\n'}
+[6.393595] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/msg/HardwareStatus.msg\n'}
+[6.393943] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/srv/ComputeRectangleArea.srv\n'}
+[6.394217] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/srv/ComputeRectangleArea_Request.msg\n'}
+[6.394488] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/srv/ComputeRectangleArea_Response.msg\n'}
+[6.394800] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/ament_index/resource_index/package_run_dependencies/my_robot_interfaces\n'}
+[6.395103] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/ament_index/resource_index/parent_prefix_path/my_robot_interfaces\n'}
+[6.395384] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/ament_prefix_path.sh\n'}
+[6.395715] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/ament_prefix_path.dsv\n'}
+[6.396022] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/path.sh\n'}
+[6.396295] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/path.dsv\n'}
+[6.396550] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/local_setup.bash\n'}
+[6.396871] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/local_setup.sh\n'}
+[6.397161] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/local_setup.zsh\n'}
+[6.397417] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/local_setup.dsv\n'}
+[6.397747] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/package.dsv\n'}
+[6.399419] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/ament_index/resource_index/packages/my_robot_interfaces\n'}
+[6.402021] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_generator_cExport.cmake\n'}
+[6.402419] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[6.404983] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[6.405432] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[6.408030] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[6.408520] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[6.411209] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[6.411708] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[6.414383] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_generator_cppExport.cmake\n'}
+[6.417310] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[6.417772] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[6.420649] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[6.421164] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[6.424091] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[6.424526] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[6.427348] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_generator_pyExport.cmake\n'}
+[6.427785] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[6.428211] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[6.428529] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[6.428894] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[6.429247] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[6.429551] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[6.429924] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[6.430256] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[6.430563] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfacesConfig.cmake\n'}
+[6.430862] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfacesConfig-version.cmake\n'}
+[6.431194] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/package.xml\n'}
+[6.449858] (my_robot_interfaces) CommandEnded: {'returncode': 0}
+[6.516138] (-) TimerEvent: {}
+[6.619062] (-) TimerEvent: {}
+[6.790512] (-) TimerEvent: {}
+[6.897260] (-) TimerEvent: {}
+[6.998669] (-) TimerEvent: {}
+[7.099437] (-) TimerEvent: {}
+[7.200747] (-) TimerEvent: {}
+[7.301559] (-) TimerEvent: {}
+[7.407328] (-) TimerEvent: {}
+[7.542247] (-) TimerEvent: {}
+[7.632002] (my_robot_interfaces) JobEnded: {'identifier': 'my_robot_interfaces', 'rc': 0}
+[7.634138] (my_cpp_pkg) JobStarted: {'identifier': 'my_cpp_pkg'}
+[7.644791] (-) TimerEvent: {}
+[7.785577] (-) TimerEvent: {}
+[7.824678] (my_py_pkg) JobStarted: {'identifier': 'my_py_pkg'}
+[8.024673] (-) TimerEvent: {}
+[8.056135] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'cmake'}
+[8.080094] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'build'}
+[8.080564] (my_cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/prateek/ros2_ws/build/my_cpp_pkg', '--', '-j2', '-l2'], 'cwd': '/home/prateek/ros2_ws/build/my_cpp_pkg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'prateek'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/prateek/ros2_ws/install/my_robot_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/prateek'), ('OLDPWD', '/home/prateek/ros2_ws/src/my_robot_bringup/launch'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1533'), ('SYSTEMD_EXEC_PID', '1695'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2377'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/prateek/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'prateek'), ('JOURNAL_STREAM', '8:23547'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'prateek'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/prateek-VM:@/tmp/.ICE-unix/1676,unix/prateek-VM:/tmp/.ICE-unix/1676'), ('INVOCATION_ID', '000e14d033914f7f828aaa81ae22c2f3'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.JQOIG2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/prateek/ros2_ws/install/my_py_pkg:/home/prateek/ros2_ws/install/my_cpp_pkg:/home/prateek/ros2_ws/install/my_robot_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:df60fcf2-0603-4e83-9544-52fee7a95cdb'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/prateek/ros2_ws/build/my_cpp_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/prateek/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/prateek/ros2_ws/install/my_robot_interfaces:/home/prateek/ros2_ws/install/my_cpp_pkg:/home/prateek/ros2_ws/install/my_py_pkg:/opt/ros/humble')]), 'shell': False}
+[8.147241] (-) TimerEvent: {}
+[8.525903] (-) TimerEvent: {}
+[8.648928] (-) TimerEvent: {}
+[8.756797] (-) TimerEvent: {}
+[8.866763] (-) TimerEvent: {}
+[8.936054] (my_cpp_pkg) StdoutLine: {'line': b'[ 12%] Built target cpp_node\n'}
+[8.968218] (-) TimerEvent: {}
+[9.070598] (-) TimerEvent: {}
+[9.157472] (my_cpp_pkg) StdoutLine: {'line': b'[ 25%] Built target robot_news_station\n'}
+[9.377856] (-) TimerEvent: {}
+[9.482858] (my_cpp_pkg) StdoutLine: {'line': b'[ 37%] Built target smartphone\n'}
+[9.483108] (-) TimerEvent: {}
+[9.589129] (-) TimerEvent: {}
+[9.709759] (-) TimerEvent: {}
+[9.754612] (my_cpp_pkg) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/number_counter.dir/src/number_counter.cpp.o\x1b[0m\n'}
+[9.811966] (-) TimerEvent: {}
+[9.973062] (-) TimerEvent: {}
+[10.296682] (-) TimerEvent: {}
+[10.429561] (-) TimerEvent: {}
+[10.432621] (my_py_pkg) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/my_py_pkg', 'build', '--build-base', '/home/prateek/ros2_ws/build/my_py_pkg/build', 'install', '--record', '/home/prateek/ros2_ws/build/my_py_pkg/install.log', '--single-version-externally-managed'], 'cwd': '/home/prateek/ros2_ws/src/my_py_pkg', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_IN:en', 'USER': 'prateek', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/prateek/ros2_ws/install/my_robot_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/prateek', 'OLDPWD': '/home/prateek/ros2_ws/src/my_robot_bringup/launch', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1533', 'SYSTEMD_EXEC_PID': '1695', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '2377', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/prateek/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'prateek', 'JOURNAL_STREAM': '8:23547', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'prateek', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/prateek-VM:@/tmp/.ICE-unix/1676,unix/prateek-VM:/tmp/.ICE-unix/1676', 'INVOCATION_ID': '000e14d033914f7f828aaa81ae22c2f3', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.JQOIG2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/prateek/ros2_ws/install/my_py_pkg:/home/prateek/ros2_ws/install/my_cpp_pkg:/home/prateek/ros2_ws/install/my_robot_interfaces:/opt/ros/humble', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:df60fcf2-0603-4e83-9544-52fee7a95cdb', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GJS_DEBUG_OUTPUT': 'stderr', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/prateek/ros2_ws/build/my_py_pkg', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/prateek/ros2_ws/build/my_py_pkg/prefix_override:/home/prateek/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/home/prateek/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/prateek/ros2_ws/install/my_robot_interfaces:/home/prateek/ros2_ws/install/my_cpp_pkg'}, 'shell': False}
+[10.537197] (-) TimerEvent: {}
+[10.639897] (-) TimerEvent: {}
+[10.990880] (-) TimerEvent: {}
+[11.030574] (my_py_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[11.041757] (my_py_pkg) StdoutLine: {'line': b'writing ../../build/my_py_pkg/my_py_pkg.egg-info/PKG-INFO\n'}
+[11.056556] (my_py_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/my_py_pkg/my_py_pkg.egg-info/dependency_links.txt\n'}
+[11.057598] (my_py_pkg) StdoutLine: {'line': b'writing entry points to ../../build/my_py_pkg/my_py_pkg.egg-info/entry_points.txt\n'}
+[11.062275] (my_py_pkg) StdoutLine: {'line': b'writing requirements to ../../build/my_py_pkg/my_py_pkg.egg-info/requires.txt\n'}
+[11.066329] (my_py_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/my_py_pkg/my_py_pkg.egg-info/top_level.txt\n'}
+[11.086689] (my_py_pkg) StdoutLine: {'line': b"reading manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'\n"}
+[11.097412] (-) TimerEvent: {}
+[11.105195] (my_py_pkg) StdoutLine: {'line': b"writing manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'\n"}
+[11.105784] (my_py_pkg) StdoutLine: {'line': b'running build\n'}
+[11.106046] (my_py_pkg) StdoutLine: {'line': b'running build_py\n'}
+[11.112719] (my_py_pkg) StdoutLine: {'line': b'copying my_py_pkg/number_publisher.py -> /home/prateek/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg\n'}
+[11.119018] (my_py_pkg) StdoutLine: {'line': b'running install\n'}
+[11.119272] (my_py_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[11.123041] (my_py_pkg) StdoutLine: {'line': b'copying /home/prateek/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/number_publisher.py -> /home/prateek/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg\n'}
+[11.124373] (my_py_pkg) StdoutLine: {'line': b'byte-compiling /home/prateek/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/number_publisher.py to number_publisher.cpython-310.pyc\n'}
+[11.126289] (my_py_pkg) StdoutLine: {'line': b'running install_data\n'}
+[11.140330] (my_py_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[11.145549] (my_py_pkg) StdoutLine: {'line': b"removing '/home/prateek/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[11.164129] (my_py_pkg) StdoutLine: {'line': b'Copying ../../build/my_py_pkg/my_py_pkg.egg-info to /home/prateek/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg-0.0.0-py3.10.egg-info\n'}
+[11.167603] (my_py_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[11.199273] (-) TimerEvent: {}
+[11.252789] (my_py_pkg) StdoutLine: {'line': b'Installing add_two_ints_client script to /home/prateek/ros2_ws/install/my_py_pkg/lib/my_py_pkg\n'}
+[11.255868] (my_py_pkg) StdoutLine: {'line': b'Installing add_two_ints_client_no_oop script to /home/prateek/ros2_ws/install/my_py_pkg/lib/my_py_pkg\n'}
+[11.266275] (my_py_pkg) StdoutLine: {'line': b'Installing add_two_ints_server script to /home/prateek/ros2_ws/install/my_py_pkg/lib/my_py_pkg\n'}
+[11.266782] (my_py_pkg) StdoutLine: {'line': b'Installing hw_status_publisher script to /home/prateek/ros2_ws/install/my_py_pkg/lib/my_py_pkg\n'}
+[11.266986] (my_py_pkg) StdoutLine: {'line': b'Installing number_publisher script to /home/prateek/ros2_ws/install/my_py_pkg/lib/my_py_pkg\n'}
+[11.275219] (my_py_pkg) StdoutLine: {'line': b'Installing py_node script to /home/prateek/ros2_ws/install/my_py_pkg/lib/my_py_pkg\n'}
+[11.277372] (my_py_pkg) StdoutLine: {'line': b'Installing robot_news_station script to /home/prateek/ros2_ws/install/my_py_pkg/lib/my_py_pkg\n'}
+[11.278067] (my_py_pkg) StdoutLine: {'line': b'Installing smartphone script to /home/prateek/ros2_ws/install/my_py_pkg/lib/my_py_pkg\n'}
+[11.279611] (my_py_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/prateek/ros2_ws/build/my_py_pkg/install.log'\n"}
+[11.341693] (-) TimerEvent: {}
+[11.393804] (my_py_pkg) CommandEnded: {'returncode': 0}
+[11.443119] (-) TimerEvent: {}
+[11.544679] (-) TimerEvent: {}
+[11.664694] (-) TimerEvent: {}
+[11.684361] (my_py_pkg) JobEnded: {'identifier': 'my_py_pkg', 'rc': 0}
+[11.768091] (-) TimerEvent: {}
+[11.868768] (-) TimerEvent: {}
+[11.975064] (-) TimerEvent: {}
+[12.085630] (-) TimerEvent: {}
+[12.190520] (-) TimerEvent: {}
+[12.292307] (-) TimerEvent: {}
+[12.438111] (-) TimerEvent: {}
+[12.570615] (-) TimerEvent: {}
+[12.827920] (-) TimerEvent: {}
+[13.021493] (-) TimerEvent: {}
+[13.211424] (-) TimerEvent: {}
+[13.575258] (-) TimerEvent: {}
+[14.564842] (-) TimerEvent: {}
+[14.680740] (-) TimerEvent: {}
+[14.782087] (-) TimerEvent: {}
+[14.882921] (-) TimerEvent: {}
+[14.983911] (-) TimerEvent: {}
+[15.088580] (-) TimerEvent: {}
+[15.189268] (-) TimerEvent: {}
+[15.289905] (-) TimerEvent: {}
+[15.393515] (-) TimerEvent: {}
+[15.526900] (-) TimerEvent: {}
+[15.627956] (-) TimerEvent: {}
+[15.740214] (-) TimerEvent: {}
+[15.849890] (-) TimerEvent: {}
+[15.951026] (-) TimerEvent: {}
+[16.067924] (-) TimerEvent: {}
+[16.177314] (-) TimerEvent: {}
+[16.289419] (-) TimerEvent: {}
+[16.390697] (-) TimerEvent: {}
+[16.493467] (-) TimerEvent: {}
+[16.594686] (-) TimerEvent: {}
+[16.713796] (-) TimerEvent: {}
+[16.838574] (-) TimerEvent: {}
+[16.940679] (-) TimerEvent: {}
+[17.042597] (-) TimerEvent: {}
+[17.148177] (-) TimerEvent: {}
+[17.251501] (-) TimerEvent: {}
+[17.354674] (-) TimerEvent: {}
+[17.463886] (-) TimerEvent: {}
+[17.564387] (-) TimerEvent: {}
+[17.667935] (-) TimerEvent: {}
+[17.781902] (-) TimerEvent: {}
+[17.887834] (-) TimerEvent: {}
+[18.002799] (-) TimerEvent: {}
+[18.103939] (-) TimerEvent: {}
+[18.205047] (-) TimerEvent: {}
+[18.306633] (-) TimerEvent: {}
+[18.423112] (-) TimerEvent: {}
+[18.524286] (-) TimerEvent: {}
+[18.625226] (-) TimerEvent: {}
+[18.737943] (-) TimerEvent: {}
+[18.839010] (-) TimerEvent: {}
+[18.947921] (-) TimerEvent: {}
+[19.049082] (-) TimerEvent: {}
+[19.149623] (-) TimerEvent: {}
+[19.252005] (-) TimerEvent: {}
+[19.354918] (-) TimerEvent: {}
+[19.456001] (-) TimerEvent: {}
+[19.568213] (-) TimerEvent: {}
+[19.669078] (-) TimerEvent: {}
+[19.769775] (-) TimerEvent: {}
+[19.871369] (-) TimerEvent: {}
+[19.972228] (-) TimerEvent: {}
+[20.073193] (-) TimerEvent: {}
+[20.190710] (-) TimerEvent: {}
+[20.292012] (-) TimerEvent: {}
+[20.420681] (-) TimerEvent: {}
+[20.527827] (-) TimerEvent: {}
+[20.635887] (-) TimerEvent: {}
+[20.736314] (-) TimerEvent: {}
+[20.848409] (-) TimerEvent: {}
+[20.955992] (-) TimerEvent: {}
+[21.057984] (-) TimerEvent: {}
+[21.160183] (-) TimerEvent: {}
+[21.276207] (-) TimerEvent: {}
+[21.377387] (-) TimerEvent: {}
+[21.483938] (-) TimerEvent: {}
+[21.589761] (-) TimerEvent: {}
+[21.695002] (-) TimerEvent: {}
+[21.797167] (-) TimerEvent: {}
+[21.899059] (-) TimerEvent: {}
+[21.999855] (-) TimerEvent: {}
+[22.100554] (-) TimerEvent: {}
+[22.201188] (-) TimerEvent: {}
+[22.319896] (-) TimerEvent: {}
+[22.446316] (-) TimerEvent: {}
+[22.565508] (-) TimerEvent: {}
+[22.679780] (-) TimerEvent: {}
+[22.789839] (-) TimerEvent: {}
+[22.947685] (-) TimerEvent: {}
+[23.056078] (-) TimerEvent: {}
+[23.160141] (-) TimerEvent: {}
+[23.261436] (-) TimerEvent: {}
+[23.362277] (-) TimerEvent: {}
+[23.464083] (-) TimerEvent: {}
+[23.565730] (-) TimerEvent: {}
+[23.666784] (-) TimerEvent: {}
+[23.774740] (-) TimerEvent: {}
+[23.894701] (-) TimerEvent: {}
+[23.995974] (-) TimerEvent: {}
+[24.119998] (-) TimerEvent: {}
+[24.230114] (-) TimerEvent: {}
+[24.331806] (-) TimerEvent: {}
+[24.471009] (-) TimerEvent: {}
+[24.595322] (-) TimerEvent: {}
+[24.696642] (-) TimerEvent: {}
+[24.797184] (-) TimerEvent: {}
+[24.934841] (-) TimerEvent: {}
+[25.038521] (-) TimerEvent: {}
+[25.140133] (-) TimerEvent: {}
+[25.244335] (-) TimerEvent: {}
+[25.348015] (-) TimerEvent: {}
+[25.449576] (-) TimerEvent: {}
+[25.556807] (-) TimerEvent: {}
+[25.658997] (-) TimerEvent: {}
+[25.771911] (-) TimerEvent: {}
+[25.887325] (-) TimerEvent: {}
+[25.990981] (-) TimerEvent: {}
+[26.094714] (-) TimerEvent: {}
+[26.200340] (-) TimerEvent: {}
+[26.313986] (-) TimerEvent: {}
+[26.471551] (-) TimerEvent: {}
+[26.573663] (-) TimerEvent: {}
+[26.676831] (-) TimerEvent: {}
+[26.784231] (-) TimerEvent: {}
+[26.885391] (-) TimerEvent: {}
+[26.992558] (-) TimerEvent: {}
+[27.132403] (-) TimerEvent: {}
+[27.233440] (-) TimerEvent: {}
+[27.348136] (-) TimerEvent: {}
+[27.449055] (-) TimerEvent: {}
+[27.550059] (-) TimerEvent: {}
+[27.650925] (-) TimerEvent: {}
+[27.751858] (-) TimerEvent: {}
+[27.865591] (-) TimerEvent: {}
+[27.983916] (-) TimerEvent: {}
+[28.100322] (-) TimerEvent: {}
+[28.224105] (-) TimerEvent: {}
+[28.338032] (-) TimerEvent: {}
+[28.444551] (-) TimerEvent: {}
+[28.549949] (-) TimerEvent: {}
+[28.650880] (-) TimerEvent: {}
+[28.753649] (-) TimerEvent: {}
+[28.864243] (-) TimerEvent: {}
+[28.964968] (-) TimerEvent: {}
+[29.105566] (-) TimerEvent: {}
+[29.213161] (-) TimerEvent: {}
+[29.356244] (-) TimerEvent: {}
+[29.488869] (-) TimerEvent: {}
+[29.595121] (-) TimerEvent: {}
+[29.871624] (-) TimerEvent: {}
+[29.978226] (-) TimerEvent: {}
+[30.079339] (-) TimerEvent: {}
+[30.180412] (-) TimerEvent: {}
+[30.281136] (-) TimerEvent: {}
+[30.395083] (-) TimerEvent: {}
+[30.496614] (-) TimerEvent: {}
+[30.650407] (-) TimerEvent: {}
+[30.751940] (-) TimerEvent: {}
+[30.852634] (-) TimerEvent: {}
+[30.953182] (-) TimerEvent: {}
+[31.054156] (-) TimerEvent: {}
+[31.155031] (-) TimerEvent: {}
+[31.260165] (-) TimerEvent: {}
+[31.400527] (-) TimerEvent: {}
+[31.505632] (-) TimerEvent: {}
+[31.606918] (-) TimerEvent: {}
+[31.708021] (-) TimerEvent: {}
+[32.432997] (-) TimerEvent: {}
+[32.534526] (-) TimerEvent: {}
+[32.593648] (my_cpp_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX executable number_counter\x1b[0m\n'}
+[32.635355] (-) TimerEvent: {}
+[32.737612] (-) TimerEvent: {}
+[32.840250] (-) TimerEvent: {}
+[32.941931] (-) TimerEvent: {}
+[33.042766] (-) TimerEvent: {}
+[33.146522] (-) TimerEvent: {}
+[33.248533] (-) TimerEvent: {}
+[33.353309] (-) TimerEvent: {}
+[33.587320] (-) TimerEvent: {}
+[33.693841] (-) TimerEvent: {}
+[33.784483] (my_cpp_pkg) StdoutLine: {'line': b'[ 50%] Built target number_counter\n'}
+[33.794006] (-) TimerEvent: {}
+[33.885322] (my_cpp_pkg) StdoutLine: {'line': b'[ 62%] Built target add_two_ints_server\n'}
+[33.896658] (-) TimerEvent: {}
+[33.988612] (my_cpp_pkg) StdoutLine: {'line': b'[ 75%] Built target add_two_ints_client_no_oop\n'}
+[33.997068] (-) TimerEvent: {}
+[34.072637] (my_cpp_pkg) StdoutLine: {'line': b'[ 87%] Built target add_two_ints_client\n'}
+[34.097271] (-) TimerEvent: {}
+[34.159135] (my_cpp_pkg) StdoutLine: {'line': b'[100%] Built target hw_status_publisher\n'}
+[34.188657] (my_cpp_pkg) CommandEnded: {'returncode': 0}
+[34.203209] (-) TimerEvent: {}
+[34.304608] (-) TimerEvent: {}
+[34.405428] (-) TimerEvent: {}
+[34.468732] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'install'}
+[34.469164] (my_cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/prateek/ros2_ws/build/my_cpp_pkg'], 'cwd': '/home/prateek/ros2_ws/build/my_cpp_pkg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'prateek'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/prateek/ros2_ws/install/my_robot_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/prateek'), ('OLDPWD', '/home/prateek/ros2_ws/src/my_robot_bringup/launch'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1533'), ('SYSTEMD_EXEC_PID', '1695'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2377'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/prateek/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'prateek'), ('JOURNAL_STREAM', '8:23547'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'prateek'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/prateek-VM:@/tmp/.ICE-unix/1676,unix/prateek-VM:/tmp/.ICE-unix/1676'), ('INVOCATION_ID', '000e14d033914f7f828aaa81ae22c2f3'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.JQOIG2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/prateek/ros2_ws/install/my_py_pkg:/home/prateek/ros2_ws/install/my_cpp_pkg:/home/prateek/ros2_ws/install/my_robot_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:df60fcf2-0603-4e83-9544-52fee7a95cdb'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/prateek/ros2_ws/build/my_cpp_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/prateek/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/prateek/ros2_ws/install/my_robot_interfaces:/home/prateek/ros2_ws/install/my_cpp_pkg:/home/prateek/ros2_ws/install/my_py_pkg:/opt/ros/humble')]), 'shell': False}
+[34.494279] (my_cpp_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[34.500536] (my_cpp_pkg) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[34.502884] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_node\n'}
+[34.504731] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/robot_news_station\n'}
+[34.505461] (-) TimerEvent: {}
+[34.506925] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/smartphone\n'}
+[34.509043] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/number_counter\n'}
+[34.510410] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/add_two_ints_server\n'}
+[34.512465] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/add_two_ints_client\n'}
+[34.512067] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/add_two_ints_client_no_oop\n'}
+[34.512968] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/hw_status_publisher\n'}
+[34.514149] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/package_run_dependencies/my_cpp_pkg\n'}
+[34.515418] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/parent_prefix_path/my_cpp_pkg\n'}
+[34.516546] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.sh\n'}
+[34.518087] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.dsv\n'}
+[34.519311] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.sh\n'}
+[34.520458] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.dsv\n'}
+[34.521349] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.bash\n'}
+[34.522621] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.sh\n'}
+[34.523655] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.zsh\n'}
+[34.524602] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.dsv\n'}
+[34.525787] (my_cpp_pkg) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.dsv\n'}
+[34.555089] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/packages/my_cpp_pkg\n'}
+[34.557007] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig.cmake\n'}
+[34.562394] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig-version.cmake\n'}
+[34.562725] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.xml\n'}
+[34.562846] (my_cpp_pkg) CommandEnded: {'returncode': 0}
+[34.616451] (-) TimerEvent: {}
+[34.718403] (-) TimerEvent: {}
+[34.819901] (-) TimerEvent: {}
+[34.922252] (-) TimerEvent: {}
+[35.028087] (-) TimerEvent: {}
+[35.061231] (my_cpp_pkg) JobEnded: {'identifier': 'my_cpp_pkg', 'rc': 0}
+[35.063826] (-) EventReactorShutdown: {}
