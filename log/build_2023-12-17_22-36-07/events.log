@@ -1,0 +1,94 @@
+[0.000000] (-) TimerEvent: {}
+[0.000395] (-) JobUnselected: {'identifier': 'my_py_pkg'}
+[0.000463] (my_cpp_pkg) JobQueued: {'identifier': 'my_cpp_pkg', 'dependencies': OrderedDict()}
+[0.000663] (my_cpp_pkg) JobStarted: {'identifier': 'my_cpp_pkg'}
+[0.094893] (-) TimerEvent: {}
+[0.200394] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'cmake'}
+[0.200975] (-) TimerEvent: {}
+[0.202602] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'build'}
+[0.206345] (my_cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/prateek/ros2_ws/build/my_cpp_pkg', '--', '-j2', '-l2'], 'cwd': '/home/prateek/ros2_ws/build/my_cpp_pkg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'prateek'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/prateek'), ('OLDPWD', '/home/prateek/ros2_ws/src/my_cpp_pkg/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1535'), ('SYSTEMD_EXEC_PID', '1701'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2355'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/prateek/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'prateek'), ('JOURNAL_STREAM', '8:23446'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'prateek'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/prateek-VM:@/tmp/.ICE-unix/1676,unix/prateek-VM:/tmp/.ICE-unix/1676'), ('INVOCATION_ID', 'ca6fa865beb4496785b87cf4338c2bbf'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.BL00F2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/prateek/ros2_ws/install/my_py_pkg:/home/prateek/ros2_ws/install/my_cpp_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:de009893-ce8a-4579-a92d-bff2bbd9e139'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/prateek/ros2_ws/build/my_cpp_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/prateek/ros2_ws/build/my_py_pkg:/home/prateek/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/prateek/ros2_ws/install/my_cpp_pkg:/home/prateek/ros2_ws/install/my_py_pkg:/opt/ros/humble')]), 'shell': False}
+[0.301437] (-) TimerEvent: {}
+[0.371069] (my_cpp_pkg) StdoutLine: {'line': b'[ 16%] Built target cpp_node\n'}
+[0.397511] (my_cpp_pkg) StdoutLine: {'line': b'[ 33%] Built target robot_news_station\n'}
+[0.402634] (-) TimerEvent: {}
+[0.459260] (my_cpp_pkg) StdoutLine: {'line': b'[ 50%] Built target smartphone\n'}
+[0.497814] (my_cpp_pkg) StdoutLine: {'line': b'[ 66%] Built target number_counter\n'}
+[0.503076] (-) TimerEvent: {}
+[0.539006] (my_cpp_pkg) StdoutLine: {'line': b'[ 83%] Built target add_two_ints_server\n'}
+[0.539246] (my_cpp_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target add_two_ints_client_no_oop\x1b[0m\n'}
+[0.603827] (-) TimerEvent: {}
+[0.609392] (my_cpp_pkg) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding CXX object CMakeFiles/add_two_ints_client_no_oop.dir/src/add_two_ints_client_no_oop.cpp.o\x1b[0m\n'}
+[0.704188] (-) TimerEvent: {}
+[0.807834] (-) TimerEvent: {}
+[0.909554] (-) TimerEvent: {}
+[1.013008] (-) TimerEvent: {}
+[1.131481] (-) TimerEvent: {}
+[1.234762] (-) TimerEvent: {}
+[1.338175] (-) TimerEvent: {}
+[1.442396] (-) TimerEvent: {}
+[1.543826] (-) TimerEvent: {}
+[1.645303] (-) TimerEvent: {}
+[1.748114] (-) TimerEvent: {}
+[1.849588] (-) TimerEvent: {}
+[1.950976] (-) TimerEvent: {}
+[2.052423] (-) TimerEvent: {}
+[2.153198] (-) TimerEvent: {}
+[2.255178] (-) TimerEvent: {}
+[2.358708] (-) TimerEvent: {}
+[2.460622] (-) TimerEvent: {}
+[2.561656] (-) TimerEvent: {}
+[2.662816] (-) TimerEvent: {}
+[2.764470] (-) TimerEvent: {}
+[2.868038] (-) TimerEvent: {}
+[2.969756] (-) TimerEvent: {}
+[3.073161] (-) TimerEvent: {}
+[3.182103] (-) TimerEvent: {}
+[3.288044] (-) TimerEvent: {}
+[3.398563] (-) TimerEvent: {}
+[3.500093] (-) TimerEvent: {}
+[3.600757] (-) TimerEvent: {}
+[3.702031] (-) TimerEvent: {}
+[3.804948] (-) TimerEvent: {}
+[3.914015] (-) TimerEvent: {}
+[4.018121] (-) TimerEvent: {}
+[4.119012] (-) TimerEvent: {}
+[4.220214] (-) TimerEvent: {}
+[4.321180] (-) TimerEvent: {}
+[4.422921] (-) TimerEvent: {}
+[4.532865] (-) TimerEvent: {}
+[4.634631] (-) TimerEvent: {}
+[4.735398] (-) TimerEvent: {}
+[4.836815] (-) TimerEvent: {}
+[4.942884] (-) TimerEvent: {}
+[5.044835] (-) TimerEvent: {}
+[5.154396] (-) TimerEvent: {}
+[5.256733] (-) TimerEvent: {}
+[5.361389] (-) TimerEvent: {}
+[5.465983] (-) TimerEvent: {}
+[5.495079] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.496019] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:24:69:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp::executor\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[5.496208] (my_cpp_pkg) StderrLine: {'line': b'   24 | in_until_future_complete(node, future) == rclcpp::\x1b[01;31m\x1b[Kexecutor\x1b[m\x1b[K::FutureReturnCode::SUCCESS)\n'}
+[5.496320] (my_cpp_pkg) StderrLine: {'line': b'      |                                                   \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.496403] (my_cpp_pkg) StderrLine: {'line': b'\n'}
+[5.566272] (-) TimerEvent: {}
+[5.666907] (-) TimerEvent: {}
+[5.767784] (-) TimerEvent: {}
+[5.868941] (-) TimerEvent: {}
+[5.988404] (-) TimerEvent: {}
+[6.090230] (-) TimerEvent: {}
+[6.193031] (-) TimerEvent: {}
+[6.303055] (-) TimerEvent: {}
+[6.416514] (-) TimerEvent: {}
+[6.517124] (-) TimerEvent: {}
+[6.618801] (-) TimerEvent: {}
+[6.736592] (-) TimerEvent: {}
+[6.838322] (-) TimerEvent: {}
+[6.907122] (my_cpp_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/add_two_ints_client_no_oop.dir/build.make:76: CMakeFiles/add_two_ints_client_no_oop.dir/src/add_two_ints_client_no_oop.cpp.o] Error 1\n'}
+[6.908441] (my_cpp_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:277: CMakeFiles/add_two_ints_client_no_oop.dir/all] Error 2\n'}
+[6.908578] (my_cpp_pkg) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[6.912803] (my_cpp_pkg) CommandEnded: {'returncode': 2}
+[6.938830] (-) TimerEvent: {}
+[7.039962] (-) TimerEvent: {}
+[7.200150] (-) TimerEvent: {}
+[7.258357] (my_cpp_pkg) JobEnded: {'identifier': 'my_cpp_pkg', 'rc': 2}
+[7.264266] (-) EventReactorShutdown: {}

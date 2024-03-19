@@ -1,0 +1,32 @@
+[0.010s] Invoking command in '/home/prateek/ros2_ws/build/my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/prateek/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/prateek/ros2_ws/build/my_robot_interfaces -- -j4 -l4
+[0.087s] [35m[1mConsolidate compiler generated dependencies of target my_robot_interfaces__rosidl_generator_c[0m
+[0.094s] [  2%] Built target my_robot_interfaces__cpp
+[0.098s] [ 12%] Built target my_robot_interfaces__rosidl_generator_c
+[0.101s] [ 12%] Built target ament_cmake_python_copy_my_robot_interfaces
+[0.104s] [35m[1mConsolidate compiler generated dependencies of target my_robot_interfaces__rosidl_typesupport_cpp[0m
+[0.106s] [35m[1mConsolidate compiler generated dependencies of target my_robot_interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[0.109s] [35m[1mConsolidate compiler generated dependencies of target my_robot_interfaces__rosidl_typesupport_introspection_cpp[0m
+[0.112s] [35m[1mConsolidate compiler generated dependencies of target my_robot_interfaces__rosidl_typesupport_fastrtps_c[0m
+[0.131s] [ 23%] Built target my_robot_interfaces__rosidl_typesupport_cpp
+[0.146s] [35m[1mConsolidate compiler generated dependencies of target my_robot_interfaces__rosidl_typesupport_introspection_c[0m
+[0.148s] [ 33%] Built target my_robot_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.149s] [ 43%] Built target my_robot_interfaces__rosidl_typesupport_fastrtps_c
+[0.160s] [ 53%] Built target my_robot_interfaces__rosidl_typesupport_introspection_cpp
+[0.169s] [35m[1mConsolidate compiler generated dependencies of target my_robot_interfaces__rosidl_typesupport_c[0m
+[0.172s] [ 64%] Built target my_robot_interfaces__rosidl_typesupport_introspection_c
+[0.202s] [ 74%] Built target my_robot_interfaces__rosidl_typesupport_c
+[0.243s] [ 74%] Built target my_robot_interfaces
+[0.278s] [ 76%] Built target my_robot_interfaces__py
+[0.286s] [35m[1mConsolidate compiler generated dependencies of target my_robot_interfaces__rosidl_generator_py[0m
+[0.291s] gmake[2]: *** No rule to make target '/usr/lib/x86_64-linux-gnu/libpython3.10.so', needed by 'rosidl_generator_py/my_robot_interfaces/libmy_robot_interfaces__rosidl_generator_py.so'.  Stop.
+[0.291s] gmake[1]: *** [CMakeFiles/Makefile2:475: CMakeFiles/my_robot_interfaces__rosidl_generator_py.dir/all] Error 2
+[0.291s] gmake[1]: *** Waiting for unfinished jobs....
+[0.384s] running egg_info
+[0.384s] writing my_robot_interfaces.egg-info/PKG-INFO
+[0.385s] writing dependency_links to my_robot_interfaces.egg-info/dependency_links.txt
+[0.385s] writing top-level names to my_robot_interfaces.egg-info/top_level.txt
+[0.387s] reading manifest file 'my_robot_interfaces.egg-info/SOURCES.txt'
+[0.388s] writing manifest file 'my_robot_interfaces.egg-info/SOURCES.txt'
+[0.408s] [ 76%] Built target ament_cmake_python_build_my_robot_interfaces_egg
+[0.409s] gmake: *** [Makefile:146: all] Error 2
+[0.410s] Invoked command in '/home/prateek/ros2_ws/build/my_robot_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/prateek/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/prateek/ros2_ws/build/my_robot_interfaces -- -j4 -l4

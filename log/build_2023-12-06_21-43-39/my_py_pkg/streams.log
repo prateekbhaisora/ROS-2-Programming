@@ -1,0 +1,20 @@
+[2.241s] Invoking command in '/home/prateek/ros2_ws/src/my_py_pkg': PYTHONPATH=/home/prateek/ros2_ws/build/my_py_pkg/prefix_override:/home/prateek/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/prateek/ros2_ws/build/my_py_pkg/build install --record /home/prateek/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed
+[3.097s] running egg_info
+[3.107s] writing ../../build/my_py_pkg/my_py_pkg.egg-info/PKG-INFO
+[3.112s] writing dependency_links to ../../build/my_py_pkg/my_py_pkg.egg-info/dependency_links.txt
+[3.113s] writing entry points to ../../build/my_py_pkg/my_py_pkg.egg-info/entry_points.txt
+[3.115s] writing requirements to ../../build/my_py_pkg/my_py_pkg.egg-info/requires.txt
+[3.116s] writing top-level names to ../../build/my_py_pkg/my_py_pkg.egg-info/top_level.txt
+[3.122s] reading manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[3.124s] writing manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[3.130s] running build
+[3.132s] running build_py
+[3.132s] running install
+[3.133s] running install_lib
+[3.136s] running install_data
+[3.137s] running install_egg_info
+[3.168s] removing '/home/prateek/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[3.171s] Copying ../../build/my_py_pkg/my_py_pkg.egg-info to /home/prateek/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg-0.0.0-py3.10.egg-info
+[3.172s] running install_scripts
+[3.267s] writing list of installed files to '/home/prateek/ros2_ws/build/my_py_pkg/install.log'
+[3.463s] Invoked command in '/home/prateek/ros2_ws/src/my_py_pkg' returned '0': PYTHONPATH=/home/prateek/ros2_ws/build/my_py_pkg/prefix_override:/home/prateek/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/prateek/ros2_ws/build/my_py_pkg/build install --record /home/prateek/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed

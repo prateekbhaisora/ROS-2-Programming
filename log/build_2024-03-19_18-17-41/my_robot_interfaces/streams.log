@@ -1,0 +1,24 @@
+[0.025s] Invoking command in '/home/prateek/ros2_ws/build/my_robot_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/prateek/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/prateek/ros2_ws/build/my_robot_interfaces -- -j4 -l4
+[0.115s] [  2%] Built target my_robot_interfaces__cpp
+[0.135s] [ 12%] Built target my_robot_interfaces__rosidl_generator_c
+[0.137s] [ 12%] Built target ament_cmake_python_copy_my_robot_interfaces
+[0.149s] [ 23%] Built target my_robot_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.154s] [ 33%] Built target my_robot_interfaces__rosidl_typesupport_introspection_cpp
+[0.173s] [ 43%] Built target my_robot_interfaces__rosidl_typesupport_cpp
+[0.188s] [ 53%] Built target my_robot_interfaces__rosidl_typesupport_c
+[0.195s] [ 64%] Built target my_robot_interfaces__rosidl_typesupport_introspection_c
+[0.205s] [ 74%] Built target my_robot_interfaces__rosidl_typesupport_fastrtps_c
+[0.222s] [ 74%] Built target my_robot_interfaces
+[0.266s] [ 76%] Built target my_robot_interfaces__py
+[0.277s] gmake[2]: *** No rule to make target '/usr/lib/x86_64-linux-gnu/libpython3.10.so', needed by 'rosidl_generator_py/my_robot_interfaces/libmy_robot_interfaces__rosidl_generator_py.so'.  Stop.
+[0.277s] gmake[1]: *** [CMakeFiles/Makefile2:475: CMakeFiles/my_robot_interfaces__rosidl_generator_py.dir/all] Error 2
+[0.277s] gmake[1]: *** Waiting for unfinished jobs....
+[0.374s] running egg_info
+[0.375s] writing my_robot_interfaces.egg-info/PKG-INFO
+[0.375s] writing dependency_links to my_robot_interfaces.egg-info/dependency_links.txt
+[0.375s] writing top-level names to my_robot_interfaces.egg-info/top_level.txt
+[0.377s] reading manifest file 'my_robot_interfaces.egg-info/SOURCES.txt'
+[0.377s] writing manifest file 'my_robot_interfaces.egg-info/SOURCES.txt'
+[0.396s] [ 76%] Built target ament_cmake_python_build_my_robot_interfaces_egg
+[0.397s] gmake: *** [Makefile:146: all] Error 2
+[0.399s] Invoked command in '/home/prateek/ros2_ws/build/my_robot_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/prateek/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/prateek/ros2_ws/build/my_robot_interfaces -- -j4 -l4

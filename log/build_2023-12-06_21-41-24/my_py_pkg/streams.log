@@ -1,0 +1,35 @@
+[1.599s] Invoking command in '/home/prateek/ros2_ws/src/my_py_pkg': PYTHONPATH=/home/prateek/ros2_ws/build/my_py_pkg/prefix_override:/home/prateek/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/prateek/ros2_ws/build/my_py_pkg/build install --record /home/prateek/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed
+[2.070s] running egg_info
+[2.072s] creating ../../build/my_py_pkg/my_py_pkg.egg-info
+[2.072s] writing ../../build/my_py_pkg/my_py_pkg.egg-info/PKG-INFO
+[2.082s] writing dependency_links to ../../build/my_py_pkg/my_py_pkg.egg-info/dependency_links.txt
+[2.094s] writing entry points to ../../build/my_py_pkg/my_py_pkg.egg-info/entry_points.txt
+[2.095s] writing requirements to ../../build/my_py_pkg/my_py_pkg.egg-info/requires.txt
+[2.105s] writing top-level names to ../../build/my_py_pkg/my_py_pkg.egg-info/top_level.txt
+[2.105s] writing manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[2.105s] reading manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[2.105s] writing manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[2.114s] running build
+[2.114s] running build_py
+[2.114s] creating /home/prateek/ros2_ws/build/my_py_pkg/build
+[2.114s] creating /home/prateek/ros2_ws/build/my_py_pkg/build/lib
+[2.115s] creating /home/prateek/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg
+[2.115s] copying my_py_pkg/__init__.py -> /home/prateek/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg
+[2.115s] running install
+[2.122s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[2.122s]   warnings.warn(
+[2.123s] running install_lib
+[2.125s] creating /home/prateek/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[2.126s] copying /home/prateek/ros2_ws/build/my_py_pkg/build/lib/my_py_pkg/__init__.py -> /home/prateek/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[2.127s] byte-compiling /home/prateek/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/__init__.py to __init__.cpython-310.pyc
+[2.128s] running install_data
+[2.136s] creating /home/prateek/ros2_ws/install/my_py_pkg/share/ament_index
+[2.137s] creating /home/prateek/ros2_ws/install/my_py_pkg/share/ament_index/resource_index
+[2.137s] creating /home/prateek/ros2_ws/install/my_py_pkg/share/ament_index/resource_index/packages
+[2.137s] copying resource/my_py_pkg -> /home/prateek/ros2_ws/install/my_py_pkg/share/ament_index/resource_index/packages
+[2.137s] copying package.xml -> /home/prateek/ros2_ws/install/my_py_pkg/share/my_py_pkg
+[2.137s] running install_egg_info
+[2.142s] Copying ../../build/my_py_pkg/my_py_pkg.egg-info to /home/prateek/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg-0.0.0-py3.10.egg-info
+[2.145s] running install_scripts
+[2.238s] writing list of installed files to '/home/prateek/ros2_ws/build/my_py_pkg/install.log'
+[2.309s] Invoked command in '/home/prateek/ros2_ws/src/my_py_pkg' returned '0': PYTHONPATH=/home/prateek/ros2_ws/build/my_py_pkg/prefix_override:/home/prateek/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/prateek/ros2_ws/build/my_py_pkg/build install --record /home/prateek/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed

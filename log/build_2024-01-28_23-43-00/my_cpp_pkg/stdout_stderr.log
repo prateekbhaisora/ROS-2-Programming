@@ -1,0 +1,11 @@
+[ 18%] Built target number_counter
+[ 25%] Built target robot_news_station
+[ 37%] Built target smartphone
+[ 50%] Built target cpp_node
+gmake[2]: *** No rule to make target '/usr/lib/x86_64-linux-gnu/libpython3.10.so', needed by 'hw_status_publisher'.  Stop.
+gmake[1]: *** [CMakeFiles/Makefile2:333: CMakeFiles/hw_status_publisher.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+[ 62%] Built target add_two_ints_client_no_oop
+[ 75%] Built target add_two_ints_server
+[ 87%] Built target add_two_ints_client
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,20 @@
+[0.030s] Invoking command in '/home/prateek/ros2_ws/build/my_cpp_pkg': AMENT_PREFIX_PATH=/home/prateek/ros2_ws/install/my_robot_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/prateek/ros2_ws/install/my_robot_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/prateek/ros2_ws/install/my_robot_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/prateek/ros2_ws/build/my_cpp_pkg -- -j4 -l4
+[0.121s] [35m[1mConsolidate compiler generated dependencies of target smartphone[0m
+[0.123s] [35m[1mConsolidate compiler generated dependencies of target cpp_node[0m
+[0.123s] [35m[1mConsolidate compiler generated dependencies of target number_counter[0m
+[0.131s] [35m[1mConsolidate compiler generated dependencies of target robot_news_station[0m
+[0.139s] [ 12%] Built target smartphone
+[0.139s] [ 25%] Built target cpp_node
+[0.146s] [ 37%] Built target robot_news_station
+[0.146s] [ 50%] Built target number_counter
+[0.151s] [35m[1mConsolidate compiler generated dependencies of target add_two_ints_client_no_oop[0m
+[0.156s] [35m[1mConsolidate compiler generated dependencies of target add_two_ints_client[0m
+[0.161s] [35m[1mConsolidate compiler generated dependencies of target add_two_ints_server[0m
+[0.168s] [ 62%] Built target add_two_ints_client_no_oop
+[0.169s] [ 75%] Built target add_two_ints_client
+[0.174s] [35m[1mConsolidate compiler generated dependencies of target hw_status_publisher[0m
+[0.175s] [ 87%] Built target add_two_ints_server
+[0.180s] gmake[2]: *** No rule to make target '/usr/lib/x86_64-linux-gnu/libpython3.10.so', needed by 'hw_status_publisher'.  Stop.
+[0.180s] gmake[1]: *** [CMakeFiles/Makefile2:333: CMakeFiles/hw_status_publisher.dir/all] Error 2
+[0.180s] gmake: *** [Makefile:146: all] Error 2
+[0.183s] Invoked command in '/home/prateek/ros2_ws/build/my_cpp_pkg' returned '2': AMENT_PREFIX_PATH=/home/prateek/ros2_ws/install/my_robot_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/prateek/ros2_ws/install/my_robot_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/prateek/ros2_ws/install/my_robot_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/prateek/ros2_ws/build/my_cpp_pkg -- -j4 -l4

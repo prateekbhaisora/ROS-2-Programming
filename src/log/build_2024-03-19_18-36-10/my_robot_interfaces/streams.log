@@ -1,0 +1,21 @@
+[0.008s] Invoking command in '/home/prateek/ros2_ws/src/build/my_robot_interfaces': /usr/bin/cmake --build /home/prateek/ros2_ws/src/build/my_robot_interfaces --clean-first -- -j4 -l4
+[0.275s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[0.297s] failed to create symbolic link '/home/prateek/ros2_ws/src/build/my_robot_interfaces/ament_cmake_python/my_robot_interfaces/my_robot_interfaces' because existing path cannot be removed: Is a directory
+[0.298s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[0.298s] gmake[2]: *** [CMakeFiles/ament_cmake_python_symlink_my_robot_interfaces.dir/build.make:70: CMakeFiles/ament_cmake_python_symlink_my_robot_interfaces] Error 1
+[0.299s] gmake[1]: *** [CMakeFiles/Makefile2:421: CMakeFiles/ament_cmake_python_symlink_my_robot_interfaces.dir/all] Error 2
+[0.299s] gmake[1]: *** Waiting for unfinished jobs....
+[0.408s] Traceback (most recent call last):
+[0.409s]   File "/opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp", line 8, in <module>
+[0.409s]     from rosidl_generator_cpp import generate_cpp
+[0.409s] ModuleNotFoundError: No module named 'rosidl_generator_cpp'
+[0.409s] Traceback (most recent call last):
+[0.409s]   File "/opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c", line 8, in <module>
+[0.409s]     from rosidl_generator_c import generate_c
+[0.409s] ModuleNotFoundError: No module named 'rosidl_generator_c'
+[0.409s] gmake[2]: *** [CMakeFiles/my_robot_interfaces__cpp.dir/build.make:96: rosidl_generator_cpp/my_robot_interfaces/msg/hardware_status.hpp] Error 1
+[0.409s] gmake[1]: *** [CMakeFiles/Makefile2:317: CMakeFiles/my_robot_interfaces__cpp.dir/all] Error 2
+[0.412s] gmake[2]: *** [CMakeFiles/my_robot_interfaces__rosidl_generator_c.dir/build.make:88: rosidl_generator_c/my_robot_interfaces/msg/hardware_status.h] Error 1
+[0.412s] gmake[1]: *** [CMakeFiles/Makefile2:212: CMakeFiles/my_robot_interfaces__rosidl_generator_c.dir/all] Error 2
+[0.415s] gmake: *** [Makefile:146: all] Error 2
+[0.419s] Invoked command in '/home/prateek/ros2_ws/src/build/my_robot_interfaces' returned '2': /usr/bin/cmake --build /home/prateek/ros2_ws/src/build/my_robot_interfaces --clean-first -- -j4 -l4

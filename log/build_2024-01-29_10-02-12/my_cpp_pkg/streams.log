@@ -1,0 +1,9 @@
+[0.081s] Invoking command in '/home/prateek/ros2_ws/build/my_cpp_pkg': AMENT_PREFIX_PATH=/home/prateek/ros2_ws/install/my_robot_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/prateek/ros2_ws/install/my_robot_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/prateek/ros2_ws/install/my_robot_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/prateek/ros2_ws/build/my_cpp_pkg -- -j4 -l4
+[0.186s] [ 12%] Built target cpp_node
+[0.186s] [ 25%] Built target smartphone
+[0.187s] [ 37%] Built target number_counter
+[0.188s] [ 50%] Built target robot_news_station
+[0.221s] [ 62%] Built target add_two_ints_client
+[0.225s] [ 75%] Built target add_two_ints_server
+[0.227s] [ 87%] Built target hw_status_publisher
+[0.229s] [100%] Built target add_two_ints_client_no_oop

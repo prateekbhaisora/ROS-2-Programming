@@ -1,0 +1,32 @@
+[0.027s] Invoking command in '/home/prateek/ros2_ws/build/my_robot_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/prateek/ros2_ws/build/my_robot_interfaces -- -j4 -l4
+[0.139s] [35m[1mConsolidate compiler generated dependencies of target my_robot_interfaces__rosidl_generator_c[0m
+[0.144s] [  2%] Built target my_robot_interfaces__cpp
+[0.149s] [ 12%] Built target my_robot_interfaces__rosidl_generator_c
+[0.156s] [ 12%] Built target ament_cmake_python_copy_my_robot_interfaces
+[0.157s] [35m[1mConsolidate compiler generated dependencies of target my_robot_interfaces__rosidl_typesupport_cpp[0m
+[0.158s] [35m[1mConsolidate compiler generated dependencies of target my_robot_interfaces__rosidl_typesupport_fastrtps_cpp[0m
+[0.164s] [35m[1mConsolidate compiler generated dependencies of target my_robot_interfaces__rosidl_typesupport_introspection_cpp[0m
+[0.167s] [ 23%] Built target my_robot_interfaces__rosidl_typesupport_cpp
+[0.168s] [ 33%] Built target my_robot_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.169s] [35m[1mConsolidate compiler generated dependencies of target my_robot_interfaces__rosidl_typesupport_fastrtps_c[0m
+[0.173s] [ 43%] Built target my_robot_interfaces__rosidl_typesupport_introspection_cpp
+[0.177s] [ 53%] Built target my_robot_interfaces__rosidl_typesupport_fastrtps_c
+[0.178s] [35m[1mConsolidate compiler generated dependencies of target my_robot_interfaces__rosidl_typesupport_c[0m
+[0.178s] [35m[1mConsolidate compiler generated dependencies of target my_robot_interfaces__rosidl_typesupport_introspection_c[0m
+[0.185s] [ 64%] Built target my_robot_interfaces__rosidl_typesupport_c
+[0.186s] [ 74%] Built target my_robot_interfaces__rosidl_typesupport_introspection_c
+[0.202s] [ 74%] Built target my_robot_interfaces
+[0.217s] [ 76%] Built target my_robot_interfaces__py
+[0.232s] [35m[1mConsolidate compiler generated dependencies of target my_robot_interfaces__rosidl_generator_py[0m
+[0.237s] gmake[2]: *** No rule to make target '/usr/lib/x86_64-linux-gnu/libpython3.10.so', needed by 'rosidl_generator_py/my_robot_interfaces/libmy_robot_interfaces__rosidl_generator_py.so'.  Stop.
+[0.238s] gmake[1]: *** [CMakeFiles/Makefile2:475: CMakeFiles/my_robot_interfaces__rosidl_generator_py.dir/all] Error 2
+[0.238s] gmake[1]: *** Waiting for unfinished jobs....
+[0.299s] running egg_info
+[0.299s] writing my_robot_interfaces.egg-info/PKG-INFO
+[0.299s] writing dependency_links to my_robot_interfaces.egg-info/dependency_links.txt
+[0.299s] writing top-level names to my_robot_interfaces.egg-info/top_level.txt
+[0.301s] reading manifest file 'my_robot_interfaces.egg-info/SOURCES.txt'
+[0.301s] writing manifest file 'my_robot_interfaces.egg-info/SOURCES.txt'
+[0.314s] [ 76%] Built target ament_cmake_python_build_my_robot_interfaces_egg
+[0.315s] gmake: *** [Makefile:146: all] Error 2
+[0.317s] Invoked command in '/home/prateek/ros2_ws/build/my_robot_interfaces' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/prateek/ros2_ws/build/my_robot_interfaces -- -j4 -l4

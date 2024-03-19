@@ -1,0 +1,17 @@
+[0.210s] Invoking command in '/home/prateek/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/prateek/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/prateek/ros2_ws/build/my_cpp_pkg -- -j2 -l2
+[0.371s] [ 16%] Built target cpp_node
+[0.397s] [ 33%] Built target robot_news_station
+[0.459s] [ 50%] Built target smartphone
+[0.498s] [ 66%] Built target number_counter
+[0.538s] [ 83%] Built target add_two_ints_server
+[0.539s] [35m[1mConsolidate compiler generated dependencies of target add_two_ints_client_no_oop[0m
+[0.609s] [ 91%] [32mBuilding CXX object CMakeFiles/add_two_ints_client_no_oop.dir/src/add_two_ints_client_no_oop.cpp.o[0m
+[5.495s] [01m[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[5.495s] [01m[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:24:69:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp::executor[m[K’ has not been declared
+[5.496s]    24 | in_until_future_complete(node, future) == rclcpp::[01;31m[Kexecutor[m[K::FutureReturnCode::SUCCESS)
+[5.496s]       |                                                   [01;31m[K^~~~~~~~[m[K
+[5.496s] 
+[6.907s] gmake[2]: *** [CMakeFiles/add_two_ints_client_no_oop.dir/build.make:76: CMakeFiles/add_two_ints_client_no_oop.dir/src/add_two_ints_client_no_oop.cpp.o] Error 1
+[6.908s] gmake[1]: *** [CMakeFiles/Makefile2:277: CMakeFiles/add_two_ints_client_no_oop.dir/all] Error 2
+[6.908s] gmake: *** [Makefile:146: all] Error 2
+[6.913s] Invoked command in '/home/prateek/ros2_ws/build/my_cpp_pkg' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/prateek/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/prateek/ros2_ws/build/my_cpp_pkg -- -j2 -l2

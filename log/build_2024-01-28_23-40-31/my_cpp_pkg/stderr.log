@@ -1,0 +1,43 @@
+[33mCMake Warning at /opt/ros/humble/share/rcutils/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):
+  Package 'rcutils' exports library 'dl' which couldn't be found
+Call Stack (most recent call first):
+  /opt/ros/humble/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)
+  /opt/ros/humble/share/rosidl_runtime_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /opt/ros/humble/share/rosidl_runtime_c/cmake/rosidl_runtime_cConfig.cmake:41 (include)
+  /opt/ros/humble/share/builtin_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /opt/ros/humble/share/builtin_interfaces/cmake/builtin_interfacesConfig.cmake:41 (include)
+  /opt/ros/humble/share/libstatistics_collector/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /opt/ros/humble/share/libstatistics_collector/cmake/libstatistics_collectorConfig.cmake:41 (include)
+  /opt/ros/humble/share/rclcpp/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+  /opt/ros/humble/share/rclcpp/cmake/rclcppConfig.cmake:41 (include)
+  CMakeLists.txt:16 (find_package)
+
+[0m
+[33mCMake Warning at CMakeLists.txt:41 (add_executable):
+  Cannot generate a safe linker search path for target hw_status_publisher
+  because files in some directories may conflict with libraries in implicit
+  directories:
+
+    link library [libpython3.10.so] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/lib/python3.10/config-3.10-aarch64-linux-gnu
+      /usr/lib/aarch64-linux-gnu
+
+  Some of these libraries may not be found correctly.
+
+[0m
+[33mCMake Warning at CMakeLists.txt:41 (add_executable):
+  Cannot generate a safe runtime search path for target hw_status_publisher
+  because files in some directories may conflict with libraries in implicit
+  directories:
+
+    runtime library [libpython3.10.so] in /usr/lib/x86_64-linux-gnu may be hidden by files in:
+      /usr/lib/python3.10/config-3.10-aarch64-linux-gnu
+      /usr/lib/aarch64-linux-gnu
+
+  Some of these libraries may not be found correctly.
+
+[0m
+gmake[2]: *** No rule to make target '/usr/lib/x86_64-linux-gnu/libpython3.10.so', needed by 'hw_status_publisher'.  Stop.
+gmake[1]: *** [CMakeFiles/Makefile2:333: CMakeFiles/hw_status_publisher.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

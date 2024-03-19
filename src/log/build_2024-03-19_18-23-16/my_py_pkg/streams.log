@@ -1,0 +1,68 @@
+[0.730s] Invoking command in '/home/prateek/ros2_ws/src/my_py_pkg': AMENT_PREFIX_PATH=/home/prateek/ros2_ws/src/install/my_robot_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/prateek/ros2_ws/src/install/my_robot_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/prateek/ros2_ws/src/install/my_robot_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/prateek/ros2_ws/src/build/my_py_pkg/prefix_override:/home/prateek/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages:/home/prateek/ros2_ws/src/install/my_robot_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/my_py_pkg build --build-base /home/prateek/ros2_ws/src/build/my_py_pkg/build install --record /home/prateek/ros2_ws/src/build/my_py_pkg/install.log --single-version-externally-managed install_data
+[0.924s] running egg_info
+[0.924s] creating ../build/my_py_pkg/my_py_pkg.egg-info
+[0.924s] writing ../build/my_py_pkg/my_py_pkg.egg-info/PKG-INFO
+[0.924s] writing dependency_links to ../build/my_py_pkg/my_py_pkg.egg-info/dependency_links.txt
+[0.924s] writing entry points to ../build/my_py_pkg/my_py_pkg.egg-info/entry_points.txt
+[0.925s] writing requirements to ../build/my_py_pkg/my_py_pkg.egg-info/requires.txt
+[0.925s] writing top-level names to ../build/my_py_pkg/my_py_pkg.egg-info/top_level.txt
+[0.925s] writing manifest file '../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[0.926s] reading manifest file '../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[0.926s] writing manifest file '../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[0.926s] running build
+[0.926s] running build_py
+[0.927s] creating /home/prateek/ros2_ws/src/build/my_py_pkg/build
+[0.927s] creating /home/prateek/ros2_ws/src/build/my_py_pkg/build/lib
+[0.927s] creating /home/prateek/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg
+[0.927s] copying my_py_pkg/template.py -> /home/prateek/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg
+[0.927s] copying my_py_pkg/add_two_ints_client_no_oop.py -> /home/prateek/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg
+[0.934s] copying my_py_pkg/add_two_ints_client.py -> /home/prateek/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg
+[0.934s] copying my_py_pkg/hw_status_publisher.py -> /home/prateek/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg
+[0.934s] copying my_py_pkg/number_publisher.py -> /home/prateek/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg
+[0.935s] copying my_py_pkg/add_two_ints_server.py -> /home/prateek/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg
+[0.935s] copying my_py_pkg/robot_news_station.py -> /home/prateek/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg
+[0.936s] copying my_py_pkg/my_first_node.py -> /home/prateek/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg
+[0.936s] copying my_py_pkg/smartphone.py -> /home/prateek/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg
+[0.936s] copying my_py_pkg/__init__.py -> /home/prateek/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg
+[0.936s] running install
+[0.937s] running install_lib
+[0.937s] creating /home/prateek/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[0.937s] copying /home/prateek/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg/template.py -> /home/prateek/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[0.938s] copying /home/prateek/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg/add_two_ints_client_no_oop.py -> /home/prateek/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[0.938s] copying /home/prateek/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg/add_two_ints_client.py -> /home/prateek/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[0.938s] copying /home/prateek/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg/hw_status_publisher.py -> /home/prateek/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[0.938s] copying /home/prateek/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg/number_publisher.py -> /home/prateek/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[0.938s] copying /home/prateek/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg/add_two_ints_server.py -> /home/prateek/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[0.938s] copying /home/prateek/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg/robot_news_station.py -> /home/prateek/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[0.938s] copying /home/prateek/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg/my_first_node.py -> /home/prateek/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[0.938s] copying /home/prateek/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg/smartphone.py -> /home/prateek/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[0.938s] copying /home/prateek/ros2_ws/src/build/my_py_pkg/build/lib/my_py_pkg/__init__.py -> /home/prateek/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg
+[0.938s] byte-compiling /home/prateek/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/template.py to template.cpython-310.pyc
+[0.939s] byte-compiling /home/prateek/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/add_two_ints_client_no_oop.py to add_two_ints_client_no_oop.cpython-310.pyc
+[0.943s] byte-compiling /home/prateek/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/add_two_ints_client.py to add_two_ints_client.cpython-310.pyc
+[0.943s] byte-compiling /home/prateek/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/hw_status_publisher.py to hw_status_publisher.cpython-310.pyc
+[0.943s] byte-compiling /home/prateek/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/number_publisher.py to number_publisher.cpython-310.pyc
+[0.944s] byte-compiling /home/prateek/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/add_two_ints_server.py to add_two_ints_server.cpython-310.pyc
+[0.944s] byte-compiling /home/prateek/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/robot_news_station.py to robot_news_station.cpython-310.pyc
+[0.944s] byte-compiling /home/prateek/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/my_first_node.py to my_first_node.cpython-310.pyc
+[0.944s] byte-compiling /home/prateek/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/smartphone.py to smartphone.cpython-310.pyc
+[0.945s] byte-compiling /home/prateek/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg/__init__.py to __init__.cpython-310.pyc
+[0.945s] running install_data
+[0.945s] creating /home/prateek/ros2_ws/src/install/my_py_pkg/share/ament_index
+[0.945s] creating /home/prateek/ros2_ws/src/install/my_py_pkg/share/ament_index/resource_index
+[0.945s] creating /home/prateek/ros2_ws/src/install/my_py_pkg/share/ament_index/resource_index/packages
+[0.945s] copying resource/my_py_pkg -> /home/prateek/ros2_ws/src/install/my_py_pkg/share/ament_index/resource_index/packages
+[0.945s] copying package.xml -> /home/prateek/ros2_ws/src/install/my_py_pkg/share/my_py_pkg
+[0.945s] running install_egg_info
+[0.946s] Copying ../build/my_py_pkg/my_py_pkg.egg-info to /home/prateek/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg-0.0.0-py3.10.egg-info
+[0.947s] running install_scripts
+[0.966s] Installing add_two_ints_client script to /home/prateek/ros2_ws/src/install/my_py_pkg/lib/my_py_pkg
+[0.967s] Installing add_two_ints_client_no_oop script to /home/prateek/ros2_ws/src/install/my_py_pkg/lib/my_py_pkg
+[0.968s] Installing add_two_ints_server script to /home/prateek/ros2_ws/src/install/my_py_pkg/lib/my_py_pkg
+[0.968s] Installing hw_status_publisher script to /home/prateek/ros2_ws/src/install/my_py_pkg/lib/my_py_pkg
+[0.969s] Installing number_publisher script to /home/prateek/ros2_ws/src/install/my_py_pkg/lib/my_py_pkg
+[0.969s] Installing py_node script to /home/prateek/ros2_ws/src/install/my_py_pkg/lib/my_py_pkg
+[0.970s] Installing robot_news_station script to /home/prateek/ros2_ws/src/install/my_py_pkg/lib/my_py_pkg
+[0.970s] Installing smartphone script to /home/prateek/ros2_ws/src/install/my_py_pkg/lib/my_py_pkg
+[0.971s] writing list of installed files to '/home/prateek/ros2_ws/src/build/my_py_pkg/install.log'
+[0.991s] Invoked command in '/home/prateek/ros2_ws/src/my_py_pkg' returned '0': AMENT_PREFIX_PATH=/home/prateek/ros2_ws/src/install/my_robot_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/prateek/ros2_ws/src/install/my_robot_interfaces:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/prateek/ros2_ws/src/install/my_robot_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/prateek/ros2_ws/src/build/my_py_pkg/prefix_override:/home/prateek/ros2_ws/src/install/my_py_pkg/lib/python3.10/site-packages:/home/prateek/ros2_ws/src/install/my_robot_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../build/my_py_pkg build --build-base /home/prateek/ros2_ws/src/build/my_py_pkg/build install --record /home/prateek/ros2_ws/src/build/my_py_pkg/install.log --single-version-externally-managed install_data
