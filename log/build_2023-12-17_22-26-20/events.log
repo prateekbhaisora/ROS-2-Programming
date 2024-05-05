@@ -1,0 +1,312 @@
+[0.000000] (-) TimerEvent: {}
+[0.000379] (-) JobUnselected: {'identifier': 'my_py_pkg'}
+[0.003292] (my_cpp_pkg) JobQueued: {'identifier': 'my_cpp_pkg', 'dependencies': OrderedDict()}
+[0.003468] (my_cpp_pkg) JobStarted: {'identifier': 'my_cpp_pkg'}
+[0.100407] (-) TimerEvent: {}
+[0.208610] (-) TimerEvent: {}
+[0.213489] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'cmake'}
+[0.224646] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'build'}
+[0.225112] (my_cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/prateek/ros2_ws/build/my_cpp_pkg', '--', '-j2', '-l2'], 'cwd': '/home/prateek/ros2_ws/build/my_cpp_pkg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'prateek'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/prateek'), ('OLDPWD', '/home/prateek/ros2_ws/src/my_cpp_pkg/src'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1535'), ('SYSTEMD_EXEC_PID', '1701'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2355'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/prateek/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'prateek'), ('JOURNAL_STREAM', '8:23446'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'prateek'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/prateek-VM:@/tmp/.ICE-unix/1676,unix/prateek-VM:/tmp/.ICE-unix/1676'), ('INVOCATION_ID', 'ca6fa865beb4496785b87cf4338c2bbf'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.BL00F2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/prateek/ros2_ws/install/my_py_pkg:/home/prateek/ros2_ws/install/my_cpp_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:de009893-ce8a-4579-a92d-bff2bbd9e139'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/prateek/ros2_ws/build/my_cpp_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/prateek/ros2_ws/build/my_py_pkg:/home/prateek/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/prateek/ros2_ws/install/my_cpp_pkg:/home/prateek/ros2_ws/install/my_py_pkg:/opt/ros/humble')]), 'shell': False}
+[0.309163] (-) TimerEvent: {}
+[0.410709] (-) TimerEvent: {}
+[0.512957] (-) TimerEvent: {}
+[0.565760] (my_cpp_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.613682] (-) TimerEvent: {}
+[0.720128] (-) TimerEvent: {}
+[0.821367] (-) TimerEvent: {}
+[0.953568] (-) TimerEvent: {}
+[1.023055] (my_cpp_pkg) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.053900] (-) TimerEvent: {}
+[1.154762] (-) TimerEvent: {}
+[1.156192] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rclcpp: 16.0.7 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.255057] (-) TimerEvent: {}
+[1.356471] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.356932] (-) TimerEvent: {}
+[1.376396] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.424763] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.457257] (-) TimerEvent: {}
+[1.500094] (my_cpp_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.557804] (-) TimerEvent: {}
+[1.575417] (my_cpp_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.658747] (-) TimerEvent: {}
+[1.759734] (-) TimerEvent: {}
+[1.846114] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.859739] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.860266] (-) TimerEvent: {}
+[1.961322] (-) TimerEvent: {}
+[2.063035] (-) TimerEvent: {}
+[2.173888] (-) TimerEvent: {}
+[2.286943] (-) TimerEvent: {}
+[2.296897] (my_cpp_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.396303] (-) TimerEvent: {}
+[2.497514] (-) TimerEvent: {}
+[2.602884] (-) TimerEvent: {}
+[2.710195] (-) TimerEvent: {}
+[2.813855] (-) TimerEvent: {}
+[2.938587] (-) TimerEvent: {}
+[2.944298] (my_cpp_pkg) StdoutLine: {'line': b'-- Found example_interfaces: 0.9.3 (/opt/ros/humble/share/example_interfaces/cmake)\n'}
+[3.039408] (-) TimerEvent: {}
+[3.146051] (-) TimerEvent: {}
+[3.337572] (-) TimerEvent: {}
+[3.440062] (-) TimerEvent: {}
+[3.551350] (-) TimerEvent: {}
+[3.614420] (my_cpp_pkg) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.656278] (-) TimerEvent: {}
+[3.758128] (-) TimerEvent: {}
+[3.818529] (my_cpp_pkg) StdoutLine: {'line': b'-- Generating done\n'}
+[3.852973] (my_cpp_pkg) StdoutLine: {'line': b'-- Build files have been written to: /home/prateek/ros2_ws/build/my_cpp_pkg\n'}
+[3.859092] (-) TimerEvent: {}
+[3.963270] (-) TimerEvent: {}
+[3.992215] (my_cpp_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target cpp_node\x1b[0m\n'}
+[4.024824] (my_cpp_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_news_station\x1b[0m\n'}
+[4.063744] (-) TimerEvent: {}
+[4.164776] (-) TimerEvent: {}
+[4.228957] (my_cpp_pkg) StdoutLine: {'line': b'[ 16%] Built target cpp_node\n'}
+[4.265469] (-) TimerEvent: {}
+[4.288787] (my_cpp_pkg) StdoutLine: {'line': b'[ 33%] Built target robot_news_station\n'}
+[4.337453] (my_cpp_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target smartphone\x1b[0m\n'}
+[4.353326] (my_cpp_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target number_counter\x1b[0m\n'}
+[4.366338] (-) TimerEvent: {}
+[4.471318] (my_cpp_pkg) StdoutLine: {'line': b'[ 50%] Built target smartphone\n'}
+[4.471565] (-) TimerEvent: {}
+[4.482860] (my_cpp_pkg) StdoutLine: {'line': b'[ 66%] Built target number_counter\n'}
+[4.572998] (-) TimerEvent: {}
+[4.581939] (my_cpp_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target add_two_ints_server\x1b[0m\n'}
+[4.660777] (my_cpp_pkg) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/add_two_ints_client_no_oop.dir/src/add_two_ints_client_no_oop.cpp.o\x1b[0m\n'}
+[4.674558] (-) TimerEvent: {}
+[4.697743] (my_cpp_pkg) StdoutLine: {'line': b'[ 91%] Built target add_two_ints_server\n'}
+[4.775047] (-) TimerEvent: {}
+[4.875882] (-) TimerEvent: {}
+[4.976923] (-) TimerEvent: {}
+[5.077585] (-) TimerEvent: {}
+[5.178685] (-) TimerEvent: {}
+[5.279823] (-) TimerEvent: {}
+[5.381225] (-) TimerEvent: {}
+[5.482309] (-) TimerEvent: {}
+[5.584700] (-) TimerEvent: {}
+[5.687766] (-) TimerEvent: {}
+[5.789370] (-) TimerEvent: {}
+[5.891443] (-) TimerEvent: {}
+[5.993746] (-) TimerEvent: {}
+[6.095485] (-) TimerEvent: {}
+[6.196687] (-) TimerEvent: {}
+[6.298300] (-) TimerEvent: {}
+[6.399375] (-) TimerEvent: {}
+[6.500280] (-) TimerEvent: {}
+[6.604568] (-) TimerEvent: {}
+[6.705387] (-) TimerEvent: {}
+[6.806798] (-) TimerEvent: {}
+[6.908133] (-) TimerEvent: {}
+[7.008937] (-) TimerEvent: {}
+[7.111443] (-) TimerEvent: {}
+[7.212616] (-) TimerEvent: {}
+[7.313426] (-) TimerEvent: {}
+[7.414529] (-) TimerEvent: {}
+[7.524898] (-) TimerEvent: {}
+[7.625480] (-) TimerEvent: {}
+[7.728563] (-) TimerEvent: {}
+[7.830546] (-) TimerEvent: {}
+[7.931221] (-) TimerEvent: {}
+[8.032899] (-) TimerEvent: {}
+[8.141538] (-) TimerEvent: {}
+[8.242887] (-) TimerEvent: {}
+[8.345665] (-) TimerEvent: {}
+[8.446719] (-) TimerEvent: {}
+[8.547889] (-) TimerEvent: {}
+[8.660690] (-) TimerEvent: {}
+[8.762053] (-) TimerEvent: {}
+[8.864171] (-) TimerEvent: {}
+[8.965416] (-) TimerEvent: {}
+[9.068063] (-) TimerEvent: {}
+[9.170879] (-) TimerEvent: {}
+[9.274135] (-) TimerEvent: {}
+[9.377467] (-) TimerEvent: {}
+[9.480260] (-) TimerEvent: {}
+[9.581755] (-) TimerEvent: {}
+[9.683274] (-) TimerEvent: {}
+[9.794958] (-) TimerEvent: {}
+[9.902481] (-) TimerEvent: {}
+[10.007527] (-) TimerEvent: {}
+[10.110848] (-) TimerEvent: {}
+[10.218817] (-) TimerEvent: {}
+[10.320966] (-) TimerEvent: {}
+[10.423167] (-) TimerEvent: {}
+[10.532921] (-) TimerEvent: {}
+[10.634511] (-) TimerEvent: {}
+[10.742873] (-) TimerEvent: {}
+[10.844107] (-) TimerEvent: {}
+[10.944870] (-) TimerEvent: {}
+[11.077860] (-) TimerEvent: {}
+[11.180735] (-) TimerEvent: {}
+[11.286540] (-) TimerEvent: {}
+[11.401652] (-) TimerEvent: {}
+[11.531710] (-) TimerEvent: {}
+[11.638632] (-) TimerEvent: {}
+[11.742566] (-) TimerEvent: {}
+[11.845013] (-) TimerEvent: {}
+[11.949434] (-) TimerEvent: {}
+[12.073949] (-) TimerEvent: {}
+[12.197248] (-) TimerEvent: {}
+[12.298644] (-) TimerEvent: {}
+[12.400804] (-) TimerEvent: {}
+[12.506707] (-) TimerEvent: {}
+[12.639131] (-) TimerEvent: {}
+[12.739874] (-) TimerEvent: {}
+[12.842701] (-) TimerEvent: {}
+[12.980503] (-) TimerEvent: {}
+[13.081873] (-) TimerEvent: {}
+[13.266891] (-) TimerEvent: {}
+[13.386793] (-) TimerEvent: {}
+[13.490413] (-) TimerEvent: {}
+[13.591517] (-) TimerEvent: {}
+[13.701630] (-) TimerEvent: {}
+[13.841497] (-) TimerEvent: {}
+[13.942736] (-) TimerEvent: {}
+[14.049651] (-) TimerEvent: {}
+[14.196364] (-) TimerEvent: {}
+[14.379354] (-) TimerEvent: {}
+[14.455047] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[14.455328] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:7:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kfound \xe2\x80\x98\x1b[01m\x1b[K:\x1b[m\x1b[K\xe2\x80\x99 in nested-name-specifier, expected \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.455440] (my_cpp_pkg) StderrLine: {'line': b'    7 |     auto node = std::make_shared<rclcpp\x1b[01;31m\x1b[K:\x1b[m\x1b[KNode>("add_two_ints_client_no_oop");\n'}
+[14.455529] (my_cpp_pkg) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[14.455613] (my_cpp_pkg) StderrLine: {'line': b'      |                                        \x1b[32m\x1b[K::\x1b[m\x1b[K\n'}
+[14.456426] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:8:89:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kexample_interfaces::srv::AddTwoInts::AddTwoInts(const char [13])\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.456603] (my_cpp_pkg) StderrLine: {'line': b'    8 |     auto client = node->create_client<example_interfaces::srv::AddTwoInts("add_two_ints"\x1b[01;31m\x1b[K)\x1b[m\x1b[K>\n'}
+[14.456695] (my_cpp_pkg) StderrLine: {'line': b'      |                                                                                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[14.456832] (my_cpp_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/example_interfaces/example_interfaces/srv/add_two_ints.hpp:7\x1b[m\x1b[K,\n'}
+[14.456952] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:2\x1b[m\x1b[K:\n'}
+[14.457037] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/example_interfaces/example_interfaces/srv/detail/add_two_ints__struct.hpp:265:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr example_interfaces::srv::AddTwoInts::AddTwoInts()\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.457222] (my_cpp_pkg) StderrLine: {'line': b'  265 | struct \x1b[01;36m\x1b[KAddTwoInts\x1b[m\x1b[K\n'}
+[14.457315] (my_cpp_pkg) StderrLine: {'line': b'      |        \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.463284] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/example_interfaces/example_interfaces/srv/detail/add_two_ints__struct.hpp:265:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 0 arguments, 1 provided\n'}
+[14.463713] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/example_interfaces/example_interfaces/srv/detail/add_two_ints__struct.hpp:265:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr example_interfaces::srv::AddTwoInts::AddTwoInts(const example_interfaces::srv::AddTwoInts&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.463862] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/example_interfaces/example_interfaces/srv/detail/add_two_ints__struct.hpp:265:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kconst char [13]\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst example_interfaces::srv::AddTwoInts&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.463969] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/example_interfaces/example_interfaces/srv/detail/add_two_ints__struct.hpp:265:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr example_interfaces::srv::AddTwoInts::AddTwoInts(example_interfaces::srv::AddTwoInts&&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.464163] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/example_interfaces/example_interfaces/srv/detail/add_two_ints__struct.hpp:265:8:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kconst char [13]\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kexample_interfaces::srv::AddTwoInts&&\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.467660] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:8:25:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kunable to deduce \xe2\x80\x98\x1b[01m\x1b[Kauto\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[K((std::__shared_ptr_access<rclcpp::Node, __gnu_cxx::_S_atomic, false, false>*)(& node))->std::__shared_ptr_access<rclcpp::Node, __gnu_cxx::_S_atomic, false, false>::operator->()->create_client<<expression error> >\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.468128] (my_cpp_pkg) StderrLine: {'line': b'    8 |     auto client = node->\x1b[01;31m\x1b[Kcreate_client<example_interfaces::srv::AddTwoInts("add_two_ints")>\x1b[m\x1b[K\n'}
+[14.468244] (my_cpp_pkg) StderrLine: {'line': b'      |                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.468329] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:8:25:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  couldn\xe2\x80\x99t deduce template parameter \xe2\x80\x98\x1b[01m\x1b[Kauto\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.468412] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:11:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[Kwhile\x1b[m\x1b[K\xe2\x80\x99\n'}
+[14.468552] (my_cpp_pkg) StderrLine: {'line': b'   11 |     \x1b[01;31m\x1b[Kwhile\x1b[m\x1b[K (!client->wait_for_service(std::chrono::seconds(1)))\n'}
+[14.468683] (my_cpp_pkg) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[14.477353] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:23:69:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp::executor\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[14.477623] (my_cpp_pkg) StderrLine: {'line': b'   23 |     if (rclcpp::spin_until_future_complete(node, future) == rclcpp::\x1b[01;31m\x1b[Kexecutor\x1b[m\x1b[K::FutureReturnCode::SUCCESS)\n'}
+[14.477787] (my_cpp_pkg) StderrLine: {'line': b'      |                                                                     \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[14.481295] (my_cpp_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[14.483040] (-) TimerEvent: {}
+[14.483677] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[14.484010] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[14.485603] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[14.485736] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[14.485833] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[14.486208] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[14.487739] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[14.487868] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[14.487958] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[14.488118] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:1\x1b[m\x1b[K:\n'}
+[14.488319] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:25:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[14.488432] (my_cpp_pkg) StderrLine: {'line': b'   25 |         RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "%d + %d = %d", request->a, request->b, future.get()->sum);\n'}
+[14.488516] (my_cpp_pkg) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[14.488596] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:25:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[14.488677] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:25:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[14.488757] (my_cpp_pkg) StderrLine: {'line': b'   25 |         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "%d + %d = %d", request->a, request->b, future.get()->sum);\n'}
+[14.488836] (my_cpp_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.488928] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:25:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K<declaration error>\x1b[m\x1b[K\xe2\x80\x99 is not a template [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[14.489089] (my_cpp_pkg) StderrLine: {'line': b'   25 |         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "%d + %d = %d", request->a, request->b, future.get()->sum);\n'}
+[14.489297] (my_cpp_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.489472] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:25:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[14.489635] (my_cpp_pkg) StderrLine: {'line': b'   25 |         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "%d + %d = %d", request->a, request->b, future.get()->sum);\n'}
+[14.489814] (my_cpp_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.489978] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:25:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K<declaration error>\x1b[m\x1b[K\xe2\x80\x99 is not a template [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[14.490207] (my_cpp_pkg) StderrLine: {'line': b'   25 |         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "%d + %d = %d", request->a, request->b, future.get()->sum);\n'}
+[14.490362] (my_cpp_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.490518] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:25:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[14.490705] (my_cpp_pkg) StderrLine: {'line': b'   25 |         \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(), "%d + %d = %d", request->a, request->b, future.get()->sum);\n'}
+[14.490876] (my_cpp_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.491131] (my_cpp_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[14.491321] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[14.491498] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[14.491698] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[14.491918] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[14.492211] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[14.492415] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[14.492569] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[14.492700] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[14.497882] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[14.498232] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[14.498380] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:1\x1b[m\x1b[K:\n'}
+[14.498515] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:25:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[14.498671] (my_cpp_pkg) StderrLine: {'line': b'   25 |         RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "%d + %d = %d", request->a, request->b, future.get()->sum);\n'}
+[14.498866] (my_cpp_pkg) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[14.499007] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:25:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[14.499140] (my_cpp_pkg) StderrLine: {'line': b'   25 |         RCLCPP_INFO(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "%d + %d = %d", request->a, request->b, future.get()->sum);\n'}
+[14.499270] (my_cpp_pkg) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[14.499396] (my_cpp_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[14.499525] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[14.499653] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[14.499847] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[14.499985] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[14.500113] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[14.500239] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[14.500381] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[14.500510] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[14.500677] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[14.500869] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:1\x1b[m\x1b[K:\n'}
+[14.501010] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:30:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[14.501144] (my_cpp_pkg) StderrLine: {'line': b'   30 |         RCLCPP_ERROR(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Error while calling the service!");\n'}
+[14.501274] (my_cpp_pkg) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[14.501402] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:30:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[14.501530] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:30:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[14.501659] (my_cpp_pkg) StderrLine: {'line': b'   30 |         \x1b[01;31m\x1b[KRCLCPP_ERROR\x1b[m\x1b[K(this->get_logger(), "Error while calling the service!");\n'}
+[14.501838] (my_cpp_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.501925] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:30:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K<declaration error>\x1b[m\x1b[K\xe2\x80\x99 is not a template [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[14.502011] (my_cpp_pkg) StderrLine: {'line': b'   30 |         \x1b[01;31m\x1b[KRCLCPP_ERROR\x1b[m\x1b[K(this->get_logger(), "Error while calling the service!");\n'}
+[14.502091] (my_cpp_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.502168] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:30:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[14.502247] (my_cpp_pkg) StderrLine: {'line': b'   30 |         \x1b[01;31m\x1b[KRCLCPP_ERROR\x1b[m\x1b[K(this->get_logger(), "Error while calling the service!");\n'}
+[14.502343] (my_cpp_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.502420] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:30:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K<declaration error>\x1b[m\x1b[K\xe2\x80\x99 is not a template [\x1b[01;31m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive\x07-fpermissive\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[14.502510] (my_cpp_pkg) StderrLine: {'line': b'   30 |         \x1b[01;31m\x1b[KRCLCPP_ERROR\x1b[m\x1b[K(this->get_logger(), "Error while calling the service!");\n'}
+[14.502592] (my_cpp_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.502697] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:30:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[14.502810] (my_cpp_pkg) StderrLine: {'line': b'   30 |         \x1b[01;31m\x1b[KRCLCPP_ERROR\x1b[m\x1b[K(this->get_logger(), "Error while calling the service!");\n'}
+[14.502901] (my_cpp_pkg) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[14.502980] (my_cpp_pkg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[14.503059] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[14.503137] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[14.503224] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[14.503304] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[14.503381] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[14.503463] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[14.503541] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[14.503618] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[14.503766] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[14.503852] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[14.503931] (my_cpp_pkg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:1\x1b[m\x1b[K:\n'}
+[14.504011] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:30:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[14.504093] (my_cpp_pkg) StderrLine: {'line': b'   30 |         RCLCPP_ERROR(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Error while calling the service!");\n'}
+[14.504185] (my_cpp_pkg) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[14.504264] (my_cpp_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/add_two_ints_client_no_oop.cpp:30:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[Kthis\x1b[m\x1b[K\xe2\x80\x99 in non-member function\n'}
+[14.504343] (my_cpp_pkg) StderrLine: {'line': b'   30 |         RCLCPP_ERROR(\x1b[01;31m\x1b[Kthis\x1b[m\x1b[K->get_logger(), "Error while calling the service!");\n'}
+[14.504421] (my_cpp_pkg) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[14.591287] (-) TimerEvent: {}
+[14.692507] (-) TimerEvent: {}
+[14.820341] (-) TimerEvent: {}
+[14.942598] (-) TimerEvent: {}
+[15.049243] (-) TimerEvent: {}
+[15.150737] (-) TimerEvent: {}
+[15.256638] (-) TimerEvent: {}
+[15.370545] (-) TimerEvent: {}
+[15.472139] (-) TimerEvent: {}
+[15.586601] (-) TimerEvent: {}
+[15.635647] (my_cpp_pkg) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/add_two_ints_client_no_oop.dir/build.make:76: CMakeFiles/add_two_ints_client_no_oop.dir/src/add_two_ints_client_no_oop.cpp.o] Error 1\n'}
+[15.635971] (my_cpp_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:277: CMakeFiles/add_two_ints_client_no_oop.dir/all] Error 2\n'}
+[15.636098] (my_cpp_pkg) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[15.636187] (my_cpp_pkg) CommandEnded: {'returncode': 2}
+[15.687878] (-) TimerEvent: {}
+[15.789697] (-) TimerEvent: {}
+[15.927845] (-) TimerEvent: {}
+[16.030868] (-) TimerEvent: {}
+[16.118952] (my_cpp_pkg) JobEnded: {'identifier': 'my_cpp_pkg', 'rc': 2}
+[16.130015] (-) EventReactorShutdown: {}

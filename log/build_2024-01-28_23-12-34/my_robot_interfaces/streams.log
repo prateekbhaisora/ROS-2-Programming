@@ -1,0 +1,24 @@
+[0.024s] Invoking command in '/home/prateek/ros2_ws/build/my_robot_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/prateek/ros2_ws/build/my_robot_interfaces -- -j4 -l4
+[0.092s] [  2%] Built target my_robot_interfaces__cpp
+[0.093s] [ 12%] Built target my_robot_interfaces__rosidl_generator_c
+[0.105s] [ 12%] Built target ament_cmake_python_copy_my_robot_interfaces
+[0.108s] [ 23%] Built target my_robot_interfaces__rosidl_typesupport_cpp
+[0.114s] [ 33%] Built target my_robot_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.115s] [ 43%] Built target my_robot_interfaces__rosidl_typesupport_introspection_cpp
+[0.128s] [ 53%] Built target my_robot_interfaces__rosidl_typesupport_fastrtps_c
+[0.132s] [ 64%] Built target my_robot_interfaces__rosidl_typesupport_introspection_c
+[0.142s] [ 74%] Built target my_robot_interfaces__rosidl_typesupport_c
+[0.155s] [ 74%] Built target my_robot_interfaces
+[0.167s] [ 76%] Built target my_robot_interfaces__py
+[0.177s] gmake[2]: *** No rule to make target '/usr/lib/x86_64-linux-gnu/libpython3.10.so', needed by 'rosidl_generator_py/my_robot_interfaces/libmy_robot_interfaces__rosidl_generator_py.so'.  Stop.
+[0.177s] gmake[1]: *** [CMakeFiles/Makefile2:475: CMakeFiles/my_robot_interfaces__rosidl_generator_py.dir/all] Error 2
+[0.177s] gmake[1]: *** Waiting for unfinished jobs....
+[0.242s] running egg_info
+[0.242s] writing my_robot_interfaces.egg-info/PKG-INFO
+[0.243s] writing dependency_links to my_robot_interfaces.egg-info/dependency_links.txt
+[0.243s] writing top-level names to my_robot_interfaces.egg-info/top_level.txt
+[0.244s] reading manifest file 'my_robot_interfaces.egg-info/SOURCES.txt'
+[0.244s] writing manifest file 'my_robot_interfaces.egg-info/SOURCES.txt'
+[0.258s] [ 76%] Built target ament_cmake_python_build_my_robot_interfaces_egg
+[0.259s] gmake: *** [Makefile:146: all] Error 2
+[0.260s] Invoked command in '/home/prateek/ros2_ws/build/my_robot_interfaces' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/prateek/ros2_ws/build/my_robot_interfaces -- -j4 -l4

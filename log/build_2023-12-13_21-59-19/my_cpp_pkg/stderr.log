@@ -1,0 +1,28 @@
+[01m[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/number_counter.cpp:[m[K In constructor ‘[01m[KNumberCounterNode::NumberCounterNode()[m[K’:
+[01m[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/number_counter.cpp:11:87:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KNumberCounterNode::create_subscription<example_interfaces::msg::Int64>(const char [13], int)[m[K’
+   11 |         counter_publisher_ = [01;31m[Kthis->create_subscription<example_interfaces::msg::Int64>("number_count",[m[K
+      |                              [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+   12 | [01;31m[K        10)[m[K;
+      |         [01;31m[K~~~[m[K                                                                            
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/number_counter.cpp:1[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:92:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+   92 | [01;36m[KNode[m[K::create_subscription(
+      | [01;36m[K^~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:92:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/number_counter.cpp:11:87:[m[K [01;36m[Knote: [m[K  candidate expects 5 arguments, 2 provided
+   11 |         counter_publisher_ = [01;36m[Kthis->create_subscription<example_interfaces::msg::Int64>("number_count",[m[K
+      |                              [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+   12 | [01;36m[K        10)[m[K;
+      |         [01;36m[K~~~[m[K                                                                            
+[01m[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/number_counter.cpp:[m[K In member function ‘[01m[Kvoid NumberCounterNode::callbackNumber(example_interfaces::msg::Int64_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/prateek/ros2_ws/src/my_cpp_pkg/src/number_counter.cpp:19:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcounter[m[K’ was not declared in this scope; did you mean ‘[01m[Kcounter_[m[K’?
+   19 |         [01;31m[Kcounter[m[K += msg->data;
+      |         [01;31m[K^~~~~~~[m[K
+      |         [32m[Kcounter_[m[K
+gmake[2]: *** [CMakeFiles/number_counter.dir/build.make:76: CMakeFiles/number_counter.dir/src/number_counter.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:221: CMakeFiles/number_counter.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

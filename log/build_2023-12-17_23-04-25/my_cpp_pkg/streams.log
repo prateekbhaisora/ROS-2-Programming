@@ -1,0 +1,38 @@
+[0.268s] Invoking command in '/home/prateek/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/prateek/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/prateek/ros2_ws/build/my_cpp_pkg -- -j2 -l2
+[0.453s] [ 14%] Built target cpp_node
+[0.551s] [ 28%] Built target robot_news_station
+[0.571s] [ 42%] Built target smartphone
+[0.683s] [ 57%] Built target number_counter
+[0.719s] [ 71%] Built target add_two_ints_server
+[0.798s] [35m[1mConsolidate compiler generated dependencies of target add_two_ints_client[0m
+[0.848s] [ 85%] Built target add_two_ints_client_no_oop
+[0.884s] [ 92%] [32mBuilding CXX object CMakeFiles/add_two_ints_client.dir/src/add_two_ints_client.cpp.o[0m
+[7.081s] [100%] [32m[1mLinking CXX executable add_two_ints_client[0m
+[7.420s] [100%] Built target add_two_ints_client
+[7.485s] Invoked command in '/home/prateek/ros2_ws/build/my_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/prateek/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/prateek/ros2_ws/build/my_cpp_pkg -- -j2 -l2
+[7.931s] Invoking command in '/home/prateek/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/prateek/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/prateek/ros2_ws/build/my_cpp_pkg
+[7.975s] -- Install configuration: ""
+[7.979s] -- Execute custom install script
+[7.982s] -- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_node
+[7.982s] -- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/robot_news_station
+[7.988s] -- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/smartphone
+[7.990s] -- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/number_counter
+[7.993s] -- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/add_two_ints_server
+[7.995s] -- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/add_two_ints_client
+[7.997s] -- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/add_two_ints_client_no_oop
+[7.997s] -- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/package_run_dependencies/my_cpp_pkg
+[7.998s] -- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/parent_prefix_path/my_cpp_pkg
+[7.999s] -- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.sh
+[8.001s] -- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.dsv
+[8.002s] -- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.sh
+[8.003s] -- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.dsv
+[8.005s] -- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.bash
+[8.008s] -- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.sh
+[8.009s] -- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.zsh
+[8.010s] -- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.dsv
+[8.011s] -- Symlinking: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.dsv
+[8.045s] -- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/packages/my_cpp_pkg
+[8.047s] -- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig.cmake
+[8.048s] -- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig-version.cmake
+[8.050s] -- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.xml
+[8.059s] Invoked command in '/home/prateek/ros2_ws/build/my_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/prateek/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/prateek/ros2_ws/build/my_cpp_pkg

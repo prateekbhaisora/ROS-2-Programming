@@ -1,0 +1,64 @@
+[4.013s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'my_cpp_pkg', '--symlink-install']
+[4.014s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=2, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['my_cpp_pkg'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f84e76d3a90>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f84e76d14e0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f84e76d14e0>>)
+[4.343s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[4.350s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[4.350s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[4.350s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[4.350s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[4.350s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[4.350s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/prateek/ros2_ws/src/my_cpp_pkg/src'
+[4.351s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[4.351s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[4.351s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[4.352s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[4.352s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[4.352s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[4.352s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[4.352s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[4.352s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[4.467s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[4.468s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[4.470s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[4.470s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[4.470s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[4.471s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[4.471s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[4.471s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[4.471s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[4.471s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[4.471s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[4.472s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[4.472s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[4.472s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[4.472s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[4.472s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[4.472s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[4.472s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[4.472s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[4.501s] WARNING:colcon.colcon_core.package_selection:ignoring unknown package 'my_cpp_pkg' in --packages-select
+[4.802s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[4.802s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[4.930s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/prateek/ros2_ws/install
+[4.989s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 270 installed packages in /opt/ros/humble
+[4.995s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[5.239s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[5.270s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[5.271s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[5.271s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[5.271s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[5.272s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[5.328s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[5.329s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[5.329s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[5.505s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[5.582s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[5.583s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/prateek/ros2_ws/src/my_cpp_pkg/src/install/local_setup.ps1'
+[5.589s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/prateek/ros2_ws/src/my_cpp_pkg/src/install/_local_setup_util_ps1.py'
+[5.596s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/prateek/ros2_ws/src/my_cpp_pkg/src/install/setup.ps1'
+[5.627s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/prateek/ros2_ws/src/my_cpp_pkg/src/install/local_setup.sh'
+[5.630s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/prateek/ros2_ws/src/my_cpp_pkg/src/install/_local_setup_util_sh.py'
+[5.631s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/prateek/ros2_ws/src/my_cpp_pkg/src/install/setup.sh'
+[5.663s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/prateek/ros2_ws/src/my_cpp_pkg/src/install/local_setup.bash'
+[5.668s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/prateek/ros2_ws/src/my_cpp_pkg/src/install/setup.bash'
+[5.710s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/prateek/ros2_ws/src/my_cpp_pkg/src/install/local_setup.zsh'
+[5.715s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/prateek/ros2_ws/src/my_cpp_pkg/src/install/setup.zsh'

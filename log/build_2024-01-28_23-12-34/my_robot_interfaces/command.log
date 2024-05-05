@@ -1,0 +1,2 @@
+Invoking command in '/home/prateek/ros2_ws/build/my_robot_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/prateek/ros2_ws/build/my_robot_interfaces -- -j4 -l4
+Invoked command in '/home/prateek/ros2_ws/build/my_robot_interfaces' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/prateek/ros2_ws/build/my_robot_interfaces -- -j4 -l4

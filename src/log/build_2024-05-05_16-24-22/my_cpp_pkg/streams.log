@@ -1,0 +1,22 @@
+[0.007s] Invoking command in '/home/prateek/ros2_ws/src/build/my_cpp_pkg': AMENT_PREFIX_PATH=/home/prateek/ros2_ws/src/install/my_robot_interfaces CMAKE_PREFIX_PATH=/home/prateek/ros2_ws/src/install/my_robot_interfaces LD_LIBRARY_PATH=/home/prateek/ros2_ws/src/install/my_robot_interfaces/lib:/usr/local/lib/z3-z3-4.7.1/build PYTHONPATH=/home/prateek/ros2_ws/src/install/my_robot_interfaces/local/lib/python3.10/dist-packages /usr/bin/cmake --build /home/prateek/ros2_ws/src/build/my_cpp_pkg -- -j16 -l16
+[0.023s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.115s] Traceback (most recent call last):
+[0.115s]   File "/opt/ros/humble/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py", line 21, in <module>
+[0.115s]     from ament_package.templates import get_environment_hook_template_path
+[0.115s] ModuleNotFoundError: No module named 'ament_package'
+[0.122s] [31mCMake Error at /opt/ros/humble/share/ament_cmake_core/cmake/ament_cmake_package_templates-extras.cmake:41 (message):
+[0.122s]   execute_process(/usr/bin/python3
+[0.122s]   /opt/ros/humble/share/ament_cmake_core/cmake/package_templates/templates_2_cmake.py
+[0.122s]   /home/prateek/ros2_ws/src/build/my_cpp_pkg/ament_cmake_package_templates/templates.cmake)
+[0.122s]   returned error code 1
+[0.122s] Call Stack (most recent call first):
+[0.122s]   /opt/ros/humble/share/ament_cmake_core/cmake/ament_cmake_coreConfig.cmake:41 (include)
+[0.122s]   /opt/ros/humble/share/ament_cmake/cmake/ament_cmake_export_dependencies-extras.cmake:15 (find_package)
+[0.122s]   /opt/ros/humble/share/ament_cmake/cmake/ament_cmakeConfig.cmake:41 (include)
+[0.122s]   CMakeLists.txt:9 (find_package)
+[0.123s] 
+[0.123s] [0m
+[0.123s] -- Configuring incomplete, errors occurred!
+[0.123s] See also "/home/prateek/ros2_ws/src/build/my_cpp_pkg/CMakeFiles/CMakeOutput.log".
+[0.124s] gmake: *** [Makefile:554: cmake_check_build_system] Error 1
+[0.126s] Invoked command in '/home/prateek/ros2_ws/src/build/my_cpp_pkg' returned '2': AMENT_PREFIX_PATH=/home/prateek/ros2_ws/src/install/my_robot_interfaces CMAKE_PREFIX_PATH=/home/prateek/ros2_ws/src/install/my_robot_interfaces LD_LIBRARY_PATH=/home/prateek/ros2_ws/src/install/my_robot_interfaces/lib:/usr/local/lib/z3-z3-4.7.1/build PYTHONPATH=/home/prateek/ros2_ws/src/install/my_robot_interfaces/local/lib/python3.10/dist-packages /usr/bin/cmake --build /home/prateek/ros2_ws/src/build/my_cpp_pkg -- -j16 -l16

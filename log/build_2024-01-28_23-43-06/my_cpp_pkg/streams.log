@@ -1,0 +1,13 @@
+[0.039s] Invoking command in '/home/prateek/ros2_ws/build/my_cpp_pkg': AMENT_PREFIX_PATH=/home/prateek/ros2_ws/install/my_robot_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/prateek/ros2_ws/install/my_robot_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/prateek/ros2_ws/install/my_robot_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/prateek/ros2_ws/build/my_cpp_pkg -- -j4 -l4
+[0.080s] [ 12%] Built target number_counter
+[0.088s] [ 25%] Built target smartphone
+[0.088s] [ 37%] Built target cpp_node
+[0.094s] [ 50%] Built target robot_news_station
+[0.097s] [ 62%] Built target add_two_ints_server
+[0.105s] [ 75%] Built target add_two_ints_client
+[0.105s] [ 87%] Built target add_two_ints_client_no_oop
+[0.106s] gmake[2]: *** No rule to make target '/usr/lib/x86_64-linux-gnu/libpython3.10.so', needed by 'hw_status_publisher'.  Stop.
+[0.106s] gmake[1]: *** [CMakeFiles/Makefile2:333: CMakeFiles/hw_status_publisher.dir/all] Error 2
+[0.106s] gmake[1]: *** Waiting for unfinished jobs....
+[0.106s] gmake: *** [Makefile:146: all] Error 2
+[0.108s] Invoked command in '/home/prateek/ros2_ws/build/my_cpp_pkg' returned '2': AMENT_PREFIX_PATH=/home/prateek/ros2_ws/install/my_robot_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/prateek/ros2_ws/install/my_robot_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/prateek/ros2_ws/install/my_robot_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/prateek/ros2_ws/build/my_cpp_pkg -- -j4 -l4

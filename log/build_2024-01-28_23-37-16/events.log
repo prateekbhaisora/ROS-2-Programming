@@ -1,0 +1,105 @@
+[0.000000] (-) TimerEvent: {}
+[0.000240] (-) JobUnselected: {'identifier': 'my_py_pkg'}
+[0.000439] (-) JobUnselected: {'identifier': 'my_robot_bringup'}
+[0.000734] (-) JobUnselected: {'identifier': 'my_robot_interfaces'}
+[0.001024] (my_cpp_pkg) JobQueued: {'identifier': 'my_cpp_pkg', 'dependencies': OrderedDict([('my_robot_interfaces', '/home/prateek/ros2_ws/install/my_robot_interfaces')])}
+[0.001088] (my_cpp_pkg) JobStarted: {'identifier': 'my_cpp_pkg'}
+[0.022678] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'cmake'}
+[0.023087] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'build'}
+[0.023564] (my_cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/prateek/ros2_ws/build/my_cpp_pkg', '--', '-j4', '-l4'], 'cwd': '/home/prateek/ros2_ws/build/my_cpp_pkg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'prateek'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/prateek/ros2_ws/install/my_robot_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/prateek'), ('OLDPWD', '/home/prateek'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1697'), ('SYSTEMD_EXEC_PID', '1830'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '49847'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'prateek'), ('JOURNAL_STREAM', '8:26320'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'prateek'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1803,unix/ubuntu:/tmp/.ICE-unix/1803'), ('INVOCATION_ID', '62975937a2524e38a23586201733911f'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.8WO0H2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/prateek/ros2_ws/install/my_robot_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:9d944941-0e47-433e-9d0c-62f6428c55ee'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/prateek/ros2_ws/build/my_cpp_pkg'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/prateek/ros2_ws/install/my_robot_interfaces:/opt/ros/humble')]), 'shell': False}
+[0.068899] (my_cpp_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099520] (-) TimerEvent: {}
+[0.167665] (my_cpp_pkg) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.176495] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rclcpp: 16.0.7 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.189352] (my_cpp_pkg) StderrLine: {'line': b'\x1b[33mCMake Warning at /opt/ros/humble/share/rcutils/cmake/ament_cmake_export_libraries-extras.cmake:116 (message):\n'}
+[0.189428] (my_cpp_pkg) StderrLine: {'line': b"  Package 'rcutils' exports library 'dl' which couldn't be found\n"}
+[0.189457] (my_cpp_pkg) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.189482] (my_cpp_pkg) StderrLine: {'line': b'  /opt/ros/humble/share/rcutils/cmake/rcutilsConfig.cmake:41 (include)\n'}
+[0.189506] (my_cpp_pkg) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_runtime_c/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[0.189530] (my_cpp_pkg) StderrLine: {'line': b'  /opt/ros/humble/share/rosidl_runtime_c/cmake/rosidl_runtime_cConfig.cmake:41 (include)\n'}
+[0.189554] (my_cpp_pkg) StderrLine: {'line': b'  /opt/ros/humble/share/builtin_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[0.189578] (my_cpp_pkg) StderrLine: {'line': b'  /opt/ros/humble/share/builtin_interfaces/cmake/builtin_interfacesConfig.cmake:41 (include)\n'}
+[0.189603] (my_cpp_pkg) StderrLine: {'line': b'  /opt/ros/humble/share/libstatistics_collector/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[0.189627] (my_cpp_pkg) StderrLine: {'line': b'  /opt/ros/humble/share/libstatistics_collector/cmake/libstatistics_collectorConfig.cmake:41 (include)\n'}
+[0.189650] (my_cpp_pkg) StderrLine: {'line': b'  /opt/ros/humble/share/rclcpp/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[0.189674] (my_cpp_pkg) StderrLine: {'line': b'  /opt/ros/humble/share/rclcpp/cmake/rclcppConfig.cmake:41 (include)\n'}
+[0.189697] (my_cpp_pkg) StderrLine: {'line': b'  CMakeLists.txt:15 (find_package)\n'}
+[0.189728] (my_cpp_pkg) StderrLine: {'line': b'\n'}
+[0.189756] (my_cpp_pkg) StderrLine: {'line': b'\x1b[0m\n'}
+[0.198250] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.199613] (-) TimerEvent: {}
+[0.201369] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.206065] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.213884] (my_cpp_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.222985] (my_cpp_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.265976] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.267159] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.299912] (-) TimerEvent: {}
+[0.366581] (my_cpp_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.399982] (-) TimerEvent: {}
+[0.473778] (my_cpp_pkg) StdoutLine: {'line': b'-- Found example_interfaces: 0.9.3 (/opt/ros/humble/share/example_interfaces/cmake)\n'}
+[0.500058] (-) TimerEvent: {}
+[0.559979] (my_cpp_pkg) StdoutLine: {'line': b'-- Found my_robot_interfaces: 0.0.0 (/home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake)\n'}
+[0.600415] (-) TimerEvent: {}
+[0.605107] (my_cpp_pkg) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.626468] (my_cpp_pkg) StderrLine: {'line': b'\x1b[33mCMake Warning at CMakeLists.txt:40 (add_executable):\n'}
+[0.626548] (my_cpp_pkg) StderrLine: {'line': b'  Cannot generate a safe linker search path for target hw_status_publisher\n'}
+[0.626579] (my_cpp_pkg) StderrLine: {'line': b'  because files in some directories may conflict with libraries in implicit\n'}
+[0.626609] (my_cpp_pkg) StderrLine: {'line': b'  directories:\n'}
+[0.626642] (my_cpp_pkg) StderrLine: {'line': b'\n'}
+[0.626666] (my_cpp_pkg) StderrLine: {'line': b'    link library [libpython3.10.so] in /usr/lib/x86_64-linux-gnu may be hidden by files in:\n'}
+[0.626690] (my_cpp_pkg) StderrLine: {'line': b'      /usr/lib/python3.10/config-3.10-aarch64-linux-gnu\n'}
+[0.626714] (my_cpp_pkg) StderrLine: {'line': b'      /usr/lib/aarch64-linux-gnu\n'}
+[0.626738] (my_cpp_pkg) StderrLine: {'line': b'\n'}
+[0.626761] (my_cpp_pkg) StderrLine: {'line': b'  Some of these libraries may not be found correctly.\n'}
+[0.626785] (my_cpp_pkg) StderrLine: {'line': b'\n'}
+[0.626808] (my_cpp_pkg) StderrLine: {'line': b'\x1b[0m\n'}
+[0.629231] (my_cpp_pkg) StderrLine: {'line': b'\x1b[33mCMake Warning at CMakeLists.txt:40 (add_executable):\n'}
+[0.629275] (my_cpp_pkg) StderrLine: {'line': b'  Cannot generate a safe runtime search path for target hw_status_publisher\n'}
+[0.629300] (my_cpp_pkg) StderrLine: {'line': b'  because files in some directories may conflict with libraries in implicit\n'}
+[0.629326] (my_cpp_pkg) StderrLine: {'line': b'  directories:\n'}
+[0.629350] (my_cpp_pkg) StderrLine: {'line': b'\n'}
+[0.629373] (my_cpp_pkg) StderrLine: {'line': b'    runtime library [libpython3.10.so] in /usr/lib/x86_64-linux-gnu may be hidden by files in:\n'}
+[0.629397] (my_cpp_pkg) StderrLine: {'line': b'      /usr/lib/python3.10/config-3.10-aarch64-linux-gnu\n'}
+[0.629421] (my_cpp_pkg) StderrLine: {'line': b'      /usr/lib/aarch64-linux-gnu\n'}
+[0.629455] (my_cpp_pkg) StderrLine: {'line': b'\n'}
+[0.629505] (my_cpp_pkg) StderrLine: {'line': b'  Some of these libraries may not be found correctly.\n'}
+[0.629528] (my_cpp_pkg) StderrLine: {'line': b'\n'}
+[0.629551] (my_cpp_pkg) StderrLine: {'line': b'\x1b[0m\n'}
+[0.630666] (my_cpp_pkg) StdoutLine: {'line': b'-- Generating done\n'}
+[0.632313] (my_cpp_pkg) StdoutLine: {'line': b'-- Build files have been written to: /home/prateek/ros2_ws/build/my_cpp_pkg\n'}
+[0.655318] (my_cpp_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target cpp_node\x1b[0m\n'}
+[0.655493] (my_cpp_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target robot_news_station\x1b[0m\n'}
+[0.655933] (my_cpp_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target smartphone\x1b[0m\n'}
+[0.659037] (my_cpp_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target number_counter\x1b[0m\n'}
+[0.671405] (my_cpp_pkg) StdoutLine: {'line': b'[  6%] \x1b[32m\x1b[1mLinking CXX executable robot_news_station\x1b[0m\n'}
+[0.674465] (my_cpp_pkg) StdoutLine: {'line': b'[ 12%] \x1b[32m\x1b[1mLinking CXX executable cpp_node\x1b[0m\n'}
+[0.679518] (my_cpp_pkg) StdoutLine: {'line': b'[ 18%] \x1b[32m\x1b[1mLinking CXX executable number_counter\x1b[0m\n'}
+[0.683407] (my_cpp_pkg) StdoutLine: {'line': b'[ 25%] \x1b[32m\x1b[1mLinking CXX executable smartphone\x1b[0m\n'}
+[0.700518] (-) TimerEvent: {}
+[0.800829] (-) TimerEvent: {}
+[0.825725] (my_cpp_pkg) StdoutLine: {'line': b'[ 31%] Built target cpp_node\n'}
+[0.874019] (my_cpp_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target add_two_ints_server\x1b[0m\n'}
+[0.886406] (my_cpp_pkg) StdoutLine: {'line': b'[ 37%] Built target robot_news_station\n'}
+[0.894818] (my_cpp_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target add_two_ints_client_no_oop\x1b[0m\n'}
+[0.900884] (-) TimerEvent: {}
+[0.905266] (my_cpp_pkg) StdoutLine: {'line': b'[ 43%] \x1b[32m\x1b[1mLinking CXX executable add_two_ints_client_no_oop\x1b[0m\n'}
+[0.910835] (my_cpp_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32m\x1b[1mLinking CXX executable add_two_ints_server\x1b[0m\n'}
+[1.000981] (-) TimerEvent: {}
+[1.034015] (my_cpp_pkg) StdoutLine: {'line': b'[ 56%] Built target add_two_ints_client_no_oop\n'}
+[1.039960] (my_cpp_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target add_two_ints_client\x1b[0m\n'}
+[1.061698] (my_cpp_pkg) StdoutLine: {'line': b'[ 62%] Built target smartphone\n'}
+[1.069401] (my_cpp_pkg) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX executable add_two_ints_client\x1b[0m\n'}
+[1.077214] (my_cpp_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target hw_status_publisher\x1b[0m\n'}
+[1.083290] (my_cpp_pkg) StderrLine: {'line': b"gmake[2]: *** No rule to make target '/usr/lib/x86_64-linux-gnu/libpython3.10.so', needed by 'hw_status_publisher'.  Stop.\n"}
+[1.083404] (my_cpp_pkg) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:333: CMakeFiles/hw_status_publisher.dir/all] Error 2\n'}
+[1.083436] (my_cpp_pkg) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[1.086748] (my_cpp_pkg) StdoutLine: {'line': b'[ 75%] Built target add_two_ints_server\n'}
+[1.101002] (my_cpp_pkg) StdoutLine: {'line': b'[ 81%] Built target number_counter\n'}
+[1.101087] (-) TimerEvent: {}
+[1.167338] (my_cpp_pkg) StdoutLine: {'line': b'[ 87%] Built target add_two_ints_client\n'}
+[1.168329] (my_cpp_pkg) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[1.170609] (my_cpp_pkg) CommandEnded: {'returncode': 2}
+[1.201466] (-) TimerEvent: {}
+[1.224356] (my_cpp_pkg) JobEnded: {'identifier': 'my_cpp_pkg', 'rc': 2}
+[1.238613] (-) EventReactorShutdown: {}

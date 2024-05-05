@@ -1,0 +1,42 @@
+[0.171s] Invoking command in '/home/prateek/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/prateek/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/prateek/ros2_ws/build/my_cpp_pkg -- -j2 -l2
+[0.693s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.233s] -- Found rclcpp: 16.0.7 (/opt/ros/humble/share/rclcpp/cmake)
+[1.432s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.445s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.503s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.580s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.644s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.914s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.927s] -- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.314s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.861s] -- Found example_interfaces: 0.9.3 (/opt/ros/humble/share/example_interfaces/cmake)
+[3.548s] -- Configuring done
+[3.622s] -- Generating done
+[3.625s] -- Build files have been written to: /home/prateek/ros2_ws/build/my_cpp_pkg
+[3.704s] [35m[1mConsolidate compiler generated dependencies of target cpp_node[0m
+[3.734s] [ 25%] [32mBuilding CXX object CMakeFiles/robot_news_station.dir/src/robot_news_station.cpp.o[0m
+[3.769s] [ 75%] Built target cpp_node
+[14.033s] [100%] [32m[1mLinking CXX executable robot_news_station[0m
+[14.981s] [100%] Built target robot_news_station
+[15.058s] Invoked command in '/home/prateek/ros2_ws/build/my_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/prateek/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --build /home/prateek/ros2_ws/build/my_cpp_pkg -- -j2 -l2
+[15.263s] Invoking command in '/home/prateek/ros2_ws/build/my_cpp_pkg': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/prateek/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/prateek/ros2_ws/build/my_cpp_pkg
+[15.283s] -- Install configuration: ""
+[15.291s] -- Up-to-date: /home/prateek/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_node
+[15.299s] -- Installing: /home/prateek/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/robot_news_station
+[15.299s] -- Set runtime path of "/home/prateek/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/robot_news_station" to ""
+[15.299s] -- Installing: /home/prateek/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/package_run_dependencies/my_cpp_pkg
+[15.299s] -- Installing: /home/prateek/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/parent_prefix_path/my_cpp_pkg
+[15.299s] -- Installing: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.sh
+[15.300s] -- Installing: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.dsv
+[15.302s] -- Installing: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.sh
+[15.303s] -- Installing: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.dsv
+[15.304s] -- Installing: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.bash
+[15.306s] -- Installing: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.sh
+[15.307s] -- Installing: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.zsh
+[15.308s] -- Installing: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.dsv
+[15.309s] -- Installing: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.dsv
+[15.327s] -- Installing: /home/prateek/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/packages/my_cpp_pkg
+[15.327s] -- Installing: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig.cmake
+[15.328s] -- Installing: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig-version.cmake
+[15.329s] -- Installing: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.xml
+[15.340s] Invoked command in '/home/prateek/ros2_ws/build/my_cpp_pkg' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/prateek/ros2_ws/install/my_py_pkg:/opt/ros/humble /usr/bin/cmake --install /home/prateek/ros2_ws/build/my_cpp_pkg

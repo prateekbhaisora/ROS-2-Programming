@@ -1,0 +1,788 @@
+[0.000000] (-) TimerEvent: {}
+[0.000631] (my_robot_interfaces) JobQueued: {'identifier': 'my_robot_interfaces', 'dependencies': OrderedDict()}
+[0.000667] (my_cpp_pkg) JobQueued: {'identifier': 'my_cpp_pkg', 'dependencies': OrderedDict([('my_robot_interfaces', '/home/prateek/ros2_ws/install/my_robot_interfaces')])}
+[0.000689] (my_py_pkg) JobQueued: {'identifier': 'my_py_pkg', 'dependencies': OrderedDict([('my_robot_interfaces', '/home/prateek/ros2_ws/install/my_robot_interfaces')])}
+[0.000703] (my_robot_bringup) JobQueued: {'identifier': 'my_robot_bringup', 'dependencies': OrderedDict([('my_robot_interfaces', '/home/prateek/ros2_ws/install/my_robot_interfaces'), ('my_cpp_pkg', '/home/prateek/ros2_ws/install/my_cpp_pkg'), ('my_py_pkg', '/home/prateek/ros2_ws/install/my_py_pkg')])}
+[0.000724] (my_robot_interfaces) JobStarted: {'identifier': 'my_robot_interfaces'}
+[0.007086] (my_robot_interfaces) JobProgress: {'identifier': 'my_robot_interfaces', 'progress': 'cmake'}
+[0.007469] (my_robot_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/prateek/ros2_ws/src/my_robot_interfaces', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/prateek/ros2_ws/install/my_robot_interfaces'], 'cwd': '/home/prateek/ros2_ws/build/my_robot_interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'prateek'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/prateek/ros2_ws/install/my_robot_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/prateek'), ('OLDPWD', '/home/prateek/ros2_ws/build'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1637'), ('SYSTEMD_EXEC_PID', '1744'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '19554'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/prateek/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'prateek'), ('JOURNAL_STREAM', '8:26107'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'prateek'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/bin:/usr/bin:/usr/local/bin:/path/to/qemu/bin:/usr/bin:/usr/bin:/usr/local/bin:/path/to/qemu/bin:/usr/bin:/usr/bin:/usr/local/bin:/path/to/qemu/bin:/usr/bin:/usr/bin:/usr/local/bin:/path/to/qemu/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1721,unix/ubuntu:/tmp/.ICE-unix/1721'), ('INVOCATION_ID', '6926d18bfc08469da692bfd82ad747cb'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.FQXMK2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/prateek/ros2_ws/install/my_robot_bringup:/home/prateek/ros2_ws/install/my_py_pkg:/home/prateek/ros2_ws/install/my_cpp_pkg:/home/prateek/ros2_ws/install/my_robot_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:9f65e7df-e641-4149-8fe4-077ac4611edb'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/prateek/ros2_ws/build/my_robot_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/prateek/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/prateek/ros2_ws/install/my_robot_bringup:/home/prateek/ros2_ws/install/my_cpp_pkg:/home/prateek/ros2_ws/install/my_robot_interfaces:/home/prateek/ros2_ws/install/my_py_pkg:/opt/ros/humble')]), 'shell': False}
+[0.099805] (-) TimerEvent: {}
+[0.138385] (my_robot_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.200142] (-) TimerEvent: {}
+[0.254191] (my_robot_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.260537] (my_robot_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.300349] (-) TimerEvent: {}
+[0.311576] (my_robot_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.317870] (my_robot_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.318099] (my_robot_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.318426] (my_robot_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.320968] (my_robot_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.400549] (-) TimerEvent: {}
+[0.411263] (my_robot_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.415161] (my_robot_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.415520] (my_robot_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.416063] (my_robot_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.419309] (my_robot_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.500764] (-) TimerEvent: {}
+[0.563293] (my_robot_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.601012] (-) TimerEvent: {}
+[0.610843] (my_robot_interfaces) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.636250] (my_robot_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.639665] (my_robot_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.646414] (my_robot_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.686245] (my_robot_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.701288] (-) TimerEvent: {}
+[0.801723] (-) TimerEvent: {}
+[0.902294] (-) TimerEvent: {}
+[0.958386] (my_robot_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.002619] (-) TimerEvent: {}
+[1.102830] (-) TimerEvent: {}
+[1.121468] (my_robot_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.203043] (-) TimerEvent: {}
+[1.303302] (-) TimerEvent: {}
+[1.348595] (my_robot_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.386457] (my_robot_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.388091] (my_robot_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.403402] (-) TimerEvent: {}
+[1.409165] (my_robot_interfaces) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[1.409337] (my_robot_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.409385] (my_robot_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.409428] (my_robot_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[1.425869] (my_robot_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.461916] (my_robot_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.487987] (my_robot_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[1.490126] (my_robot_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/prateek/ros2_ws/build/my_robot_interfaces\n'}
+[1.494581] (my_robot_interfaces) CommandEnded: {'returncode': 0}
+[1.495239] (my_robot_interfaces) JobProgress: {'identifier': 'my_robot_interfaces', 'progress': 'build'}
+[1.496457] (my_robot_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/prateek/ros2_ws/build/my_robot_interfaces', '--clean-first', '--', '-j4', '-l4'], 'cwd': '/home/prateek/ros2_ws/build/my_robot_interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'prateek'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/prateek/ros2_ws/install/my_robot_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/prateek'), ('OLDPWD', '/home/prateek/ros2_ws/build'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1637'), ('SYSTEMD_EXEC_PID', '1744'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '19554'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/prateek/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'prateek'), ('JOURNAL_STREAM', '8:26107'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'prateek'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/bin:/usr/bin:/usr/local/bin:/path/to/qemu/bin:/usr/bin:/usr/bin:/usr/local/bin:/path/to/qemu/bin:/usr/bin:/usr/bin:/usr/local/bin:/path/to/qemu/bin:/usr/bin:/usr/bin:/usr/local/bin:/path/to/qemu/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1721,unix/ubuntu:/tmp/.ICE-unix/1721'), ('INVOCATION_ID', '6926d18bfc08469da692bfd82ad747cb'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.FQXMK2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/prateek/ros2_ws/install/my_robot_bringup:/home/prateek/ros2_ws/install/my_py_pkg:/home/prateek/ros2_ws/install/my_cpp_pkg:/home/prateek/ros2_ws/install/my_robot_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:9f65e7df-e641-4149-8fe4-077ac4611edb'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/prateek/ros2_ws/build/my_robot_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/prateek/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/prateek/ros2_ws/install/my_robot_bringup:/home/prateek/ros2_ws/install/my_cpp_pkg:/home/prateek/ros2_ws/install/my_robot_interfaces:/home/prateek/ros2_ws/install/my_py_pkg:/opt/ros/humble')]), 'shell': False}
+[1.503518] (-) TimerEvent: {}
+[1.603859] (-) TimerEvent: {}
+[1.673321] (my_robot_interfaces) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.679613] (my_robot_interfaces) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.684710] (my_robot_interfaces) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_symlink_my_robot_interfaces\n'}
+[1.703995] (-) TimerEvent: {}
+[1.804214] (-) TimerEvent: {}
+[1.881281] (my_robot_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[1.882027] (my_robot_interfaces) StdoutLine: {'line': b'creating my_robot_interfaces.egg-info\n'}
+[1.882366] (my_robot_interfaces) StdoutLine: {'line': b'writing my_robot_interfaces.egg-info/PKG-INFO\n'}
+[1.882799] (my_robot_interfaces) StdoutLine: {'line': b'writing dependency_links to my_robot_interfaces.egg-info/dependency_links.txt\n'}
+[1.882873] (my_robot_interfaces) StdoutLine: {'line': b'writing top-level names to my_robot_interfaces.egg-info/top_level.txt\n'}
+[1.883475] (my_robot_interfaces) StdoutLine: {'line': b"writing manifest file 'my_robot_interfaces.egg-info/SOURCES.txt'\n"}
+[1.885078] (my_robot_interfaces) StdoutLine: {'line': b"reading manifest file 'my_robot_interfaces.egg-info/SOURCES.txt'\n"}
+[1.885600] (my_robot_interfaces) StdoutLine: {'line': b"writing manifest file 'my_robot_interfaces.egg-info/SOURCES.txt'\n"}
+[1.904399] (-) TimerEvent: {}
+[1.905782] (my_robot_interfaces) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_build_my_robot_interfaces_egg\n'}
+[1.959412] (my_robot_interfaces) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_robot_interfaces/msg/detail/hardware_status__functions.c.o\x1b[0m\n'}
+[1.971978] (my_robot_interfaces) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_robot_interfaces/srv/detail/compute_rectangle_area__functions.c.o\x1b[0m\n'}
+[2.004527] (-) TimerEvent: {}
+[2.030689] (my_robot_interfaces) StdoutLine: {'line': b'[ 10%] Built target my_robot_interfaces__cpp\n'}
+[2.053045] (my_robot_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.057166] (my_robot_interfaces) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.061706] (my_robot_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.066995] (my_robot_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library libmy_robot_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[2.104622] (-) TimerEvent: {}
+[2.122492] (my_robot_interfaces) StdoutLine: {'line': b'[ 20%] Built target my_robot_interfaces__rosidl_generator_c\n'}
+[2.128956] (my_robot_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.204711] (-) TimerEvent: {}
+[2.287097] (my_robot_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_robot_interfaces/msg/hardware_status__type_support.cpp.o\x1b[0m\n'}
+[2.304822] (-) TimerEvent: {}
+[2.380054] (my_robot_interfaces) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_robot_interfaces/msg/detail/hardware_status__type_support.cpp.o\x1b[0m\n'}
+[2.402909] (my_robot_interfaces) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_robot_interfaces/msg/detail/dds_fastrtps/hardware_status__type_support.cpp.o\x1b[0m\n'}
+[2.404900] (-) TimerEvent: {}
+[2.418846] (my_robot_interfaces) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_robot_interfaces/msg/detail/hardware_status__type_support_c.cpp.o\x1b[0m\n'}
+[2.505078] (-) TimerEvent: {}
+[2.578353] (my_robot_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_robot_interfaces/srv/compute_rectangle_area__type_support.cpp.o\x1b[0m\n'}
+[2.605162] (-) TimerEvent: {}
+[2.705440] (-) TimerEvent: {}
+[2.805774] (-) TimerEvent: {}
+[2.889277] (my_robot_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_robot_interfaces/srv/detail/dds_fastrtps/compute_rectangle_area__type_support.cpp.o\x1b[0m\n'}
+[2.891900] (my_robot_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_robot_interfaces/srv/detail/compute_rectangle_area__type_support.cpp.o\x1b[0m\n'}
+[2.905876] (-) TimerEvent: {}
+[2.915103] (my_robot_interfaces) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_robot_interfaces/srv/detail/compute_rectangle_area__type_support_c.cpp.o\x1b[0m\n'}
+[2.947298] (my_robot_interfaces) StdoutLine: {'line': b'[ 46%] \x1b[32m\x1b[1mLinking CXX shared library libmy_robot_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[3.004865] (my_robot_interfaces) StdoutLine: {'line': b'[ 46%] Built target my_robot_interfaces__rosidl_typesupport_cpp\n'}
+[3.005975] (-) TimerEvent: {}
+[3.011900] (my_robot_interfaces) StdoutLine: {'line': b'[ 48%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[3.106078] (-) TimerEvent: {}
+[3.206326] (-) TimerEvent: {}
+[3.235336] (my_robot_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libmy_robot_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[3.256282] (my_robot_interfaces) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking CXX shared library libmy_robot_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[3.280189] (my_robot_interfaces) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking CXX shared library libmy_robot_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[3.306441] (-) TimerEvent: {}
+[3.308266] (my_robot_interfaces) StdoutLine: {'line': b'[ 56%] Built target my_robot_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[3.308414] (my_robot_interfaces) StdoutLine: {'line': b'[ 56%] Built target my_robot_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[3.314748] (my_robot_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.330325] (my_robot_interfaces) StdoutLine: {'line': b'[ 58%] Built target my_robot_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[3.336887] (my_robot_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_robot_interfaces/srv/detail/compute_rectangle_area__type_support.c.o\x1b[0m\n'}
+[3.347607] (my_robot_interfaces) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_robot_interfaces/msg/detail/hardware_status__type_support.c.o\x1b[0m\n'}
+[3.382773] (my_robot_interfaces) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking C shared library libmy_robot_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[3.406695] (-) TimerEvent: {}
+[3.406840] (my_robot_interfaces) StdoutLine: {'line': b'[ 66%] Built target my_robot_interfaces__rosidl_typesupport_introspection_c\n'}
+[3.506809] (-) TimerEvent: {}
+[3.534744] (my_robot_interfaces) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_robot_interfaces/srv/compute_rectangle_area__type_support.cpp.o\x1b[0m\n'}
+[3.547622] (my_robot_interfaces) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/my_robot_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_robot_interfaces/msg/hardware_status__type_support.cpp.o\x1b[0m\n'}
+[3.578912] (my_robot_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libmy_robot_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[3.605512] (my_robot_interfaces) StdoutLine: {'line': b'[ 74%] Built target my_robot_interfaces__rosidl_typesupport_c\n'}
+[3.606981] (-) TimerEvent: {}
+[3.616739] (my_robot_interfaces) StdoutLine: {'line': b'[ 74%] Built target my_robot_interfaces\n'}
+[3.627903] (my_robot_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[3.707465] (-) TimerEvent: {}
+[3.807647] (-) TimerEvent: {}
+[3.907905] (-) TimerEvent: {}
+[3.978501] (my_robot_interfaces) StdoutLine: {'line': b'[ 76%] Built target my_robot_interfaces__py\n'}
+[3.990196] (my_robot_interfaces) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_robot_interfaces/msg/_hardware_status_s.c.o\x1b[0m\n'}
+[3.990321] (my_robot_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_robot_interfaces/srv/_compute_rectangle_area_s.c.o\x1b[0m\n'}
+[4.008039] (-) TimerEvent: {}
+[4.084659] (my_robot_interfaces) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/my_robot_interfaces/libmy_robot_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[4.108240] (-) TimerEvent: {}
+[4.110717] (my_robot_interfaces) StdoutLine: {'line': b'[ 84%] Built target my_robot_interfaces__rosidl_generator_py\n'}
+[4.122652] (my_robot_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[4.122801] (my_robot_interfaces) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[4.123573] (my_robot_interfaces) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/my_robot_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[4.197755] (my_robot_interfaces) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[4.208337] (-) TimerEvent: {}
+[4.215766] (my_robot_interfaces) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[4.220727] (my_robot_interfaces) StdoutLine: {'line': b'[ 97%] Built target my_robot_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[4.222420] (my_robot_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\x1b[0m\n'}
+[4.236759] (my_robot_interfaces) StdoutLine: {'line': b'[100%] Built target my_robot_interfaces__rosidl_typesupport_c__pyext\n'}
+[4.250006] (my_robot_interfaces) StdoutLine: {'line': b'[100%] Built target my_robot_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[4.268912] (my_robot_interfaces) CommandEnded: {'returncode': 0}
+[4.308539] (-) TimerEvent: {}
+[4.314113] (my_robot_interfaces) JobProgress: {'identifier': 'my_robot_interfaces', 'progress': 'install'}
+[4.319887] (my_robot_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/prateek/ros2_ws/build/my_robot_interfaces'], 'cwd': '/home/prateek/ros2_ws/build/my_robot_interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'prateek'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/prateek/ros2_ws/install/my_robot_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/prateek'), ('OLDPWD', '/home/prateek/ros2_ws/build'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1637'), ('SYSTEMD_EXEC_PID', '1744'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '19554'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/prateek/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'prateek'), ('JOURNAL_STREAM', '8:26107'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'prateek'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/bin:/usr/bin:/usr/local/bin:/path/to/qemu/bin:/usr/bin:/usr/bin:/usr/local/bin:/path/to/qemu/bin:/usr/bin:/usr/bin:/usr/local/bin:/path/to/qemu/bin:/usr/bin:/usr/bin:/usr/local/bin:/path/to/qemu/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1721,unix/ubuntu:/tmp/.ICE-unix/1721'), ('INVOCATION_ID', '6926d18bfc08469da692bfd82ad747cb'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.FQXMK2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/prateek/ros2_ws/install/my_robot_bringup:/home/prateek/ros2_ws/install/my_py_pkg:/home/prateek/ros2_ws/install/my_cpp_pkg:/home/prateek/ros2_ws/install/my_robot_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:9f65e7df-e641-4149-8fe4-077ac4611edb'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/prateek/ros2_ws/build/my_robot_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/prateek/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/prateek/ros2_ws/install/my_robot_bringup:/home/prateek/ros2_ws/install/my_cpp_pkg:/home/prateek/ros2_ws/install/my_robot_interfaces:/home/prateek/ros2_ws/install/my_py_pkg:/opt/ros/humble')]), 'shell': False}
+[4.324885] (my_robot_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.325605] (my_robot_interfaces) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[4.325875] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/share/ament_index/resource_index/rosidl_interfaces/my_robot_interfaces\n'}
+[4.331420] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/hardware_status__functions.h\n'}
+[4.337242] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/hardware_status__struct.h\n'}
+[4.350710] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/hardware_status__type_support.h\n'}
+[4.356277] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/hardware_status.h\n'}
+[4.361538] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[4.366962] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/compute_rectangle_area.h\n'}
+[4.384088] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/compute_rectangle_area__functions.h\n'}
+[4.394663] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/compute_rectangle_area__struct.h\n'}
+[4.399349] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/compute_rectangle_area__type_support.h\n'}
+[4.404213] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/library_path.sh\n'}
+[4.408658] (-) TimerEvent: {}
+[4.409239] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/library_path.dsv\n'}
+[4.414256] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/hardware_status__rosidl_typesupport_fastrtps_c.h\n'}
+[4.419157] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[4.423894] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/compute_rectangle_area__rosidl_typesupport_fastrtps_c.h\n'}
+[4.428682] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/hardware_status__rosidl_typesupport_introspection_c.h\n'}
+[4.433074] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[4.438853] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/compute_rectangle_area__rosidl_typesupport_introspection_c.h\n'}
+[4.465075] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/hardware_status__builder.hpp\n'}
+[4.469971] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/hardware_status__struct.hpp\n'}
+[4.474612] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/hardware_status__traits.hpp\n'}
+[4.479201] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/hardware_status.hpp\n'}
+[4.483841] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/compute_rectangle_area.hpp\n'}
+[4.488546] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/compute_rectangle_area__builder.hpp\n'}
+[4.493157] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/compute_rectangle_area__struct.hpp\n'}
+[4.497841] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/compute_rectangle_area__traits.hpp\n'}
+[4.502894] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/hardware_status__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.507572] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[4.508881] (-) TimerEvent: {}
+[4.512304] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/compute_rectangle_area__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.517167] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/msg/detail/hardware_status__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.521774] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/include/my_robot_interfaces/my_robot_interfaces/srv/detail/compute_rectangle_area__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.526383] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/pythonpath.sh\n'}
+[4.533198] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/pythonpath.dsv\n'}
+[4.552002] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[4.566602] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[4.571676] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[4.576421] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[4.581783] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/__init__.py\n'}
+[4.586701] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[4.591467] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[4.596075] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/_my_robot_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[4.600705] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/libmy_robot_interfaces__rosidl_generator_py.so\n'}
+[4.605490] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/msg/__init__.py\n'}
+[4.609168] (-) TimerEvent: {}
+[4.610093] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/msg/_hardware_status.py\n'}
+[4.614732] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/msg/_hardware_status_s.c\n'}
+[4.619346] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[4.623921] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[4.628495] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[4.633140] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/srv/__init__.py\n'}
+[4.638038] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/srv/_compute_rectangle_area.py\n'}
+[4.647659] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/srv/_compute_rectangle_area_s.c\n'}
+[4.664828] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[4.665441] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[4.665511] (my_robot_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/my_robot_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[4.665554] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/msg/HardwareStatus.idl\n'}
+[4.670183] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/srv/ComputeRectangleArea.idl\n'}
+[4.675115] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/msg/HardwareStatus.msg\n'}
+[4.680079] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/srv/ComputeRectangleArea.srv\n'}
+[4.685333] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/srv/ComputeRectangleArea_Request.msg\n'}
+[4.690214] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/srv/ComputeRectangleArea_Response.msg\n'}
+[4.694822] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/share/ament_index/resource_index/package_run_dependencies/my_robot_interfaces\n'}
+[4.699519] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/share/ament_index/resource_index/parent_prefix_path/my_robot_interfaces\n'}
+[4.704133] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/ament_prefix_path.sh\n'}
+[4.708836] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/ament_prefix_path.dsv\n'}
+[4.709241] (-) TimerEvent: {}
+[4.713648] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/path.sh\n'}
+[4.718258] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/environment/path.dsv\n'}
+[4.722944] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/local_setup.bash\n'}
+[4.727644] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/local_setup.sh\n'}
+[4.732259] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/local_setup.zsh\n'}
+[4.737574] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/local_setup.dsv\n'}
+[4.757236] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/package.dsv\n'}
+[4.768453] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/share/ament_index/resource_index/packages/my_robot_interfaces\n'}
+[4.773381] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[4.778120] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[4.782807] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[4.787512] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[4.792219] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[4.796882] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[4.801597] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[4.806205] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfacesConfig.cmake\n'}
+[4.809315] (-) TimerEvent: {}
+[4.810920] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfacesConfig-version.cmake\n'}
+[4.815525] (my_robot_interfaces) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/package.xml\n'}
+[4.820308] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/prateek/ros2_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_generator_c.so\n'}
+[4.820619] (my_robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/prateek/ros2_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_generator_c.so" to ""\n'}
+[4.820785] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/prateek/ros2_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[4.821106] (my_robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/prateek/ros2_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[4.821239] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/prateek/ros2_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[4.821621] (my_robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/prateek/ros2_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[4.821752] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/prateek/ros2_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_c.so\n'}
+[4.821996] (my_robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/prateek/ros2_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[4.822151] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/prateek/ros2_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[4.822519] (my_robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/prateek/ros2_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[4.822678] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/prateek/ros2_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[4.822973] (my_robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/prateek/ros2_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[4.823108] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/prateek/ros2_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_cpp.so\n'}
+[4.823409] (my_robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/prateek/ros2_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[4.854466] (my_robot_interfaces) StdoutLine: {'line': b"Listing '/home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces'...\n"}
+[4.854638] (my_robot_interfaces) StdoutLine: {'line': b"Compiling '/home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/__init__.py'...\n"}
+[4.854779] (my_robot_interfaces) StdoutLine: {'line': b"Listing '/home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/msg'...\n"}
+[4.855017] (my_robot_interfaces) StdoutLine: {'line': b"Compiling '/home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/msg/__init__.py'...\n"}
+[4.855096] (my_robot_interfaces) StdoutLine: {'line': b"Compiling '/home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/msg/_hardware_status.py'...\n"}
+[4.855266] (my_robot_interfaces) StdoutLine: {'line': b"Listing '/home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/srv'...\n"}
+[4.855337] (my_robot_interfaces) StdoutLine: {'line': b"Compiling '/home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/srv/__init__.py'...\n"}
+[4.855402] (my_robot_interfaces) StdoutLine: {'line': b"Compiling '/home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages/my_robot_interfaces/srv/_compute_rectangle_area.py'...\n"}
+[4.859100] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/prateek/ros2_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_generator_py.so\n'}
+[4.859447] (my_robot_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/prateek/ros2_ws/install/my_robot_interfaces/lib/libmy_robot_interfaces__rosidl_generator_py.so" to ""\n'}
+[4.859532] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_generator_cExport.cmake\n'}
+[4.859670] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[4.859827] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[4.859965] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[4.860152] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[4.860353] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[4.860520] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[4.860633] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[4.860795] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_generator_cppExport.cmake\n'}
+[4.860923] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[4.861078] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[4.861248] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[4.861373] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[4.861537] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[4.861664] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/my_robot_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[4.861845] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_generator_pyExport.cmake\n'}
+[4.861993] (my_robot_interfaces) StdoutLine: {'line': b'-- Installing: /home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake/export_my_robot_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[4.863649] (my_robot_interfaces) CommandEnded: {'returncode': 0}
+[4.909552] (-) TimerEvent: {}
+[4.923180] (my_robot_interfaces) JobEnded: {'identifier': 'my_robot_interfaces', 'rc': 0}
+[4.923830] (my_cpp_pkg) JobStarted: {'identifier': 'my_cpp_pkg'}
+[4.926067] (my_py_pkg) JobStarted: {'identifier': 'my_py_pkg'}
+[4.930360] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'cmake'}
+[4.930395] (my_cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '/home/prateek/ros2_ws/src/my_cpp_pkg', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/prateek/ros2_ws/install/my_cpp_pkg'], 'cwd': '/home/prateek/ros2_ws/build/my_cpp_pkg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'prateek'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/prateek/ros2_ws/install/my_robot_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/prateek'), ('OLDPWD', '/home/prateek/ros2_ws/build'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1637'), ('SYSTEMD_EXEC_PID', '1744'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '19554'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/prateek/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'prateek'), ('JOURNAL_STREAM', '8:26107'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'prateek'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/bin:/usr/bin:/usr/local/bin:/path/to/qemu/bin:/usr/bin:/usr/bin:/usr/local/bin:/path/to/qemu/bin:/usr/bin:/usr/bin:/usr/local/bin:/path/to/qemu/bin:/usr/bin:/usr/bin:/usr/local/bin:/path/to/qemu/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1721,unix/ubuntu:/tmp/.ICE-unix/1721'), ('INVOCATION_ID', '6926d18bfc08469da692bfd82ad747cb'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.FQXMK2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/prateek/ros2_ws/install/my_robot_bringup:/home/prateek/ros2_ws/install/my_py_pkg:/home/prateek/ros2_ws/install/my_cpp_pkg:/home/prateek/ros2_ws/install/my_robot_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:9f65e7df-e641-4149-8fe4-077ac4611edb'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/prateek/ros2_ws/build/my_cpp_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/prateek/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/prateek/ros2_ws/install/my_robot_interfaces:/home/prateek/ros2_ws/install/my_robot_bringup:/home/prateek/ros2_ws/install/my_cpp_pkg:/home/prateek/ros2_ws/install/my_py_pkg:/opt/ros/humble')]), 'shell': False}
+[5.009657] (-) TimerEvent: {}
+[5.041351] (my_cpp_pkg) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[5.109753] (-) TimerEvent: {}
+[5.111870] (my_cpp_pkg) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[5.117286] (my_cpp_pkg) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[5.193378] (my_cpp_pkg) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[5.199635] (my_cpp_pkg) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[5.199851] (my_cpp_pkg) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[5.200177] (my_cpp_pkg) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[5.202663] (my_cpp_pkg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[5.209822] (-) TimerEvent: {}
+[5.269379] (my_cpp_pkg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[5.275856] (my_cpp_pkg) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[5.276087] (my_cpp_pkg) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[5.276507] (my_cpp_pkg) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[5.278866] (my_cpp_pkg) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[5.309910] (-) TimerEvent: {}
+[5.410494] (-) TimerEvent: {}
+[5.424725] (my_cpp_pkg) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[5.503811] (my_cpp_pkg) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[5.509732] (my_py_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/prateek/ros2_ws/build/my_py_pkg/build', '--no-deps', 'symlink_data'], 'cwd': '/home/prateek/ros2_ws/build/my_py_pkg', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'prateek', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/prateek/ros2_ws/install/my_robot_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/prateek', 'OLDPWD': '/home/prateek/ros2_ws/build', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'MANAGERPID': '1637', 'SYSTEMD_EXEC_PID': '1744', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '19554', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/prateek/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'prateek', 'JOURNAL_STREAM': '8:26107', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'prateek', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/usr/bin:/usr/bin:/usr/local/bin:/path/to/qemu/bin:/usr/bin:/usr/bin:/usr/local/bin:/path/to/qemu/bin:/usr/bin:/usr/bin:/usr/local/bin:/path/to/qemu/bin:/usr/bin:/usr/bin:/usr/local/bin:/path/to/qemu/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ubuntu:@/tmp/.ICE-unix/1721,unix/ubuntu:/tmp/.ICE-unix/1721', 'INVOCATION_ID': '6926d18bfc08469da692bfd82ad747cb', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'IBUS_DISABLE_SNOOPER': '1', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.FQXMK2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/prateek/ros2_ws/install/my_robot_bringup:/home/prateek/ros2_ws/install/my_py_pkg:/home/prateek/ros2_ws/install/my_cpp_pkg:/home/prateek/ros2_ws/install/my_robot_interfaces:/opt/ros/humble', 'SHELL': '/bin/bash', 'TERMINATOR_UUID': 'urn:uuid:9f65e7df-e641-4149-8fe4-077ac4611edb', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GJS_DEBUG_OUTPUT': 'stderr', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/prateek/ros2_ws/build/my_py_pkg', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/prateek/ros2_ws/build/my_py_pkg/prefix_override:/home/prateek/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/home/prateek/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/prateek/ros2_ws/install/my_robot_interfaces:/home/prateek/ros2_ws/install/my_robot_bringup:/home/prateek/ros2_ws/install/my_cpp_pkg'}, 'shell': False}
+[5.510636] (-) TimerEvent: {}
+[5.530505] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rclcpp: 16.0.8 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[5.592117] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[5.596478] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[5.603922] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[5.610736] (-) TimerEvent: {}
+[5.616706] (my_cpp_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.633296] (my_cpp_pkg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.699866] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[5.702371] (my_cpp_pkg) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[5.710816] (-) TimerEvent: {}
+[5.745117] (my_py_pkg) StdoutLine: {'line': b'running develop\n'}
+[5.800584] (my_cpp_pkg) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[5.810889] (-) TimerEvent: {}
+[5.825083] (my_cpp_pkg) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[5.852883] (my_py_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[5.852980] (my_py_pkg) StdoutLine: {'line': b'creating my_py_pkg.egg-info\n'}
+[5.853209] (my_py_pkg) StdoutLine: {'line': b'writing my_py_pkg.egg-info/PKG-INFO\n'}
+[5.853408] (my_py_pkg) StdoutLine: {'line': b'writing dependency_links to my_py_pkg.egg-info/dependency_links.txt\n'}
+[5.853594] (my_py_pkg) StdoutLine: {'line': b'writing entry points to my_py_pkg.egg-info/entry_points.txt\n'}
+[5.853747] (my_py_pkg) StdoutLine: {'line': b'writing requirements to my_py_pkg.egg-info/requires.txt\n'}
+[5.853872] (my_py_pkg) StdoutLine: {'line': b'writing top-level names to my_py_pkg.egg-info/top_level.txt\n'}
+[5.854072] (my_py_pkg) StdoutLine: {'line': b"writing manifest file 'my_py_pkg.egg-info/SOURCES.txt'\n"}
+[5.855356] (my_py_pkg) StdoutLine: {'line': b"reading manifest file 'my_py_pkg.egg-info/SOURCES.txt'\n"}
+[5.855879] (my_py_pkg) StdoutLine: {'line': b"writing manifest file 'my_py_pkg.egg-info/SOURCES.txt'\n"}
+[5.856961] (my_py_pkg) StdoutLine: {'line': b'running build_ext\n'}
+[5.857236] (my_py_pkg) StdoutLine: {'line': b'Creating /home/prateek/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my-py-pkg.egg-link (link to .)\n'}
+[5.857840] (my_py_pkg) StdoutLine: {'line': b'Installing add_two_ints_client script to /home/prateek/ros2_ws/install/my_py_pkg/lib/my_py_pkg\n'}
+[5.858050] (my_py_pkg) StdoutLine: {'line': b'Installing add_two_ints_client_no_oop script to /home/prateek/ros2_ws/install/my_py_pkg/lib/my_py_pkg\n'}
+[5.858193] (my_py_pkg) StdoutLine: {'line': b'Installing add_two_ints_server script to /home/prateek/ros2_ws/install/my_py_pkg/lib/my_py_pkg\n'}
+[5.858322] (my_py_pkg) StdoutLine: {'line': b'Installing hw_status_publisher script to /home/prateek/ros2_ws/install/my_py_pkg/lib/my_py_pkg\n'}
+[5.858485] (my_py_pkg) StdoutLine: {'line': b'Installing number_publisher script to /home/prateek/ros2_ws/install/my_py_pkg/lib/my_py_pkg\n'}
+[5.858648] (my_py_pkg) StdoutLine: {'line': b'Installing py_node script to /home/prateek/ros2_ws/install/my_py_pkg/lib/my_py_pkg\n'}
+[5.858777] (my_py_pkg) StdoutLine: {'line': b'Installing robot_news_station script to /home/prateek/ros2_ws/install/my_py_pkg/lib/my_py_pkg\n'}
+[5.858940] (my_py_pkg) StdoutLine: {'line': b'Installing smartphone script to /home/prateek/ros2_ws/install/my_py_pkg/lib/my_py_pkg\n'}
+[5.859164] (my_py_pkg) StdoutLine: {'line': b'\n'}
+[5.859223] (my_py_pkg) StdoutLine: {'line': b'Installed /home/prateek/ros2_ws/build/my_py_pkg\n'}
+[5.859315] (my_py_pkg) StdoutLine: {'line': b'running symlink_data\n'}
+[5.868531] (my_cpp_pkg) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[5.881458] (my_cpp_pkg) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[5.882138] (my_py_pkg) CommandEnded: {'returncode': 0}
+[5.887533] (my_py_pkg) JobEnded: {'identifier': 'my_py_pkg', 'rc': 0}
+[5.910979] (-) TimerEvent: {}
+[5.973777] (my_cpp_pkg) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[5.974095] (my_cpp_pkg) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[6.011642] (-) TimerEvent: {}
+[6.030291] (my_cpp_pkg) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[6.031389] (my_cpp_pkg) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[6.111743] (-) TimerEvent: {}
+[6.212019] (-) TimerEvent: {}
+[6.220789] (my_cpp_pkg) StdoutLine: {'line': b'-- Found example_interfaces: 0.9.3 (/opt/ros/humble/share/example_interfaces/cmake)\n'}
+[6.312183] (-) TimerEvent: {}
+[6.368193] (my_cpp_pkg) StdoutLine: {'line': b'-- Found my_robot_interfaces: 0.0.0 (/home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake)\n'}
+[6.412352] (-) TimerEvent: {}
+[6.442981] (my_cpp_pkg) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.462486] (my_cpp_pkg) StdoutLine: {'line': b'-- Generating done\n'}
+[6.464189] (my_cpp_pkg) StdoutLine: {'line': b'-- Build files have been written to: /home/prateek/ros2_ws/build/my_cpp_pkg\n'}
+[6.472355] (my_cpp_pkg) CommandEnded: {'returncode': 0}
+[6.472664] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'build'}
+[6.472685] (my_cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/prateek/ros2_ws/build/my_cpp_pkg', '--clean-first', '--', '-j4', '-l4'], 'cwd': '/home/prateek/ros2_ws/build/my_cpp_pkg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'prateek'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/prateek/ros2_ws/install/my_robot_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/prateek'), ('OLDPWD', '/home/prateek/ros2_ws/build'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1637'), ('SYSTEMD_EXEC_PID', '1744'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '19554'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/prateek/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'prateek'), ('JOURNAL_STREAM', '8:26107'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'prateek'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/bin:/usr/bin:/usr/local/bin:/path/to/qemu/bin:/usr/bin:/usr/bin:/usr/local/bin:/path/to/qemu/bin:/usr/bin:/usr/bin:/usr/local/bin:/path/to/qemu/bin:/usr/bin:/usr/bin:/usr/local/bin:/path/to/qemu/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1721,unix/ubuntu:/tmp/.ICE-unix/1721'), ('INVOCATION_ID', '6926d18bfc08469da692bfd82ad747cb'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.FQXMK2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/prateek/ros2_ws/install/my_robot_bringup:/home/prateek/ros2_ws/install/my_py_pkg:/home/prateek/ros2_ws/install/my_cpp_pkg:/home/prateek/ros2_ws/install/my_robot_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:9f65e7df-e641-4149-8fe4-077ac4611edb'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/prateek/ros2_ws/build/my_cpp_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/prateek/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/prateek/ros2_ws/install/my_robot_interfaces:/home/prateek/ros2_ws/install/my_robot_bringup:/home/prateek/ros2_ws/install/my_cpp_pkg:/home/prateek/ros2_ws/install/my_py_pkg:/opt/ros/humble')]), 'shell': False}
+[6.512446] (-) TimerEvent: {}
+[6.580186] (my_cpp_pkg) StdoutLine: {'line': b'[  6%] \x1b[32mBuilding CXX object CMakeFiles/cpp_node.dir/src/my_first_node.cpp.o\x1b[0m\n'}
+[6.581104] (my_cpp_pkg) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding CXX object CMakeFiles/smartphone.dir/src/smartphone.cpp.o\x1b[0m\n'}
+[6.583163] (my_cpp_pkg) StdoutLine: {'line': b'[ 18%] \x1b[32mBuilding CXX object CMakeFiles/number_counter.dir/src/number_counter.cpp.o\x1b[0m\n'}
+[6.587000] (my_cpp_pkg) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/robot_news_station.dir/src/robot_news_station.cpp.o\x1b[0m\n'}
+[6.612533] (-) TimerEvent: {}
+[6.712767] (-) TimerEvent: {}
+[6.813143] (-) TimerEvent: {}
+[6.913625] (-) TimerEvent: {}
+[7.019527] (-) TimerEvent: {}
+[7.125581] (-) TimerEvent: {}
+[7.229040] (-) TimerEvent: {}
+[7.329478] (-) TimerEvent: {}
+[7.429870] (-) TimerEvent: {}
+[7.535051] (-) TimerEvent: {}
+[7.639216] (-) TimerEvent: {}
+[7.741856] (-) TimerEvent: {}
+[7.842493] (-) TimerEvent: {}
+[7.943023] (-) TimerEvent: {}
+[8.055228] (-) TimerEvent: {}
+[8.159490] (-) TimerEvent: {}
+[8.260528] (-) TimerEvent: {}
+[8.361397] (-) TimerEvent: {}
+[8.461997] (-) TimerEvent: {}
+[8.562682] (-) TimerEvent: {}
+[8.663587] (-) TimerEvent: {}
+[8.764174] (-) TimerEvent: {}
+[8.864623] (-) TimerEvent: {}
+[8.965047] (-) TimerEvent: {}
+[9.065458] (-) TimerEvent: {}
+[9.165808] (-) TimerEvent: {}
+[9.267054] (-) TimerEvent: {}
+[9.368189] (-) TimerEvent: {}
+[9.468710] (-) TimerEvent: {}
+[9.569113] (-) TimerEvent: {}
+[9.669554] (-) TimerEvent: {}
+[9.770170] (-) TimerEvent: {}
+[9.870884] (-) TimerEvent: {}
+[9.971745] (-) TimerEvent: {}
+[10.072565] (-) TimerEvent: {}
+[10.173732] (-) TimerEvent: {}
+[10.274309] (-) TimerEvent: {}
+[10.374866] (-) TimerEvent: {}
+[10.475542] (-) TimerEvent: {}
+[10.576208] (-) TimerEvent: {}
+[10.677039] (-) TimerEvent: {}
+[10.778218] (-) TimerEvent: {}
+[10.879707] (-) TimerEvent: {}
+[10.980665] (-) TimerEvent: {}
+[11.081776] (-) TimerEvent: {}
+[11.182498] (-) TimerEvent: {}
+[11.283442] (-) TimerEvent: {}
+[11.384675] (-) TimerEvent: {}
+[11.485649] (-) TimerEvent: {}
+[11.586904] (-) TimerEvent: {}
+[11.687714] (-) TimerEvent: {}
+[11.788243] (-) TimerEvent: {}
+[11.888789] (-) TimerEvent: {}
+[11.989282] (-) TimerEvent: {}
+[12.089969] (-) TimerEvent: {}
+[12.190839] (-) TimerEvent: {}
+[12.291917] (-) TimerEvent: {}
+[12.392541] (-) TimerEvent: {}
+[12.493521] (-) TimerEvent: {}
+[12.594225] (-) TimerEvent: {}
+[12.694889] (-) TimerEvent: {}
+[12.795305] (-) TimerEvent: {}
+[12.896350] (-) TimerEvent: {}
+[12.997009] (-) TimerEvent: {}
+[13.097670] (-) TimerEvent: {}
+[13.198403] (-) TimerEvent: {}
+[13.300759] (-) TimerEvent: {}
+[13.402462] (-) TimerEvent: {}
+[13.503649] (-) TimerEvent: {}
+[13.604259] (-) TimerEvent: {}
+[13.704887] (-) TimerEvent: {}
+[13.806375] (-) TimerEvent: {}
+[13.907095] (-) TimerEvent: {}
+[14.007755] (-) TimerEvent: {}
+[14.123435] (-) TimerEvent: {}
+[14.238762] (-) TimerEvent: {}
+[14.339472] (-) TimerEvent: {}
+[14.439937] (-) TimerEvent: {}
+[14.552111] (-) TimerEvent: {}
+[14.653501] (-) TimerEvent: {}
+[14.769095] (-) TimerEvent: {}
+[14.877310] (-) TimerEvent: {}
+[14.978830] (-) TimerEvent: {}
+[15.079505] (-) TimerEvent: {}
+[15.180495] (-) TimerEvent: {}
+[15.287621] (-) TimerEvent: {}
+[15.388448] (-) TimerEvent: {}
+[15.489304] (-) TimerEvent: {}
+[15.589919] (-) TimerEvent: {}
+[15.670355] (my_cpp_pkg) StdoutLine: {'line': b'[ 31%] \x1b[32m\x1b[1mLinking CXX executable cpp_node\x1b[0m\n'}
+[15.690031] (-) TimerEvent: {}
+[15.791341] (-) TimerEvent: {}
+[15.903483] (-) TimerEvent: {}
+[16.012749] (-) TimerEvent: {}
+[16.115375] (-) TimerEvent: {}
+[16.216056] (-) TimerEvent: {}
+[16.286243] (my_cpp_pkg) StdoutLine: {'line': b'[ 31%] Built target cpp_node\n'}
+[16.316178] (-) TimerEvent: {}
+[16.336204] (my_cpp_pkg) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/add_two_ints_server.dir/src/add_two_ints_server.cpp.o\x1b[0m\n'}
+[16.416368] (-) TimerEvent: {}
+[16.516887] (-) TimerEvent: {}
+[16.617644] (-) TimerEvent: {}
+[16.718153] (-) TimerEvent: {}
+[16.818983] (-) TimerEvent: {}
+[16.919748] (-) TimerEvent: {}
+[17.020546] (-) TimerEvent: {}
+[17.121163] (-) TimerEvent: {}
+[17.221877] (-) TimerEvent: {}
+[17.322476] (-) TimerEvent: {}
+[17.423250] (-) TimerEvent: {}
+[17.523626] (-) TimerEvent: {}
+[17.623997] (-) TimerEvent: {}
+[17.724351] (-) TimerEvent: {}
+[17.824876] (-) TimerEvent: {}
+[17.925432] (-) TimerEvent: {}
+[18.025986] (-) TimerEvent: {}
+[18.126479] (-) TimerEvent: {}
+[18.227168] (-) TimerEvent: {}
+[18.327508] (-) TimerEvent: {}
+[18.428293] (-) TimerEvent: {}
+[18.529421] (-) TimerEvent: {}
+[18.630115] (-) TimerEvent: {}
+[18.730694] (-) TimerEvent: {}
+[18.831086] (-) TimerEvent: {}
+[18.931491] (-) TimerEvent: {}
+[19.032261] (-) TimerEvent: {}
+[19.133476] (-) TimerEvent: {}
+[19.234081] (-) TimerEvent: {}
+[19.334654] (-) TimerEvent: {}
+[19.436318] (-) TimerEvent: {}
+[19.538006] (-) TimerEvent: {}
+[19.639191] (-) TimerEvent: {}
+[19.740769] (-) TimerEvent: {}
+[19.841307] (-) TimerEvent: {}
+[19.942095] (-) TimerEvent: {}
+[20.043161] (-) TimerEvent: {}
+[20.147392] (-) TimerEvent: {}
+[20.248381] (-) TimerEvent: {}
+[20.278827] (my_cpp_pkg) StdoutLine: {'line': b'[ 43%] \x1b[32m\x1b[1mLinking CXX executable robot_news_station\x1b[0m\n'}
+[20.348444] (-) TimerEvent: {}
+[20.449063] (-) TimerEvent: {}
+[20.549776] (-) TimerEvent: {}
+[20.650439] (-) TimerEvent: {}
+[20.751119] (-) TimerEvent: {}
+[20.851547] (-) TimerEvent: {}
+[20.870618] (my_cpp_pkg) StdoutLine: {'line': b'[ 43%] Built target robot_news_station\n'}
+[20.926095] (my_cpp_pkg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/add_two_ints_client_no_oop.dir/src/add_two_ints_client_no_oop.cpp.o\x1b[0m\n'}
+[20.951678] (-) TimerEvent: {}
+[21.052055] (-) TimerEvent: {}
+[21.152442] (-) TimerEvent: {}
+[21.253049] (-) TimerEvent: {}
+[21.353790] (-) TimerEvent: {}
+[21.454142] (-) TimerEvent: {}
+[21.554502] (-) TimerEvent: {}
+[21.654901] (-) TimerEvent: {}
+[21.755258] (-) TimerEvent: {}
+[21.855691] (-) TimerEvent: {}
+[21.956043] (-) TimerEvent: {}
+[22.056379] (-) TimerEvent: {}
+[22.156909] (-) TimerEvent: {}
+[22.257512] (-) TimerEvent: {}
+[22.358109] (-) TimerEvent: {}
+[22.458779] (-) TimerEvent: {}
+[22.559164] (-) TimerEvent: {}
+[22.659612] (-) TimerEvent: {}
+[22.760234] (-) TimerEvent: {}
+[22.860650] (-) TimerEvent: {}
+[22.961036] (-) TimerEvent: {}
+[23.061700] (-) TimerEvent: {}
+[23.162424] (-) TimerEvent: {}
+[23.263095] (-) TimerEvent: {}
+[23.364813] (-) TimerEvent: {}
+[23.465436] (-) TimerEvent: {}
+[23.565844] (-) TimerEvent: {}
+[23.666197] (-) TimerEvent: {}
+[23.766503] (-) TimerEvent: {}
+[23.866941] (-) TimerEvent: {}
+[23.967587] (-) TimerEvent: {}
+[24.068344] (-) TimerEvent: {}
+[24.169240] (-) TimerEvent: {}
+[24.269721] (-) TimerEvent: {}
+[24.370080] (-) TimerEvent: {}
+[24.470560] (-) TimerEvent: {}
+[24.571206] (-) TimerEvent: {}
+[24.671670] (-) TimerEvent: {}
+[24.772382] (-) TimerEvent: {}
+[24.873239] (-) TimerEvent: {}
+[24.974276] (-) TimerEvent: {}
+[25.075505] (-) TimerEvent: {}
+[25.176911] (-) TimerEvent: {}
+[25.277490] (-) TimerEvent: {}
+[25.378742] (-) TimerEvent: {}
+[25.479234] (-) TimerEvent: {}
+[25.579620] (-) TimerEvent: {}
+[25.679934] (-) TimerEvent: {}
+[25.780234] (-) TimerEvent: {}
+[25.880844] (-) TimerEvent: {}
+[25.981692] (-) TimerEvent: {}
+[26.082165] (-) TimerEvent: {}
+[26.182637] (-) TimerEvent: {}
+[26.286317] (-) TimerEvent: {}
+[26.387208] (-) TimerEvent: {}
+[26.488173] (-) TimerEvent: {}
+[26.588801] (-) TimerEvent: {}
+[26.689557] (-) TimerEvent: {}
+[26.790349] (-) TimerEvent: {}
+[26.891076] (-) TimerEvent: {}
+[26.991976] (-) TimerEvent: {}
+[27.092646] (-) TimerEvent: {}
+[27.194223] (-) TimerEvent: {}
+[27.294781] (-) TimerEvent: {}
+[27.395408] (-) TimerEvent: {}
+[27.496068] (-) TimerEvent: {}
+[27.596655] (-) TimerEvent: {}
+[27.697400] (-) TimerEvent: {}
+[27.798020] (-) TimerEvent: {}
+[27.898519] (-) TimerEvent: {}
+[27.950364] (my_cpp_pkg) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking CXX executable add_two_ints_server\x1b[0m\n'}
+[27.998615] (-) TimerEvent: {}
+[28.098974] (-) TimerEvent: {}
+[28.199498] (-) TimerEvent: {}
+[28.300293] (-) TimerEvent: {}
+[28.309936] (my_cpp_pkg) StdoutLine: {'line': b'[ 56%] Built target add_two_ints_server\n'}
+[28.354026] (my_cpp_pkg) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/add_two_ints_client.dir/src/add_two_ints_client.cpp.o\x1b[0m\n'}
+[28.400489] (-) TimerEvent: {}
+[28.501746] (-) TimerEvent: {}
+[28.602509] (-) TimerEvent: {}
+[28.703168] (-) TimerEvent: {}
+[28.803878] (-) TimerEvent: {}
+[28.904556] (-) TimerEvent: {}
+[29.005047] (-) TimerEvent: {}
+[29.105443] (-) TimerEvent: {}
+[29.205798] (-) TimerEvent: {}
+[29.306125] (-) TimerEvent: {}
+[29.406558] (-) TimerEvent: {}
+[29.507030] (-) TimerEvent: {}
+[29.607376] (-) TimerEvent: {}
+[29.707723] (-) TimerEvent: {}
+[29.808077] (-) TimerEvent: {}
+[29.908487] (-) TimerEvent: {}
+[30.009070] (-) TimerEvent: {}
+[30.109936] (-) TimerEvent: {}
+[30.210593] (-) TimerEvent: {}
+[30.311095] (-) TimerEvent: {}
+[30.411729] (-) TimerEvent: {}
+[30.476266] (my_cpp_pkg) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX executable smartphone\x1b[0m\n'}
+[30.512016] (-) TimerEvent: {}
+[30.613654] (-) TimerEvent: {}
+[30.715200] (-) TimerEvent: {}
+[30.815789] (-) TimerEvent: {}
+[30.916380] (-) TimerEvent: {}
+[31.016716] (-) TimerEvent: {}
+[31.117036] (-) TimerEvent: {}
+[31.217356] (-) TimerEvent: {}
+[31.317739] (-) TimerEvent: {}
+[31.418102] (-) TimerEvent: {}
+[31.455345] (my_cpp_pkg) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable add_two_ints_client_no_oop\x1b[0m\n'}
+[31.518200] (-) TimerEvent: {}
+[31.618695] (-) TimerEvent: {}
+[31.719516] (-) TimerEvent: {}
+[31.820215] (-) TimerEvent: {}
+[31.907468] (my_cpp_pkg) StdoutLine: {'line': b'[ 75%] Built target smartphone\n'}
+[31.920387] (-) TimerEvent: {}
+[31.940858] (my_cpp_pkg) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object CMakeFiles/hw_status_publisher.dir/src/hw_status_publisher.cpp.o\x1b[0m\n'}
+[32.020552] (-) TimerEvent: {}
+[32.101589] (my_cpp_pkg) StdoutLine: {'line': b'[ 81%] Built target add_two_ints_client_no_oop\n'}
+[32.120639] (-) TimerEvent: {}
+[32.221017] (-) TimerEvent: {}
+[32.321410] (-) TimerEvent: {}
+[32.421764] (-) TimerEvent: {}
+[32.522097] (-) TimerEvent: {}
+[32.622478] (-) TimerEvent: {}
+[32.722946] (-) TimerEvent: {}
+[32.823835] (-) TimerEvent: {}
+[32.925310] (-) TimerEvent: {}
+[33.026721] (-) TimerEvent: {}
+[33.128192] (-) TimerEvent: {}
+[33.228983] (-) TimerEvent: {}
+[33.322768] (my_cpp_pkg) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking CXX executable number_counter\x1b[0m\n'}
+[33.329219] (-) TimerEvent: {}
+[33.435450] (-) TimerEvent: {}
+[33.535812] (-) TimerEvent: {}
+[33.637233] (-) TimerEvent: {}
+[33.738743] (-) TimerEvent: {}
+[33.840144] (-) TimerEvent: {}
+[33.940475] (-) TimerEvent: {}
+[34.040968] (-) TimerEvent: {}
+[34.141442] (-) TimerEvent: {}
+[34.221896] (my_cpp_pkg) StdoutLine: {'line': b'[ 87%] Built target number_counter\n'}
+[34.241733] (-) TimerEvent: {}
+[34.342192] (-) TimerEvent: {}
+[34.442659] (-) TimerEvent: {}
+[34.543270] (-) TimerEvent: {}
+[34.644033] (-) TimerEvent: {}
+[34.744462] (-) TimerEvent: {}
+[34.844902] (-) TimerEvent: {}
+[34.945426] (-) TimerEvent: {}
+[35.046418] (-) TimerEvent: {}
+[35.146694] (-) TimerEvent: {}
+[35.247691] (-) TimerEvent: {}
+[35.348094] (-) TimerEvent: {}
+[35.351259] (my_cpp_pkg) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking CXX executable add_two_ints_client\x1b[0m\n'}
+[35.448246] (-) TimerEvent: {}
+[35.528011] (my_cpp_pkg) StdoutLine: {'line': b'[ 93%] Built target add_two_ints_client\n'}
+[35.548437] (-) TimerEvent: {}
+[35.648843] (-) TimerEvent: {}
+[35.749368] (-) TimerEvent: {}
+[35.850404] (-) TimerEvent: {}
+[35.956214] (-) TimerEvent: {}
+[36.057121] (-) TimerEvent: {}
+[36.157804] (-) TimerEvent: {}
+[36.258470] (-) TimerEvent: {}
+[36.359213] (-) TimerEvent: {}
+[36.459972] (-) TimerEvent: {}
+[36.560814] (-) TimerEvent: {}
+[36.661282] (-) TimerEvent: {}
+[36.761525] (-) TimerEvent: {}
+[36.861787] (-) TimerEvent: {}
+[36.962133] (-) TimerEvent: {}
+[36.965594] (my_cpp_pkg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable hw_status_publisher\x1b[0m\n'}
+[37.062207] (-) TimerEvent: {}
+[37.141205] (my_cpp_pkg) StdoutLine: {'line': b'[100%] Built target hw_status_publisher\n'}
+[37.162310] (-) TimerEvent: {}
+[37.220217] (my_cpp_pkg) CommandEnded: {'returncode': 0}
+[37.266962] (-) TimerEvent: {}
+[37.292512] (my_cpp_pkg) JobProgress: {'identifier': 'my_cpp_pkg', 'progress': 'install'}
+[37.298384] (my_cpp_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/prateek/ros2_ws/build/my_cpp_pkg'], 'cwd': '/home/prateek/ros2_ws/build/my_cpp_pkg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'prateek'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/prateek/ros2_ws/install/my_robot_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/prateek'), ('OLDPWD', '/home/prateek/ros2_ws/build'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1637'), ('SYSTEMD_EXEC_PID', '1744'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '19554'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/prateek/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'prateek'), ('JOURNAL_STREAM', '8:26107'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'prateek'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/bin:/usr/bin:/usr/local/bin:/path/to/qemu/bin:/usr/bin:/usr/bin:/usr/local/bin:/path/to/qemu/bin:/usr/bin:/usr/bin:/usr/local/bin:/path/to/qemu/bin:/usr/bin:/usr/bin:/usr/local/bin:/path/to/qemu/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1721,unix/ubuntu:/tmp/.ICE-unix/1721'), ('INVOCATION_ID', '6926d18bfc08469da692bfd82ad747cb'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.FQXMK2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/prateek/ros2_ws/install/my_robot_bringup:/home/prateek/ros2_ws/install/my_py_pkg:/home/prateek/ros2_ws/install/my_cpp_pkg:/home/prateek/ros2_ws/install/my_robot_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:9f65e7df-e641-4149-8fe4-077ac4611edb'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/prateek/ros2_ws/build/my_cpp_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/prateek/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/prateek/ros2_ws/install/my_robot_interfaces:/home/prateek/ros2_ws/install/my_robot_bringup:/home/prateek/ros2_ws/install/my_cpp_pkg:/home/prateek/ros2_ws/install/my_py_pkg:/opt/ros/humble')]), 'shell': False}
+[37.320832] (my_cpp_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[37.322678] (my_cpp_pkg) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[37.324090] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_node\n'}
+[37.324326] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/robot_news_station\n'}
+[37.324551] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/smartphone\n'}
+[37.324752] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/number_counter\n'}
+[37.324982] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/add_two_ints_server\n'}
+[37.325166] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/add_two_ints_client\n'}
+[37.325453] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/add_two_ints_client_no_oop\n'}
+[37.325760] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/hw_status_publisher\n'}
+[37.326461] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/package_run_dependencies/my_cpp_pkg\n'}
+[37.326848] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/parent_prefix_path/my_cpp_pkg\n'}
+[37.329291] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.sh\n'}
+[37.329601] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.dsv\n'}
+[37.329885] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.sh\n'}
+[37.330133] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.dsv\n'}
+[37.330412] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.bash\n'}
+[37.330640] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.sh\n'}
+[37.330900] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.zsh\n'}
+[37.331166] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.dsv\n'}
+[37.331352] (my_cpp_pkg) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.dsv\n'}
+[37.337296] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/packages/my_cpp_pkg\n'}
+[37.337532] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig.cmake\n'}
+[37.337668] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig-version.cmake\n'}
+[37.338433] (my_cpp_pkg) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.xml\n'}
+[37.347778] (my_cpp_pkg) CommandEnded: {'returncode': 0}
+[37.369661] (-) TimerEvent: {}
+[37.453397] (my_cpp_pkg) JobEnded: {'identifier': 'my_cpp_pkg', 'rc': 0}
+[37.454305] (my_robot_bringup) JobStarted: {'identifier': 'my_robot_bringup'}
+[37.469775] (-) TimerEvent: {}
+[37.502263] (my_robot_bringup) JobProgress: {'identifier': 'my_robot_bringup', 'progress': 'cmake'}
+[37.512875] (my_robot_bringup) Command: {'cmd': ['/usr/bin/cmake', '/home/prateek/ros2_ws/src/my_robot_bringup', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/prateek/ros2_ws/install/my_robot_bringup'], 'cwd': '/home/prateek/ros2_ws/build/my_robot_bringup', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'prateek'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/prateek/ros2_ws/install/my_robot_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/prateek'), ('OLDPWD', '/home/prateek/ros2_ws/build'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1637'), ('SYSTEMD_EXEC_PID', '1744'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '19554'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/prateek/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'prateek'), ('JOURNAL_STREAM', '8:26107'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'prateek'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/bin:/usr/bin:/usr/local/bin:/path/to/qemu/bin:/usr/bin:/usr/bin:/usr/local/bin:/path/to/qemu/bin:/usr/bin:/usr/bin:/usr/local/bin:/path/to/qemu/bin:/usr/bin:/usr/bin:/usr/local/bin:/path/to/qemu/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1721,unix/ubuntu:/tmp/.ICE-unix/1721'), ('INVOCATION_ID', '6926d18bfc08469da692bfd82ad747cb'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.FQXMK2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/prateek/ros2_ws/install/my_py_pkg:/home/prateek/ros2_ws/install/my_robot_bringup:/home/prateek/ros2_ws/install/my_cpp_pkg:/home/prateek/ros2_ws/install/my_robot_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:9f65e7df-e641-4149-8fe4-077ac4611edb'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/prateek/ros2_ws/build/my_robot_bringup'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/prateek/ros2_ws/build/my_py_pkg:/home/prateek/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/prateek/ros2_ws/install/my_cpp_pkg:/home/prateek/ros2_ws/install/my_robot_interfaces:/home/prateek/ros2_ws/install/my_robot_bringup:/home/prateek/ros2_ws/install/my_py_pkg:/opt/ros/humble')]), 'shell': False}
+[37.569879] (-) TimerEvent: {}
+[37.665626] (my_robot_bringup) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[37.669956] (-) TimerEvent: {}
+[37.741533] (my_robot_bringup) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[37.750857] (my_robot_bringup) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[37.770043] (-) TimerEvent: {}
+[37.827930] (my_robot_bringup) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[37.834962] (my_robot_bringup) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[37.835363] (my_robot_bringup) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[37.836870] (my_robot_bringup) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[37.839964] (my_robot_bringup) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[37.870122] (-) TimerEvent: {}
+[37.896208] (my_robot_bringup) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[37.903251] (my_robot_bringup) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[37.903463] (my_robot_bringup) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[37.911192] (my_robot_bringup) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[37.931103] (my_robot_bringup) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[37.970217] (-) TimerEvent: {}
+[38.070779] (-) TimerEvent: {}
+[38.082350] (my_robot_bringup) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[38.171334] (-) TimerEvent: {}
+[38.173543] (my_robot_bringup) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[38.271765] (-) TimerEvent: {}
+[38.286043] (my_robot_bringup) StdoutLine: {'line': b'-- Configuring done\n'}
+[38.288132] (my_robot_bringup) StdoutLine: {'line': b'-- Generating done\n'}
+[38.288786] (my_robot_bringup) StdoutLine: {'line': b'-- Build files have been written to: /home/prateek/ros2_ws/build/my_robot_bringup\n'}
+[38.291938] (my_robot_bringup) CommandEnded: {'returncode': 0}
+[38.292396] (my_robot_bringup) JobProgress: {'identifier': 'my_robot_bringup', 'progress': 'build'}
+[38.293664] (my_robot_bringup) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/prateek/ros2_ws/build/my_robot_bringup', '--clean-first', '--', '-j4', '-l4'], 'cwd': '/home/prateek/ros2_ws/build/my_robot_bringup', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'prateek'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/prateek/ros2_ws/install/my_robot_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/prateek'), ('OLDPWD', '/home/prateek/ros2_ws/build'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1637'), ('SYSTEMD_EXEC_PID', '1744'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '19554'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/prateek/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'prateek'), ('JOURNAL_STREAM', '8:26107'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'prateek'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/bin:/usr/bin:/usr/local/bin:/path/to/qemu/bin:/usr/bin:/usr/bin:/usr/local/bin:/path/to/qemu/bin:/usr/bin:/usr/bin:/usr/local/bin:/path/to/qemu/bin:/usr/bin:/usr/bin:/usr/local/bin:/path/to/qemu/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1721,unix/ubuntu:/tmp/.ICE-unix/1721'), ('INVOCATION_ID', '6926d18bfc08469da692bfd82ad747cb'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.FQXMK2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/prateek/ros2_ws/install/my_py_pkg:/home/prateek/ros2_ws/install/my_robot_bringup:/home/prateek/ros2_ws/install/my_cpp_pkg:/home/prateek/ros2_ws/install/my_robot_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:9f65e7df-e641-4149-8fe4-077ac4611edb'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/prateek/ros2_ws/build/my_robot_bringup'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/prateek/ros2_ws/build/my_py_pkg:/home/prateek/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/prateek/ros2_ws/install/my_cpp_pkg:/home/prateek/ros2_ws/install/my_robot_interfaces:/home/prateek/ros2_ws/install/my_robot_bringup:/home/prateek/ros2_ws/install/my_py_pkg:/opt/ros/humble')]), 'shell': False}
+[38.348404] (my_robot_bringup) CommandEnded: {'returncode': 0}
+[38.360042] (my_robot_bringup) JobProgress: {'identifier': 'my_robot_bringup', 'progress': 'install'}
+[38.360090] (my_robot_bringup) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/prateek/ros2_ws/build/my_robot_bringup'], 'cwd': '/home/prateek/ros2_ws/build/my_robot_bringup', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'prateek'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/prateek/ros2_ws/install/my_robot_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/prateek'), ('OLDPWD', '/home/prateek/ros2_ws/build'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/terminator.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1637'), ('SYSTEMD_EXEC_PID', '1744'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('TERMINATOR_DBUS_NAME', 'net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '19554'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/prateek/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'prateek'), ('JOURNAL_STREAM', '8:26107'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'prateek'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/bin:/usr/bin:/usr/local/bin:/path/to/qemu/bin:/usr/bin:/usr/bin:/usr/local/bin:/path/to/qemu/bin:/usr/bin:/usr/bin:/usr/local/bin:/path/to/qemu/bin:/usr/bin:/usr/bin:/usr/local/bin:/path/to/qemu/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1721,unix/ubuntu:/tmp/.ICE-unix/1721'), ('INVOCATION_ID', '6926d18bfc08469da692bfd82ad747cb'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('TERMINATOR_DBUS_PATH', '/net/tenshu/Terminator2'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('IBUS_DISABLE_SNOOPER', '1'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.FQXMK2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/prateek/ros2_ws/install/my_py_pkg:/home/prateek/ros2_ws/install/my_robot_bringup:/home/prateek/ros2_ws/install/my_cpp_pkg:/home/prateek/ros2_ws/install/my_robot_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('TERMINATOR_UUID', 'urn:uuid:9f65e7df-e641-4149-8fe4-077ac4611edb'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/prateek/ros2_ws/build/my_robot_bringup'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/prateek/ros2_ws/build/my_py_pkg:/home/prateek/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/prateek/ros2_ws/install/my_cpp_pkg:/home/prateek/ros2_ws/install/my_robot_interfaces:/home/prateek/ros2_ws/install/my_robot_bringup:/home/prateek/ros2_ws/install/my_py_pkg:/opt/ros/humble')]), 'shell': False}
+[38.364553] (my_robot_bringup) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[38.365103] (my_robot_bringup) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[38.365803] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_robot_bringup/share/ament_index/resource_index/package_run_dependencies/my_robot_bringup\n'}
+[38.366191] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_robot_bringup/share/ament_index/resource_index/parent_prefix_path/my_robot_bringup\n'}
+[38.367117] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/environment/ament_prefix_path.sh\n'}
+[38.367456] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/environment/ament_prefix_path.dsv\n'}
+[38.367731] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/environment/path.sh\n'}
+[38.368012] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/environment/path.dsv\n'}
+[38.368255] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/local_setup.bash\n'}
+[38.368540] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/local_setup.sh\n'}
+[38.368794] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/local_setup.zsh\n'}
+[38.369049] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/local_setup.dsv\n'}
+[38.369207] (my_robot_bringup) StdoutLine: {'line': b'-- Symlinking: /home/prateek/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/package.dsv\n'}
+[38.371899] (-) TimerEvent: {}
+[38.374322] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_robot_bringup/share/ament_index/resource_index/packages/my_robot_bringup\n'}
+[38.374751] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/cmake/my_robot_bringupConfig.cmake\n'}
+[38.375035] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/cmake/my_robot_bringupConfig-version.cmake\n'}
+[38.375320] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_robot_bringup/share/my_robot_bringup/package.xml\n'}
+[38.375871] (my_robot_bringup) StdoutLine: {'line': b'-- Up-to-date symlink: /home/prateek/ros2_ws/install/my_robot_bringup/share/my_robot_bringup//launch/number_app.launch.py\n'}
+[38.377802] (my_robot_bringup) CommandEnded: {'returncode': 0}
+[38.400516] (my_robot_bringup) JobEnded: {'identifier': 'my_robot_bringup', 'rc': 0}
+[38.418141] (-) EventReactorShutdown: {}

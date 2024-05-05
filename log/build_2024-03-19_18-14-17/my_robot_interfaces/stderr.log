@@ -1,0 +1,4 @@
+gmake[2]: *** No rule to make target '/usr/lib/x86_64-linux-gnu/libpython3.10.so', needed by 'rosidl_generator_py/my_robot_interfaces/libmy_robot_interfaces__rosidl_generator_py.so'.  Stop.
+gmake[1]: *** [CMakeFiles/Makefile2:475: CMakeFiles/my_robot_interfaces__rosidl_generator_py.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

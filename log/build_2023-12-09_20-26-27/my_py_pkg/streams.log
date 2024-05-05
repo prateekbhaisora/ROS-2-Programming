@@ -1,0 +1,19 @@
+[1.577s] Invoking command in '/home/prateek/ros2_ws/build/my_py_pkg': PYTHONPATH=/home/prateek/ros2_ws/build/my_py_pkg/prefix_override:/home/prateek/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/prateek/ros2_ws/build/my_py_pkg/build --no-deps install_data
+[2.216s] running develop
+[2.598s] running egg_info
+[2.599s] writing my_py_pkg.egg-info/PKG-INFO
+[2.601s] writing dependency_links to my_py_pkg.egg-info/dependency_links.txt
+[2.602s] writing entry points to my_py_pkg.egg-info/entry_points.txt
+[2.604s] writing requirements to my_py_pkg.egg-info/requires.txt
+[2.604s] writing top-level names to my_py_pkg.egg-info/top_level.txt
+[2.607s] reading manifest file 'my_py_pkg.egg-info/SOURCES.txt'
+[2.608s] writing manifest file 'my_py_pkg.egg-info/SOURCES.txt'
+[2.612s] running build_ext
+[2.612s] Creating /home/prateek/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my-py-pkg.egg-link (link to .)
+[2.614s] Installing py_node script to /home/prateek/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[2.615s] Installing robot_news_station script to /home/prateek/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[2.616s] Installing smartphone script to /home/prateek/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[2.616s] 
+[2.616s] Installed /home/prateek/ros2_ws/build/my_py_pkg
+[2.616s] running install_data
+[2.699s] Invoked command in '/home/prateek/ros2_ws/build/my_py_pkg' returned '0': PYTHONPATH=/home/prateek/ros2_ws/build/my_py_pkg/prefix_override:/home/prateek/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/prateek/ros2_ws/build/my_py_pkg/build --no-deps install_data

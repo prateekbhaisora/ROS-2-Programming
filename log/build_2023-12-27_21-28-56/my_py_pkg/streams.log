@@ -1,0 +1,24 @@
+[1.362s] Invoking command in '/home/prateek/ros2_ws/build/my_py_pkg': CMAKE_PREFIX_PATH=/home/prateek/ros2_ws/install/my_robot_interfaces:/home/prateek/ros2_ws/install/my_cpp_pkg:/home/prateek/ros2-ws/install/my_cpp_pkg:/home/prateek/ros2-ws/install/my_robot_interfaces PYTHONPATH=/home/prateek/ros2_ws/build/my_py_pkg/prefix_override:/home/prateek/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/prateek/ros2_ws/build/my_py_pkg/build --no-deps install_data
+[1.793s] running develop
+[2.028s] running egg_info
+[2.034s] writing my_py_pkg.egg-info/PKG-INFO
+[2.034s] writing dependency_links to my_py_pkg.egg-info/dependency_links.txt
+[2.053s] writing entry points to my_py_pkg.egg-info/entry_points.txt
+[2.056s] writing requirements to my_py_pkg.egg-info/requires.txt
+[2.061s] writing top-level names to my_py_pkg.egg-info/top_level.txt
+[2.066s] reading manifest file 'my_py_pkg.egg-info/SOURCES.txt'
+[2.072s] writing manifest file 'my_py_pkg.egg-info/SOURCES.txt'
+[2.077s] running build_ext
+[2.080s] Creating /home/prateek/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my-py-pkg.egg-link (link to .)
+[2.082s] Installing add_two_ints_client script to /home/prateek/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[2.082s] Installing add_two_ints_client_no_oop script to /home/prateek/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[2.082s] Installing add_two_ints_server script to /home/prateek/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[2.082s] Installing hw_status_publisher script to /home/prateek/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[2.082s] Installing number_publisher script to /home/prateek/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[2.082s] Installing py_node script to /home/prateek/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[2.083s] Installing robot_news_station script to /home/prateek/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[2.084s] Installing smartphone script to /home/prateek/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[2.084s] 
+[2.084s] Installed /home/prateek/ros2_ws/build/my_py_pkg
+[2.084s] running install_data
+[2.164s] Invoked command in '/home/prateek/ros2_ws/build/my_py_pkg' returned '0': CMAKE_PREFIX_PATH=/home/prateek/ros2_ws/install/my_robot_interfaces:/home/prateek/ros2_ws/install/my_cpp_pkg:/home/prateek/ros2-ws/install/my_cpp_pkg:/home/prateek/ros2-ws/install/my_robot_interfaces PYTHONPATH=/home/prateek/ros2_ws/build/my_py_pkg/prefix_override:/home/prateek/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/prateek/ros2_ws/build/my_py_pkg/build --no-deps install_data

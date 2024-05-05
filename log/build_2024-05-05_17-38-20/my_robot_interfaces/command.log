@@ -1,0 +1,4 @@
+Invoking command in '/home/prateek/ros2_ws/build/my_robot_interfaces': /usr/bin/cmake --build /home/prateek/ros2_ws/build/my_robot_interfaces -- -j16 -l16
+Invoked command in '/home/prateek/ros2_ws/build/my_robot_interfaces' returned '0': /usr/bin/cmake --build /home/prateek/ros2_ws/build/my_robot_interfaces -- -j16 -l16
+Invoking command in '/home/prateek/ros2_ws/build/my_robot_interfaces': /usr/bin/cmake --install /home/prateek/ros2_ws/build/my_robot_interfaces
+Invoked command in '/home/prateek/ros2_ws/build/my_robot_interfaces' returned '0': /usr/bin/cmake --install /home/prateek/ros2_ws/build/my_robot_interfaces

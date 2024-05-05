@@ -1,0 +1,30 @@
+[0.426s] Invoking command in '/home/prateek/ros2_ws/src/my_py_pkg': AMENT_PREFIX_PATH=/home/prateek/ros2_ws/install/my_robot_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/prateek/ros2_ws/install/my_robot_interfaces LD_LIBRARY_PATH=/home/prateek/ros2_ws/install/my_robot_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/prateek/ros2_ws/build/my_py_pkg/prefix_override:/home/prateek/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/prateek/ros2_ws/build/my_py_pkg/build install --record /home/prateek/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed
+[0.537s] running egg_info
+[0.537s] writing ../../build/my_py_pkg/my_py_pkg.egg-info/PKG-INFO
+[0.538s] writing dependency_links to ../../build/my_py_pkg/my_py_pkg.egg-info/dependency_links.txt
+[0.538s] writing entry points to ../../build/my_py_pkg/my_py_pkg.egg-info/entry_points.txt
+[0.538s] writing requirements to ../../build/my_py_pkg/my_py_pkg.egg-info/requires.txt
+[0.538s] writing top-level names to ../../build/my_py_pkg/my_py_pkg.egg-info/top_level.txt
+[0.539s] reading manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[0.540s] writing manifest file '../../build/my_py_pkg/my_py_pkg.egg-info/SOURCES.txt'
+[0.540s] running build
+[0.540s] running build_py
+[0.540s] running install
+[0.541s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.541s]   warnings.warn(
+[0.541s] running install_lib
+[0.542s] running install_data
+[0.542s] running install_egg_info
+[0.543s] removing '/home/prateek/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg-0.0.0-py3.10.egg-info' (and everything under it)
+[0.544s] Copying ../../build/my_py_pkg/my_py_pkg.egg-info to /home/prateek/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages/my_py_pkg-0.0.0-py3.10.egg-info
+[0.544s] running install_scripts
+[0.555s] Installing add_two_ints_client script to /home/prateek/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.556s] Installing add_two_ints_client_no_oop script to /home/prateek/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.556s] Installing add_two_ints_server script to /home/prateek/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.556s] Installing hw_status_publisher script to /home/prateek/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.556s] Installing number_publisher script to /home/prateek/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.556s] Installing py_node script to /home/prateek/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.556s] Installing robot_news_station script to /home/prateek/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.556s] Installing smartphone script to /home/prateek/ros2_ws/install/my_py_pkg/lib/my_py_pkg
+[0.556s] writing list of installed files to '/home/prateek/ros2_ws/build/my_py_pkg/install.log'
+[0.568s] Invoked command in '/home/prateek/ros2_ws/src/my_py_pkg' returned '0': AMENT_PREFIX_PATH=/home/prateek/ros2_ws/install/my_robot_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/prateek/ros2_ws/install/my_robot_interfaces LD_LIBRARY_PATH=/home/prateek/ros2_ws/install/my_robot_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/prateek/ros2_ws/build/my_py_pkg/prefix_override:/home/prateek/ros2_ws/install/my_py_pkg/lib/python3.10/site-packages:/home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/my_py_pkg build --build-base /home/prateek/ros2_ws/build/my_py_pkg/build install --record /home/prateek/ros2_ws/build/my_py_pkg/install.log --single-version-externally-managed

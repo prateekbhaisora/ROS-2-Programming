@@ -1,0 +1,77 @@
+[0.318s] Invoking command in '/home/prateek/ros2_ws/build/my_cpp_pkg': AMENT_PREFIX_PATH=/home/prateek/ros2_ws/install/my_robot_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/prateek/ros2_ws/install/my_robot_interfaces:/home/prateek/ros2-ws/install/my_cpp_pkg:/home/prateek/ros2-ws/install/my_robot_interfaces:/home/prateek/ros2-ws/install/my_py_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/prateek/ros2_ws/install/my_robot_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/prateek/ros2_ws/build/my_cpp_pkg -- -j2 -l2
+[0.484s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.812s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.852s] -- Found rclcpp: 16.0.7 (/opt/ros/humble/share/rclcpp/cmake)
+[0.996s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.006s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.020s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.050s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.081s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.331s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.349s] -- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.695s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.356s] -- Found example_interfaces: 0.9.3 (/opt/ros/humble/share/example_interfaces/cmake)
+[2.785s] -- Found my_robot_interfaces: 0.0.0 (/home/prateek/ros2_ws/install/my_robot_interfaces/share/my_robot_interfaces/cmake)
+[3.029s] -- Configuring done
+[3.185s] -- Generating done
+[3.194s] -- Build files have been written to: /home/prateek/ros2_ws/build/my_cpp_pkg
+[3.286s] [35m[1mConsolidate compiler generated dependencies of target cpp_node[0m
+[3.301s] [35m[1mConsolidate compiler generated dependencies of target robot_news_station[0m
+[3.358s] [  6%] [32mBuilding CXX object CMakeFiles/cpp_node.dir/src/my_first_node.cpp.o[0m
+[3.402s] [ 12%] [32mBuilding CXX object CMakeFiles/robot_news_station.dir/src/robot_news_station.cpp.o[0m
+[13.713s] [ 18%] [32m[1mLinking CXX executable cpp_node[0m
+[14.043s] [ 18%] Built target cpp_node
+[14.099s] [35m[1mConsolidate compiler generated dependencies of target smartphone[0m
+[14.145s] [ 25%] [32mBuilding CXX object CMakeFiles/smartphone.dir/src/smartphone.cpp.o[0m
+[16.169s] [ 31%] [32m[1mLinking CXX executable robot_news_station[0m
+[16.695s] [ 31%] Built target robot_news_station
+[16.753s] [35m[1mConsolidate compiler generated dependencies of target number_counter[0m
+[16.829s] [ 37%] [32mBuilding CXX object CMakeFiles/number_counter.dir/src/number_counter.cpp.o[0m
+[33.025s] [ 43%] [32m[1mLinking CXX executable smartphone[0m
+[33.837s] [ 43%] Built target smartphone
+[33.879s] [35m[1mConsolidate compiler generated dependencies of target add_two_ints_server[0m
+[33.919s] [ 50%] [32mBuilding CXX object CMakeFiles/add_two_ints_server.dir/src/add_two_ints_server.cpp.o[0m
+[36.450s] [ 56%] [32m[1mLinking CXX executable number_counter[0m
+[37.335s] [ 56%] Built target number_counter
+[37.371s] [35m[1mConsolidate compiler generated dependencies of target add_two_ints_client_no_oop[0m
+[37.423s] [ 62%] [32mBuilding CXX object CMakeFiles/add_two_ints_client_no_oop.dir/src/add_two_ints_client_no_oop.cpp.o[0m
+[40.573s] [ 68%] [32m[1mLinking CXX executable add_two_ints_server[0m
+[40.909s] [ 68%] Built target add_two_ints_server
+[40.958s] [35m[1mConsolidate compiler generated dependencies of target add_two_ints_client[0m
+[41.000s] [ 75%] [32mBuilding CXX object CMakeFiles/add_two_ints_client.dir/src/add_two_ints_client.cpp.o[0m
+[44.062s] [ 81%] [32m[1mLinking CXX executable add_two_ints_client_no_oop[0m
+[44.407s] [ 81%] Built target add_two_ints_client_no_oop
+[44.456s] [35m[1mConsolidate compiler generated dependencies of target hw_status_publisher[0m
+[44.493s] [ 87%] [32mBuilding CXX object CMakeFiles/hw_status_publisher.dir/src/hw_status_publisher.cpp.o[0m
+[47.784s] [ 93%] [32m[1mLinking CXX executable add_two_ints_client[0m
+[48.115s] [ 93%] Built target add_two_ints_client
+[53.514s] [100%] [32m[1mLinking CXX executable hw_status_publisher[0m
+[54.145s] [100%] Built target hw_status_publisher
+[54.197s] Invoked command in '/home/prateek/ros2_ws/build/my_cpp_pkg' returned '0': AMENT_PREFIX_PATH=/home/prateek/ros2_ws/install/my_robot_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/prateek/ros2_ws/install/my_robot_interfaces:/home/prateek/ros2-ws/install/my_cpp_pkg:/home/prateek/ros2-ws/install/my_robot_interfaces:/home/prateek/ros2-ws/install/my_py_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/prateek/ros2_ws/install/my_robot_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/prateek/ros2_ws/build/my_cpp_pkg -- -j2 -l2
+[54.528s] Invoking command in '/home/prateek/ros2_ws/build/my_cpp_pkg': AMENT_PREFIX_PATH=/home/prateek/ros2_ws/install/my_robot_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/prateek/ros2_ws/install/my_robot_interfaces:/home/prateek/ros2-ws/install/my_cpp_pkg:/home/prateek/ros2-ws/install/my_robot_interfaces:/home/prateek/ros2-ws/install/my_py_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/prateek/ros2_ws/install/my_robot_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/prateek/ros2_ws/build/my_cpp_pkg
+[54.560s] -- Install configuration: ""
+[54.560s] -- Execute custom install script
+[54.565s] -- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/cpp_node
+[54.566s] -- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/robot_news_station
+[54.566s] -- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/smartphone
+[54.566s] -- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/number_counter
+[54.567s] -- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/add_two_ints_server
+[54.568s] -- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/add_two_ints_client
+[54.574s] -- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/add_two_ints_client_no_oop
+[54.575s] -- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/lib/my_cpp_pkg/hw_status_publisher
+[54.591s] -- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/package_run_dependencies/my_cpp_pkg
+[54.601s] -- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/parent_prefix_path/my_cpp_pkg
+[54.602s] -- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.sh
+[54.606s] -- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/ament_prefix_path.dsv
+[54.607s] -- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.sh
+[54.608s] -- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/environment/path.dsv
+[54.609s] -- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.bash
+[54.611s] -- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.sh
+[54.621s] -- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.zsh
+[54.622s] -- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/local_setup.dsv
+[54.622s] -- Symlinking: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.dsv
+[54.664s] -- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/ament_index/resource_index/packages/my_cpp_pkg
+[54.667s] -- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig.cmake
+[54.668s] -- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/cmake/my_cpp_pkgConfig-version.cmake
+[54.671s] -- Up-to-date symlink: /home/prateek/ros2_ws/install/my_cpp_pkg/share/my_cpp_pkg/package.xml
+[54.677s] Invoked command in '/home/prateek/ros2_ws/build/my_cpp_pkg' returned '0': AMENT_PREFIX_PATH=/home/prateek/ros2_ws/install/my_robot_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/prateek/ros2_ws/install/my_robot_interfaces:/home/prateek/ros2-ws/install/my_cpp_pkg:/home/prateek/ros2-ws/install/my_robot_interfaces:/home/prateek/ros2-ws/install/my_py_pkg:/opt/ros/humble LD_LIBRARY_PATH=/home/prateek/ros2_ws/install/my_robot_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/prateek/ros2_ws/install/my_robot_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/prateek/ros2_ws/build/my_cpp_pkg
